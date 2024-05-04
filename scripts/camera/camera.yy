@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"camera",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"camera",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Libraries/AlexLibs/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

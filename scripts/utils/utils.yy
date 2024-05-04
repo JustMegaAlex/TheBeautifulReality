@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"utils",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"utils",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Libraries/AlexLibs/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
