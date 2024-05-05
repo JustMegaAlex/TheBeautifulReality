@@ -1,8 +1,30 @@
 ### Codestyle
+#### Namings:
 - PascalCase for global functions
 - camelCase for object and struct functions
 - python_case for variables
 - SCREAM_CASE for global variables and macros
+#### Spaces and braces
+- use collapsed braces
+- put spaces after arguments in function definitions and calls
+- files should end with a newline
+- don't use semicolons (they are useless in GM 99% of time)
+- wrap lines bigger that 80 symbols for better readabiltiy  
+
+A good example of code:  
+```
+if yes {
+    DoStuff("good", 1, false)
+} else {
+    DoOtherStuff(
+        SomeLongFunctionCall(),
+        SomeLongFunctionCall(),
+        SomeLongFunctionCall(),
+        SomeLongFunctionCall(),
+    )
+}
+```
+Or simply use autoformatter https://beautifier.io/ 😉
 
 ### Code structure
 Separate code into systems. A system can be and object, a bunch of global functions or a combo of both.
