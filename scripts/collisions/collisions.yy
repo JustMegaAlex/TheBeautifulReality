@@ -1,9 +1,9 @@
 {
   "$GMScript":"",
-  "%Name":"movement",
+  "%Name":"collisions",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"movement",
+  "name":"collisions",
   "parent":{
     "name":"Scripts",
     "path":"folders/Libraries/AlexLibs/Scripts.yy",

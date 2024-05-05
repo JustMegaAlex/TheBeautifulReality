@@ -55,7 +55,7 @@
     {"id":{"name":"camera","path":"scripts/camera/camera.yy",},},
     {"id":{"name":"debug","path":"scripts/debug/debug.yy",},},
     {"id":{"name":"geometry","path":"scripts/geometry/geometry.yy",},},
-    {"id":{"name":"movement","path":"scripts/movement/movement.yy",},},
+    {"id":{"name":"collisions","path":"scripts/collisions/collisions.yy",},},
     {"id":{"name":"scr_ssave_config","path":"scripts/scr_ssave_config/scr_ssave_config.yy",},},
     {"id":{"name":"scr_ssave_manager","path":"scripts/scr_ssave_manager/scr_ssave_manager.yy",},},
     {"id":{"name":"scr_ssave","path":"scripts/scr_ssave/scr_ssave.yy",},},
