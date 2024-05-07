@@ -47,5 +47,5 @@ Why:
 - it gives a better readability understanding of how a system should be used
   
 
-### Varialbe definitions
+### Variable definitions
 Use varialbe definitions only if these vars are supposed to be editable in room editor
