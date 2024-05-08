@@ -38,7 +38,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.4.0.137",
+    "IDEVersion":"2024.2.0.132",
   },
   "name":"BeautifulReality",
   "resources":[
@@ -46,7 +46,7 @@
     {"id":{"name":"libOInput","path":"objects/libOInput/libOInput.yy",},},
     {"id":{"name":"oBody","path":"objects/oBody/oBody.yy",},},
     {"id":{"name":"oConveyerBelt","path":"objects/oConveyerBelt/oConveyerBelt.yy",},},
-    {"id":{"name":"oGAMECONTROL","path":"objects/oGAMECONTROL/oGAMECONTROL.yy",},},
+    {"id":{"name":"oGameController","path":"objects/oGameController/oGameController.yy",},},
     {"id":{"name":"oGrabableParent","path":"objects/oGrabableParent/oGrabableParent.yy",},},
     {"id":{"name":"oParticles","path":"objects/oParticles/oParticles.yy",},},
     {"id":{"name":"oPDA","path":"objects/oPDA/oPDA.yy",},},
