@@ -43,7 +43,8 @@
   "name":"BeautifulReality",
   "resources":[
     {"id":{"name":"Pixel's Notes","path":"notes/Pixel's Notes/Pixel's Notes.yy",},},
-    {"id":{"name":"libOInput","path":"objects/libOInput/libOInput.yy",},},
+    {"id":{"name":"oInput","path":"objects/oInput/oInput.yy",},},
+    {"id":{"name":"oRoomSwitch","path":"objects/oRoomSwitch/oRoomSwitch.yy",},},
     {"id":{"name":"oBody","path":"objects/oBody/oBody.yy",},},
     {"id":{"name":"oConveyerBelt","path":"objects/oConveyerBelt/oConveyerBelt.yy",},},
     {"id":{"name":"oGameController","path":"objects/oGameController/oGameController.yy",},},
