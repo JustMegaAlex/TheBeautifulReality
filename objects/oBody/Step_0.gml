@@ -3,7 +3,7 @@ event_inherited()
 //State Machine
 
 switch(body_state){
-	case p_body_state.conveyer:
+	case PBodyState.conveyer:
 		
 		able_grab = false
 		
@@ -11,17 +11,17 @@ switch(body_state){
 			x = clamp(x + oConveyerBelt.conveyerSpeed, x, targetX)
 		}
 		else{
-			body_state = p_body_state.ready
+			body_state = PBodyState.ready
 		}
 		break
 		
-	case p_body_state.ready:
+	case PBodyState.ready:
 		
 		able_grab = true
 		
 		if dropped {
 			if instance_place(x,y,oTable){
-				body_state = p_body_state.table
+				body_state = PBodyState.table
 				
 				x = oTable.x
 				y = oTable.y
@@ -33,7 +33,7 @@ switch(body_state){
 		}
 		break
 		
-	case p_body_state.table:
+	case PBodyState.table:
 		
 		able_grab = false
 		break

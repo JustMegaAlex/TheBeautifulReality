@@ -1,4 +1,4 @@
-enum p_body_state{
+enum PBodyState{
 	conveyer,
 	ready,
 	table,
