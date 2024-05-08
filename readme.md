@@ -26,7 +26,7 @@ if yes {
 ```
 Or simply use autoformatter https://beautifier.io/ 😉
 
-### Code structure
+#### Code structure
 Separate code into systems. A system can be and object, a bunch of global functions or a combo of both.
 To communicate with system use interface functions, as opposed to using its variables directly. Let's say we have oSoundSystem and we want to use it to play some audio.
 Do:  
@@ -47,5 +47,9 @@ Why:
 - it gives a better readability understanding of how a system should be used
   
 
-### Variable definitions
+#### Variable definitions
 Use varialbe definitions only if these vars are supposed to be editable in room editor
+
+### Techno
+### Game entry point rmStart
+rmStart room serves only to initialize all persistent objects. oGameControl will instantly switch to the title screen (when it's implementd) from here.
