@@ -1,1 +1,4 @@
+
+EnsureSingleton()
+
 randomize()
