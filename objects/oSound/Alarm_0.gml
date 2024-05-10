@@ -1,4 +1,3 @@
-
 audio_stop_sound(current_music)
 
 var msc_gain = get_gain(next_music)

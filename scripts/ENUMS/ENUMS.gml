@@ -1,6 +1,6 @@
-enum PBodyState{
-	conveyer,
-	ready,
-	table,
-	ship
+enum PBodyState {
+    conveyer,
+    ready,
+    table,
+    ship
 }

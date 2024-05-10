@@ -1,4 +1,3 @@
-
 // fade screen
 if fade_amount > 0 {
     draw_set_color(c_black)

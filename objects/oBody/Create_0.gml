@@ -2,10 +2,10 @@
 
 event_inherited()
 
-targetX = 240 - (sprite_width/2)
-x = -(sprite_width/2)
-y = room_height/2
+target_x = 240 - (sprite_width / 2)
+x = -(sprite_width / 2)
+y = room_height / 2
 
 body_state = PBodyState.conveyer
 
-hair_index = choose(-1,0)
+hair_index = choose(-1, 0)

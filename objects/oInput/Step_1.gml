@@ -1,10 +1,9 @@
-
 key_any = false
 mouse_moved = false
 key_interact_pressed = false
 
 if !active
-	exit
+exit
 
 
 key_interact_pressed = mouse_check_button_pressed(mb_left)
