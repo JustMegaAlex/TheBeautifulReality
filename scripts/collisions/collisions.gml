@@ -78,7 +78,8 @@ function CollidingTiles(xx, yy) {
 
 function PointCollisionTiles(xx, yy) {
     var tilemap = layer_tilemap_get_id("Tiles")
-    return tilemap_get(tilemap, xx div global.tiles_cell_size, yy div global.tiles_cell_size)
+    return tilemap_get(tilemap, xx div global.tiles_cell_size, yy div global
+        .tiles_cell_size)
 }
 
 function ResolveTileCollision(hsp, vsp) {

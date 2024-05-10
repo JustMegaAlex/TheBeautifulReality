@@ -113,7 +113,8 @@ function Chance(p) {
     return random(1) < p
 }
 
-function DrawTextCustom(xx, yy, text, font = -1, col = c_white, alpha = 1, halign = fa_top, valign = fa_left) {
+function DrawTextCustom(xx, yy, text, font = -1, col = c_white, alpha = 1,
+    halign = fa_top, valign = fa_left) {
     var prev_valign = draw_get_valign()
     var prev_halign = draw_get_halign()
     var prev_font = draw_get_font()

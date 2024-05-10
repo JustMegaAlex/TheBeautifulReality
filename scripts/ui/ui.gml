@@ -38,7 +38,8 @@ function UiSlider(
 
     function check_is_captured() {
         return mouse_check_button_pressed(mb_left)
-        and(point_distance(X + slider_rel_x, Y, mouse_x, mouse_y) < collision_raduis)
+        and(point_distance(X + slider_rel_x, Y, mouse_x, mouse_y) <
+            collision_raduis)
     }
 
     function step() {
@@ -53,15 +54,18 @@ function UiSlider(
     }
 
     function draw() {
-        draw_sprite_stretched(spr, 0, X - draw_x_off, Y - draw_y_off, total_width, sprh)
+        draw_sprite_stretched(spr, 0, X - draw_x_off, Y - draw_y_off,
+            total_width, sprh)
         draw_sprite(spr, 1, X + slider_rel_x, Y)
-        draw_text_custom(X + total_width + 10, Y, value, fnt, fa_center, fa_middle)
+        draw_text_custom(X + total_width + 10, Y, value, fnt, fa_center,
+            fa_middle)
     }
 
     function perform_hook(slf) {}
 }
 
-function make_simple_fullnes_bar(xx, yy, spr = spr_fullness_bar, layer = "ui", fullness = 1) {
+function make_simple_fullnes_bar(xx, yy, spr = spr_fullness_bar, layer = "ui",
+    fullness = 1) {
     var inst = instance_create_layer(xx, yy, layer, obj_ui_fullness_bar)
     inst.sprite_index = spr
     inst.bar_fullness = fullness

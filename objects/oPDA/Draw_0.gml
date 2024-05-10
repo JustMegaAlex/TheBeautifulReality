@@ -20,5 +20,6 @@ draw_set_halign(fa_center)
 
 var _nohoveralpha = 0.25
 draw_set_alpha(_nohoveralpha + (_hover * (1 - _nohoveralpha)))
-draw_text(room_width - sprite_width / 2, 16, (pda_open ? "Put away PDA" : "Pull out PDA"))
+draw_text(room_width - sprite_width / 2, 16, (pda_open ? "Put away PDA" :
+    "Pull out PDA"))
 draw_set_alpha(1)
