@@ -1,8 +1,8 @@
 //Initial Movement On the Conveyer Belt
 
 if !oGameState.checkEventHappened(NarrativeEvents.first_talk)
-		or oGameState.checkEvent(NarrativeEvents.cake_canban) {
-	instance_destroy()		
+or oGameState.checkEvent(NarrativeEvents.cake_canban) {
+    instance_destroy()
 }
 
 event_inherited()

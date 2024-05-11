@@ -11,7 +11,7 @@ if able_grab {
 
             //switch to the grabbed state
             grabbed = true
-			just_grabbed = true
+            just_grabbed = true
 
             //Get the relative mouse position to the origin
             mouse_rel_x = mouse_x - x

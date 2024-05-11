@@ -11,10 +11,11 @@ dialog_cakes = {
     },
     call: function() {
         id.dialog_tree = id.dialog_cakes
-		oGameState.addEventHappened(NarrativeEvents.first_talk)
-		if oGameState.checkEventHappened(NarrativeEvents.cake_canban) {
-			self.options[$ "Man, you only eat cakes"] = id.dialog_reliable_eater	
-		}
+        oGameState.addEventHappened(NarrativeEvents.first_talk)
+        if oGameState.checkEventHappened(NarrativeEvents.cake_canban) {
+            self.options[$ "Man, you only eat cakes"] = 
+                    id.dialog_reliable_eater
+        }
     }
 }
 
@@ -36,8 +37,8 @@ dialog_kanban = {
 }
 
 dialog_reliable_eater = {
-	text: "So what? It's not that bad, 'cause cakes are awesome!",
-	options: {
+    text: "So what? It's not that bad, 'cause cakes are awesome!",
+    options: {
         "What are you going to do with your future?": {
             text: "Well. Actually I was thinking about it.\nI want to become a reliable cake eater!\nThat will the best job ever!",
             options: {
@@ -60,7 +61,7 @@ current_dialog = dialog_tree
 current_replica = "Default replica"
 current_options = []
 
-function startDialog(dialog=dialog_tree) {
+function startDialog(dialog = dialog_tree) {
     is_active = true
     current_dialog = dialog
     current_replica = current_dialog.text
@@ -109,6 +110,6 @@ function interact(item) {
     if item.object_index == oKanBan {
         startDialog(dialog_kanban)
         instance_destroy(item)
-		oGameState.addEventToHappenNextDay(NarrativeEvents.cake_canban)
+        oGameState.addEventToHappenNextDay(NarrativeEvents.cake_canban)
     }
 }
