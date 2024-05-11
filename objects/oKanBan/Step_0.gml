@@ -10,11 +10,22 @@ if just_grabbed {
 }
 
 if dropped {
-	if place_meeting(x, y, oInventory) {
-		is_inventory = true
-		persistent = true
+	var on_inventory = place_meeting(x, y, oInventory)
+	if !is_inventory {
+		if on_inventory {
+			is_inventory = true
+			persistent = true
+		} else {
+			x = grabb_x
+			y = grabb_y
+		}
 	} else {
-		x = grabb_x
-		y = grabb_y
+		var dialog = instance_place(x, y, oDialog)
+		if dialog {
+			dialog.interact(id)
+		} else if !on_inventory {
+			x = grabb_x
+			y = grabb_y
+		}
 	}
 }
