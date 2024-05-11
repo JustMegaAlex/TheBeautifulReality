@@ -5,6 +5,10 @@ import jsbeautifier as js
 BASEDIR = Path(__file__).resolve().parent
 EXCLUDE = ('ssave', )
 
+OPTS: js.BeautifierOptions = js.default_options()
+OPTS.end_with_newline = True
+OPTS.wrap_line_length = 80
+
 
 def check_excluded(path):
     for excl in EXCLUDE:
@@ -24,13 +28,10 @@ def collect_all_gml(dir=BASEDIR):
 
 
 def run():
-    opts: js.BeautifierOptions = js.default_options()
-    opts.end_with_newline = True
-    opts.wrap_line_length = 80
     all_gmls = collect_all_gml()
     all_gmls = [gml for gml in all_gmls if not check_excluded(gml)]
     for path in all_gmls:
-        result = js.beautify_file(path, opts)
+        result = js.beautify_file(path, OPTS)
         with path.open('w') as f:
             f.write(result)
     print('All your code is beautified!')
