@@ -32,7 +32,7 @@ function startDialog() {
     current_dialog = dialog_tree
     current_replica = current_dialog.text
     current_options_struct = current_dialog.options
-    current_options = get_keys(current_options_struct)
+    current_options = getKeys(current_options_struct)
 }
 
 function chooseOption(option) {
@@ -51,7 +51,7 @@ function chooseOption(option) {
     }
     current_replica = current_dialog.text
     current_options_struct = current_dialog.options
-    current_options = get_keys(current_options_struct)
+    current_options = getKeys(current_options_struct)
     var call = get(current_dialog, "call")
     if call != undefined {
         call()
@@ -64,10 +64,10 @@ function get(struct, key) {
     return variable_struct_get(struct, key)
 }
 
-function get_keys(struct) {
+function getKeys(struct) {
     return struct_get_names(struct)
 }
 
-function get_first(struct) {
-    return get_keys(struct)[0]
+function getFirst(struct) {
+    return getKeys(struct)[0]
 }
