@@ -10,8 +10,8 @@
   "name":"oBody",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"MorgueItems",
+    "path":"folders/Objects/MorgueItems.yy",
   },
   "parentObjectId":{
     "name":"oGrabableParent",
