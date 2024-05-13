@@ -35,7 +35,6 @@ function chooseOption(option) {
         return
     } else if is_string(current_dialog) {
         current_replica = current_dialog
-        // current_options = ["end dialog"]
         return
     }
     current_replica = current_dialog.text

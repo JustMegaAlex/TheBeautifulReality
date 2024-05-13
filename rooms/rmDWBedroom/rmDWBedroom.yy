@@ -8,6 +8,7 @@
   "instanceCreationOrder":[
     {"name":"inst_30745122","path":"rooms/rmDWBedroom/rmDWBedroom.yy",},
     {"name":"inst_402547FC","path":"rooms/rmDWBedroom/rmDWBedroom.yy",},
+    {"name":"inst_2A760654","path":"rooms/rmDWBedroom/rmDWBedroom.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -15,7 +16,11 @@
         {"$GMRInstance":"","%Name":"inst_30745122","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_30745122","objectId":{"name":"oRoomSwitch","path":"objects/oRoomSwitch/oRoomSwitch.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oRoomSwitch","path":"objects/oRoomSwitch/oRoomSwitch.yy",},"propertyId":{"name":"target_room","path":"objects/oRoomSwitch/oRoomSwitch.yy",},"resource":{"name":"rmFoyer","path":"rooms/rmFoyer/rmFoyer.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"rmFoyer",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":224.0,"y":256.0,},
-        {"$GMRInstance":"","%Name":"inst_402547FC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_402547FC","objectId":{"name":"oHandsomeGuy","path":"objects/oHandsomeGuy/oHandsomeGuy.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.4222221,"scaleY":2.4222221,"x":480.0,"y":160.0,},
+        {"$GMRInstance":"","%Name":"inst_402547FC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_402547FC","objectId":{"name":"oHandsomeGuy","path":"objects/oHandsomeGuy/oHandsomeGuy.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.4222221,"scaleY":2.4222221,"x":448.0,"y":160.0,},
+        {"$GMRInstance":"","%Name":"inst_2A760654","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2A760654","objectId":{"name":"oRoomSwitch","path":"objects/oRoomSwitch/oRoomSwitch.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oRoomSwitch","path":"objects/oRoomSwitch/oRoomSwitch.yy",},"propertyId":{"name":"target_room","path":"objects/oRoomSwitch/oRoomSwitch.yy",},"resource":{"name":"rmDWLivingRoom","path":"rooms/rmDWLivingRoom/rmDWLivingRoom.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"rmDWLivingRoom",},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oRoomSwitch","path":"objects/oRoomSwitch/oRoomSwitch.yy",},"propertyId":{"name":"target_name","path":"objects/oRoomSwitch/oRoomSwitch.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"living room",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":832.0,"y":256.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4281545523,"depth":15000,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":true,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
