@@ -39,7 +39,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.2.0.132",
+    "IDEVersion":"2024.4.0.137",
   },
   "name":"BeautifulReality",
   "resources":[
@@ -50,6 +50,7 @@
     {"id":{"name":"oGameController","path":"objects/oGameController/oGameController.yy",},},
     {"id":{"name":"oGameState","path":"objects/oGameState/oGameState.yy",},},
     {"id":{"name":"oGrabableParent","path":"objects/oGrabableParent/oGrabableParent.yy",},},
+    {"id":{"name":"oHandsomeGuy","path":"objects/oHandsomeGuy/oHandsomeGuy.yy",},},
     {"id":{"name":"oInput","path":"objects/oInput/oInput.yy",},},
     {"id":{"name":"oInventory","path":"objects/oInventory/oInventory.yy",},},
     {"id":{"name":"oKanBan","path":"objects/oKanBan/oKanBan.yy",},},
@@ -91,6 +92,7 @@
     {"id":{"name":"sPHConveyerBelt","path":"sprites/sPHConveyerBelt/sPHConveyerBelt.yy",},},
     {"id":{"name":"sPHHair","path":"sprites/sPHHair/sPHHair.yy",},},
     {"id":{"name":"sPHTable","path":"sprites/sPHTable/sPHTable.yy",},},
+    {"id":{"name":"sSharon","path":"sprites/sSharon/sSharon.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
