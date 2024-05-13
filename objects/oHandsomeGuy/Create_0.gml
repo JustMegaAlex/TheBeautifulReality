@@ -7,6 +7,7 @@ dialog_cakes = {
     options: {
         "That's a lot!": "Yes!",
         "Don't you feel sick?": "No!",
+        "See you later": "[end]"
     },
     call: function() {
         id.dialog_tree = id.dialog_cakes
