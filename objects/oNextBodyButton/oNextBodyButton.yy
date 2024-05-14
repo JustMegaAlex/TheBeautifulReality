@@ -27,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sPHNextBodyButton",
+    "path":"sprites/sPHNextBodyButton/sPHNextBodyButton.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"PlaceHolder",
-    "path":"folders/Sprites/PlaceHolder.yy",
+    "name":"02 Work",
+    "path":"folders/Sprites/02 Work.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
