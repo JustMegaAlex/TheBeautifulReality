@@ -1,4 +1,5 @@
-
+if keyboard_check_pressed(vk_space) or mouse_check_button_pressed(mb_left)
+countdown_current = 250
 
 if (countdown_current > 0){
 	countdown_current --
@@ -34,12 +35,40 @@ for (var i = 0; i < array_length(rectangle_blink_frames); i++){
 	}
 }
 
+//Cut out this rectangle at 100 frames remaining.
+if (countdown_current < 100)
+_alpha = 0
+
 //Draw Rectangle
 draw_set_alpha(_alpha)
 draw_set_color(_color)
 draw_rectangle(0, 0, room_width, room_height, 0)
 draw_set_alpha(_alpha)
 draw_set_color(c_white)
+
+// ADDITION: Momentary Title Sprite | Hardcoded, sorry. 
+if (countdown_current < 178) and (countdown_current > 170){
+	gpu_set_blendmode(bm_add)	
+	draw_set_alpha(0.2)
+	draw_sprite(sTitle, 2, window_width * 0.5, window_height * 0.5)
+	draw_set_alpha(1)
+	gpu_set_blendmode(bm_normal)
+}
+
+if (countdown_current < 167) and (countdown_current > 163){
+	draw_set_alpha(0.2)
+	gpu_set_blendmode(bm_add)
+
+	repeat(4){
+		var _x = window_width * 0.5 + random_range(-15, 15)
+		var _y = window_height * 0.5 + random_range(-15, 15)
+		draw_sprite(sTitle, 2, _x, _y)
+	}
+	
+	gpu_set_blendmode(bm_normal)
+	draw_set_alpha(1)
+}
+
 
 
 // 2 | HALLOWQUEST LOGO
@@ -84,3 +113,30 @@ draw_set_alpha(1)
 
 
 draw_text_ext_transformed(5, 5, countdown_current, 10, 100, 0.5, 0.5, 0)
+
+// FINAL | Final Rect + Title Fade In
+// In the last 100 frames, after everything else is done.
+
+if (countdown_current < 100){
+	// Draw another black rectangle, fade out in the last 6 frames (just to ease the eyes)
+	
+	var _alpha = min(1, (countdown_current/6))
+	
+	draw_set_alpha(_alpha)
+	draw_set_color(c_black)
+	draw_rectangle(0, 0, room_width, room_height, 0)
+	draw_set_color(c_white)
+	draw_set_alpha(1)
+
+	//Get screen midpoints
+	var _xmid = window_width * 0.5
+	var _ymid = window_height * 0.5
+
+	// With 100 frames left, convert to a 0-to-1 alpha, times 0.5 
+	//(to reach a max of 0.5 alpha)
+	var _alpha = ((100 - countdown_current) / 100) * 1
+
+	draw_set_alpha(_alpha)
+	draw_sprite(sTitle, 0, _xmid, _ymid)
+	draw_set_alpha(1)	
+}

@@ -1,5 +1,5 @@
 //Intro Sequence Timer (in frames)
-countdown_max = 600
+countdown_max = 700
 countdown_current = countdown_max
 
 logo_fadeinpoint = 120	//After x frames, logo fades in.
@@ -15,4 +15,4 @@ window_height = room_height
 sprite_logo = sHallowQuestLogo
 
 
-rectangle_blink_frames = [100, 99, 98, 50, 49, 48, 20, 19, 18, 12, 11, 10, 7, 6]
+rectangle_blink_frames = [230, 229, 228, 150, 149, 148, 120, 119, 118, 112, 111, 110, 107, 106]
