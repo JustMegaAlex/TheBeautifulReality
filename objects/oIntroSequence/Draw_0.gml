@@ -17,8 +17,8 @@ var _color = c_black
 //Glitch/blink this rectangle out at specific frames (from the array)
 for (var i = 0; i < array_length(rectangle_blink_frames); i++){
 	if countdown_current = rectangle_blink_frames[i]{
-		_alpha = choose(0.1, 0.3)
-		_color = c_black//choose(c_green, c_teal, c_maroon)
+		_alpha = choose(0.6, 0.9)
+		_color = choose(c_green, c_teal, c_maroon)
 		
 		repeat(choose(6, 10)){
 			var _x1 = random_range(0, window_width)
