@@ -33,8 +33,8 @@ if (state == SCREENVIEW.NONE) or (state == SCREENVIEW.START)
 	title_image_index = 2
 	}
 	
-	var _mouse_xshift = (mouse_x - xpos_title_current) * -0.003
-	var _mouse_yshift = (mouse_y - ypos_title_current) * -0.003
+	var _mouse_xshift = (mouse_x - xpos_title_current) * -0.004
+	var _mouse_yshift = (mouse_y - ypos_title_current) * -0.004
 	
 	//Draw Title Sprite
 	draw_set_alpha(0.8)
@@ -107,14 +107,14 @@ if state == SCREENVIEW.START
 
 		// DRAW THE MAIN SPRITE + TEXT ABOVE EVERYTHING
 		if !_mouse_in_rect{		
-			draw_sprite_ext(button_sprite_array[i], 0, _x, _y, _scale, _scale, 0, c_white, 1)
+			draw_sprite_ext(button_sprite_array[i], 0, _x, _y, _scale, _scale, 0, c_white, 0.9)
 			draw_set_halign(fa_middle)
 			draw_set_valign(fa_center)
 			draw_text_ext_transformed_color(_x, _y, button_text_array[i], 30, 150, 1, 1, 0, c_black, c_black, c_black, c_black, 1)
 			draw_set_halign(fa_left)
 			draw_set_valign(fa_top)
 		} else if _mouse_in_rect{		
-			draw_sprite_ext(button_sprite_array[i], 0, _x, _y, _scale, _scale, 0, c_black, 1)
+			draw_sprite_ext(button_sprite_array[i], 0, _x, _y, _scale, _scale, 0, c_black, 0.9)
 			draw_set_halign(fa_middle)
 			draw_set_valign(fa_center)
 			draw_text_ext_transformed_color(_x, _y, button_text_array[i], 30, 150, _scale, _scale, 0, c_white, c_white, c_white, c_white, 1)
@@ -171,7 +171,7 @@ if state == SCREENVIEW.OPTIONS
 		var _sw = sprite_get_width(sprite_options)
 		var _sh = sprite_get_height(sprite_options)
 	
-		draw_sprite_ext(sprite_options, 0, _xmid, _ymid, 1, 1, 0, c_black, 1)
+		draw_sprite_ext(sprite_options, 0, _xmid, _ymid, 1, 1, 0, c_black, 0.9)
 		draw_set_halign(fa_middle)
 		draw_set_valign(fa_center)
 		if ((_ymid - _ymidfinal) < 5)
@@ -272,14 +272,14 @@ if state == SCREENVIEW.OPTIONS
 
 		// DRAW THE MAIN SPRITE + TEXT ABOVE EVERYTHING
 		if !_mouse_in_rect{		
-			draw_sprite_ext(backbutton_sprite, 0, _x, _y, _scale, _scale, 0, c_white, 1)
+			draw_sprite_ext(backbutton_sprite, 0, _x, _y, _scale, _scale, 0, c_white, 0.9)
 			draw_set_halign(fa_middle)
 			draw_set_valign(fa_center)
 			draw_text_ext_transformed_color(_x, _y, backbutton_text, 30, 150, 1, 1, 0, c_black, c_black, c_black, c_black, 1)
 			draw_set_halign(fa_left)
 			draw_set_valign(fa_top)
 		} else if _mouse_in_rect{		
-			draw_sprite_ext(backbutton_sprite, 0, _x, _y, _scale, _scale, 0, c_black, 1)
+			draw_sprite_ext(backbutton_sprite, 0, _x, _y, _scale, _scale, 0, c_black, 0.9)
 			draw_set_halign(fa_middle)
 			draw_set_valign(fa_center)
 			draw_text_ext_transformed_color(_x, _y, backbutton_text, 30, 150, _scale, _scale, 0, c_white, c_white, c_white, c_white, 1)
@@ -297,11 +297,13 @@ if state == SCREENVIEW.OPTIONS
 	#endregion	
 }
 
+// BG Parallax
+
 var _xmid = gui_w * 0.5
 var _ymid = gui_h * 0.5
 
-var _mouse_xshift = (mouse_x - _xmid) * 0.003
-var _mouse_yshift = (mouse_y - _ymid) * 0.003
+var _mouse_xshift = (mouse_x - _xmid) * 0.002
+var _mouse_yshift = (mouse_y - _ymid) * 0.002
 
 layer_x("Background", -20 + _mouse_xshift)
 layer_y("Background", -20 + _mouse_yshift)

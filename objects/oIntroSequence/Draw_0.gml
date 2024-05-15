@@ -109,9 +109,34 @@ if (countdown_current < (countdown_max - logo_fadeoutpoint)) {
 	_alpha = ((countdown_current - _alpha_zero)/(_alpha_one - _alpha_zero))
 }
 
+//3 | Pixel Logo
+
+//3.1 FADE IN (glitch shader in the future though)
+//Fade in when: the countdown reaches 30 frames after start.
+if (countdown_current < (countdown_max - logo_fadeinpoint2)) {
+	var _alpha_zero = (countdown_max - logo_fadeinpoint2)	//At this point alpha should be 0
+	var _alpha_one = (countdown_max - logo_fadeinpoint2 - logo_fadeintime2)	//At this point alpha should be 1	
+	// Maths to convert the above bit into a 0-to-1 scale
+	_alpha = (1 - (countdown_current - _alpha_one)/(_alpha_zero - _alpha_one))
+}
+
+//3.2 STAY
+//Do nothing
+
+//3.3 FADE OUT
+//Fade out when: the countdown reaches 90 frames after start.
+//Reversing the same code above. Just overwriting _alpha.
+if (countdown_current < (countdown_max - logo_fadeoutpoint2)) {
+	var _alpha_one = (countdown_max - logo_fadeoutpoint2)	//At this point alpha should be 1
+	var _alpha_zero = (countdown_max - logo_fadeoutpoint2 - logo_fadeouttime2)	//At this point alpha should be 0
+	// Maths to convert the above bit into a 0-to-1 scale
+	_alpha = ((countdown_current - _alpha_zero)/(_alpha_one - _alpha_zero))
+}
+
+
 //Draw Logo Sprite
 draw_set_alpha(_alpha)
-draw_sprite(sprite_logo, 0, _xmid, _ymid)
+draw_sprite(sprite_logo_pixel, 0, _xmid, _ymid)
 draw_set_alpha(1)
 
 draw_text_ext_transformed(5, 5, countdown_current, 10, 100, 0.5, 0.5, 0)
@@ -150,9 +175,14 @@ if (countdown_current < 100){
 
 	draw_set_alpha(_alpha - 0.1)
 	draw_sprite(sTitle, 0, _xmid, _ymid)
-	draw_set_alpha(1)	
-	
-	//Audio test | ignore for now
-	audio_sound_gain(bgm_play_lpf, countdown_current/100, 1)
-	audio_sound_gain(bgm_play_regular, (100 - countdown_current)/100, 1)	
+	draw_set_alpha(1)		
 }
+
+//Audio test | ignore for now
+var _audioswapstart = 200
+
+if (countdown_current < _audioswapstart){
+	audio_sound_gain(bgm_play_lpf, (countdown_current/_audioswapstart) * 0.5, 1)
+	audio_sound_gain(bgm_play_regular, (_audioswapstart - countdown_current)/_audioswapstart, 1)
+}
+
