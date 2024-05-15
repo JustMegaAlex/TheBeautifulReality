@@ -10,4 +10,5 @@ var _scale = (global.accessibility.cursorsize * 0.1) + 0.5
 
 draw_sprite_ext(sCursor, 0, _mouse_x, _mouse_y, _scale, _scale, 0, c_white, 1)
 
+audio_master_gain(global.audio.bgmlevel/10)
 

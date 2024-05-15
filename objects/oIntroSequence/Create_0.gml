@@ -34,5 +34,7 @@ sound_bgm_asset = bgmStartScreen
 bgm_play_lpf = audio_play_sound_on(emitter1, sound_bgm_asset, true, 100);
 bgm_play_regular = audio_play_sound(sound_bgm_asset, 0, true, 0)
 
+sfx_glitch1 = sfxGlitch1
+sfx_glitch2 = sfxGlitch2
 
 

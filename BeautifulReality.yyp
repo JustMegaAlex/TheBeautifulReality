@@ -103,6 +103,8 @@
     {"id":{"name":"utils","path":"scripts/utils/utils.yy",},},
     {"id":{"name":"bgmRadio","path":"sounds/bgmRadio/bgmRadio.yy",},},
     {"id":{"name":"bgmStartScreen","path":"sounds/bgmStartScreen/bgmStartScreen.yy",},},
+    {"id":{"name":"sfxGlitch1","path":"sounds/sfxGlitch1/sfxGlitch1.yy",},},
+    {"id":{"name":"sfxGlitch2","path":"sounds/sfxGlitch2/sfxGlitch2.yy",},},
     {"id":{"name":"sCursor","path":"sprites/sCursor/sCursor.yy",},},
     {"id":{"name":"sDoor","path":"sprites/sDoor/sDoor.yy",},},
     {"id":{"name":"sHallowQuestLogo","path":"sprites/sHallowQuestLogo/sHallowQuestLogo.yy",},},

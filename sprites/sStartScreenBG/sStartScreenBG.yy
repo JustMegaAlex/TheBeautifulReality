@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"sStartScreenBG",
   "bboxMode":0,
-  "bbox_bottom":539,
+  "bbox_bottom":562,
   "bbox_left":0,
-  "bbox_right":959,
+  "bbox_right":999,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":540,
+  "height":563,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"78f31c6e-0744-415b-ba99-664b1f352263","blendMode":0,"displayName":"default","isLocked":false,"name":"78f31c6e-0744-415b-ba99-664b1f352263","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":960,
+  "width":1000,
 }

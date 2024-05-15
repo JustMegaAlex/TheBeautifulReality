@@ -14,9 +14,12 @@ if (state == SCREENVIEW.NONE) or (state == SCREENVIEW.START)
 	xpos_title_current = xpos_title_initial
 	ypos_title_current = ypos_title_initial
 	title_image_index = 0
+	audio_stop_sound(sfxGlitch1)
 	}
 
 	if (title_anim_timer < 10){
+	if !audio_is_playing(sfxGlitch1)
+	audio_play_sound(sfxGlitch1, 0, false, 0.15)
 	var _range = 10
 	xpos_title_current = xpos_title_initial + irandom_range(-_range, _range)
 	//	ypos_title_current = ypos_title_initial + irandom_range(-_range, _range)
@@ -29,9 +32,14 @@ if (state == SCREENVIEW.NONE) or (state == SCREENVIEW.START)
 	//	ypos_title_current = ypos_title_initial + irandom_range(-_range, _range)	
 	title_image_index = 2
 	}
-
+	
+	var _mouse_xshift = (mouse_x - xpos_title_current) * -0.003
+	var _mouse_yshift = (mouse_y - ypos_title_current) * -0.003
+	
 	//Draw Title Sprite
-	draw_sprite(sprite_title, title_image_index, xpos_title_current, ypos_title_current)
+	draw_set_alpha(0.8)
+	draw_sprite(sprite_title, title_image_index, xpos_title_current + _mouse_xshift, ypos_title_current + _mouse_yshift)
+	draw_set_alpha(1)
 
 }
 
@@ -288,3 +296,12 @@ if state == SCREENVIEW.OPTIONS
 		}
 	#endregion	
 }
+
+var _xmid = gui_w * 0.5
+var _ymid = gui_h * 0.5
+
+var _mouse_xshift = (mouse_x - _xmid) * 0.003
+var _mouse_yshift = (mouse_y - _ymid) * 0.003
+
+layer_x("Background", -20 + _mouse_xshift)
+layer_y("Background", -20 + _mouse_yshift)

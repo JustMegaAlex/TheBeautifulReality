@@ -4,9 +4,11 @@ countdown_current = 2
 if (countdown_current > 0){
 	countdown_current --
 } else {
-	instance_destroy()
+	instance_destroy()	
 	instance_create_layer(0, 0, "Instances", oStartScreen)
+
 	emitter1_bus.effects[0].bypass = true;
+	audio_stop_sound(sfx_glitch2)
 }
 
 /// 1 | BLACK RECTANGLE
@@ -17,7 +19,12 @@ var _color = c_black
 
 //Glitch/blink this rectangle out at specific frames (from the array)
 for (var i = 0; i < array_length(rectangle_blink_frames); i++){
+	
 	if countdown_current = rectangle_blink_frames[i]{
+		
+		if !audio_is_playing(sfx_glitch2)
+		audio_play_sound(sfx_glitch2, 0, false, 0.5)
+		
 		_alpha = choose(0.6, 0.9)
 		_color = choose(c_green, c_teal, c_maroon)
 		
@@ -131,7 +138,7 @@ if (countdown_current < 100){
 	//(to reach a max of 0.5 alpha)
 	var _alpha = ((100 - countdown_current) / 100) * 1
 
-	draw_set_alpha(_alpha)
+	draw_set_alpha(_alpha - 0.1)
 	draw_sprite(sTitle, 0, _xmid, _ymid)
 	draw_set_alpha(1)	
 	
