@@ -52,8 +52,8 @@
   "resources":[
     {"id":{"name":"fMain","path":"fonts/fMain/fMain.yy",},},
     {"id":{"name":"Pixel's Notes","path":"notes/Pixel's Notes/Pixel's Notes.yy",},},
-    {"id":{"name":"oBody","path":"objects/oBody/oBody.yy",},},
     {"id":{"name":"oAccessibility","path":"objects/oAccessibility/oAccessibility.yy",},},
+    {"id":{"name":"oBody","path":"objects/oBody/oBody.yy",},},
     {"id":{"name":"oConveyerBelt","path":"objects/oConveyerBelt/oConveyerBelt.yy",},},
     {"id":{"name":"oDialog","path":"objects/oDialog/oDialog.yy",},},
     {"id":{"name":"oGameController","path":"objects/oGameController/oGameController.yy",},},
@@ -102,6 +102,7 @@
     {"id":{"name":"ui","path":"scripts/ui/ui.yy",},},
     {"id":{"name":"utils","path":"scripts/utils/utils.yy",},},
     {"id":{"name":"bgmRadio","path":"sounds/bgmRadio/bgmRadio.yy",},},
+    {"id":{"name":"bgmStartScreen","path":"sounds/bgmStartScreen/bgmStartScreen.yy",},},
     {"id":{"name":"sCursor","path":"sprites/sCursor/sCursor.yy",},},
     {"id":{"name":"sDoor","path":"sprites/sDoor/sDoor.yy",},},
     {"id":{"name":"sHallowQuestLogo","path":"sprites/sHallowQuestLogo/sHallowQuestLogo.yy",},},

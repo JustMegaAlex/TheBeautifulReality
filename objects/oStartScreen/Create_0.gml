@@ -65,9 +65,6 @@ function clock_in(){
 	room_goto(rmStart)
 }
 
-
-
-
 // INIT | Other Views
 backbutton_sprite = sStartScreenButtonOptions
 backbutton_text = "BACK"
@@ -80,5 +77,8 @@ backbutton_click = 0
 options_ypos_array = [gui_h, gui_h, gui_h, gui_h, gui_h]
 options_text_array = ["SOUND EFFECTS", "MUSIC", "BRIGHTNESS", "FONT SIZE", "CURSOR SIZE"]
 options_value_array = [global.audio.sfxlevel, global.audio.bgmlevel, global.accessibility.brightness, global.accessibility.fontsize, global.accessibility.cursorsize]
+
+
+
 
 

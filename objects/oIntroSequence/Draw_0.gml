@@ -6,8 +6,8 @@ if (countdown_current > 0){
 } else {
 	instance_destroy()
 	instance_create_layer(0, 0, "Instances", oStartScreen)
+	emitter1_bus.effects[0].bypass = true;
 }
-
 
 /// 1 | BLACK RECTANGLE
 // Starts as a black screen
@@ -69,8 +69,6 @@ if (countdown_current < 167) and (countdown_current > 163){
 	draw_set_alpha(1)
 }
 
-
-
 // 2 | HALLOWQUEST LOGO
 // After 30 frames, fade the logo in. Logo fade-in time: 30 frames
 // Then stay for 30 frames.
@@ -81,8 +79,6 @@ var _xmid = window_width * 0.5
 var _ymid = window_height * 0.5
 
 var _alpha = 0	//alpha of the logo sprite
-
-
 
 //2.1 FADE IN (glitch shader in the future though)
 //Fade in when: the countdown reaches 30 frames after start.
@@ -111,7 +107,6 @@ draw_set_alpha(_alpha)
 draw_sprite(sprite_logo, 0, _xmid, _ymid)
 draw_set_alpha(1)
 
-
 draw_text_ext_transformed(5, 5, countdown_current, 10, 100, 0.5, 0.5, 0)
 
 // FINAL | Final Rect + Title Fade In
@@ -139,4 +134,8 @@ if (countdown_current < 100){
 	draw_set_alpha(_alpha)
 	draw_sprite(sTitle, 0, _xmid, _ymid)
 	draw_set_alpha(1)	
+	
+	//Audio test | ignore for now
+	audio_sound_gain(bgm_play_lpf, countdown_current/100, 1)
+	audio_sound_gain(bgm_play_regular, (100 - countdown_current)/100, 1)	
 }
