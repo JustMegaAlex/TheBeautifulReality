@@ -1,5 +1,5 @@
 if keyboard_check_pressed(vk_space) or mouse_check_button_pressed(mb_left)
-countdown_current = 250
+countdown_current = 2
 
 if (countdown_current > 0){
 	countdown_current --
