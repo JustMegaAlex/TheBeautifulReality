@@ -1,5 +1,5 @@
 //Intro Sequence Timer (in frames)
-countdown_max = 1140
+countdown_max = 1144
 countdown_current = countdown_max
 
 logo_fadeinpoint = 120	//After x frames, logo fades in.
