@@ -120,16 +120,26 @@ draw_text_ext_transformed(5, 5, countdown_current, 10, 100, 0.5, 0.5, 0)
 // In the last 100 frames, after everything else is done.
 
 if (countdown_current < 100){
-	// Draw another black rectangle, fade out in the last 6 frames (just to ease the eyes)
-	
-	var _alpha = min(1, (countdown_current/6))
-	
+	// Draw another black rectangle	
+	_alpha = 1
 	draw_set_alpha(_alpha)
 	draw_set_color(c_black)
 	draw_rectangle(0, 0, room_width, room_height, 0)
 	draw_set_color(c_white)
 	draw_set_alpha(1)
 
+	//In the last 6 frames, draw a glitched version of the BG
+	if (countdown_current == 6) or (countdown_current == 5) or (countdown_current == 2) or (countdown_current == 1){
+		
+		var _xshift = irandom_range(-15, 15)
+		var _yshift = 0
+		draw_sprite_ext(sStartScreenBG, 0, -20 + _xshift, -20 + _yshift, 1, 1, 0, c_lime, 0.7)
+		
+		var _xshift = irandom_range(-15, 15)
+		var _yshift = 0
+		draw_sprite_ext(sStartScreenBG, 0, -20 + _xshift, -20 + _yshift, 1, 1, 0, c_teal, 0.7)
+	}
+	
 	//Get screen midpoints
 	var _xmid = window_width * 0.5
 	var _ymid = window_height * 0.5

@@ -15,7 +15,7 @@ window_height = room_height
 sprite_logo = sHallowQuestLogo
 
 
-rectangle_blink_frames = [230, 229, 228, 150, 149, 148, 120, 119, 118, 112, 111, 110, 107, 106]
+rectangle_blink_frames = [230, 229, 228, 227, 150, 149, 148, 120, 119, 118, 112, 111, 110, 107, 106]
 
 
 
