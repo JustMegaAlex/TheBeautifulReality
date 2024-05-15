@@ -7,6 +7,7 @@ if is_active {
     }
 } else {
     if mouseClickedOnMe() {
+		if !instance_exists(oDialog)
         startDialog()
     }
 }
