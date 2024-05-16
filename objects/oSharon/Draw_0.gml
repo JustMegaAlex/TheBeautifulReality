@@ -1,5 +1,5 @@
 draw_self()
-
+draw_text(x,y, is_active)
 //Highlight Sprite on Mouse
 #region 
 
@@ -41,11 +41,11 @@ if is_active {
 	var _hmax = _y2 - _y1
 	
 	var _color = c_white
-	textbox_alpha = lerp(textbox_alpha, 0.6, 0.1)
+	textbox_alpha = lerp(textbox_alpha, 1, 1)
 	var _alpha = textbox_alpha
 	
 	if (textbox_w < _wmax)
-	textbox_w += _wmax * 0.1
+	textbox_w += _wmax * 0.2
 	var _w = textbox_w
 	
 	var _h = _hmax
@@ -54,6 +54,8 @@ if is_active {
 	#endregion
 	
 	//Text
+	draw_set_color(c_black)
+	
 	if (draw_text_allowed == true){
 	
 	    draw_text(dialog_x, dialog_y, current_replica)
@@ -71,4 +73,6 @@ if is_active {
 	    }
 	
 	}
+	
+	draw_set_color(c_white)	
 }

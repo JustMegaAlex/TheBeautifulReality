@@ -129,6 +129,9 @@ if state == SCREENVIEW.START
 			{
 				case "CLOCK IN":
 				room_goto(rmStart)
+				if audio_is_playing(bgmStartScreen)
+				audio_sound_gain(bgmStartScreen, 0, 1000)
+				
 				break;
 
 				case "OPTIONS":
@@ -305,5 +308,8 @@ var _ymid = gui_h * 0.5
 var _mouse_xshift = (mouse_x - _xmid) * 0.002
 var _mouse_yshift = (mouse_y - _ymid) * 0.002
 
-layer_x("Background", -20 + _mouse_xshift)
-layer_y("Background", -20 + _mouse_yshift)
+layer_x("BackgroundLeft", -20 + _mouse_xshift)
+layer_y("BackgroundLeft", -20 + _mouse_yshift)
+
+layer_x("BackgroundRight", -20 + _mouse_xshift)
+layer_y("BackgroundRight", -20 + _mouse_yshift)
