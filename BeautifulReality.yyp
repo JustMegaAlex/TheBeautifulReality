@@ -123,6 +123,7 @@
     {"id":{"name":"sPHHair","path":"sprites/sPHHair/sPHHair.yy",},},
     {"id":{"name":"sPHNextBodyButton","path":"sprites/sPHNextBodyButton/sPHNextBodyButton.yy",},},
     {"id":{"name":"sPHTable","path":"sprites/sPHTable/sPHTable.yy",},},
+    {"id":{"name":"sUnevenPixelLogo","path":"sprites/sUnevenPixelLogo/sUnevenPixelLogo.yy",},},
     {"id":{"name":"sSharon","path":"sprites/sSharon/sSharon.yy",},},
     {"id":{"name":"sStartScreenBG","path":"sprites/sStartScreenBG/sStartScreenBG.yy",},},
     {"id":{"name":"sStartScreenButtonClockIn","path":"sprites/sStartScreenButtonClockIn/sStartScreenButtonClockIn.yy",},},

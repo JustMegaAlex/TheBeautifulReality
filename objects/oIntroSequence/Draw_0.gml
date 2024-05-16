@@ -109,7 +109,14 @@ if (countdown_current < (countdown_max - logo_fadeoutpoint)) {
 	_alpha = ((countdown_current - _alpha_zero)/(_alpha_one - _alpha_zero))
 }
 
+//Draw Logo Sprite
+draw_set_alpha(_alpha)
+draw_sprite(sprite_logo_hallowquest, 0, _xmid, _ymid)
+draw_set_alpha(1)
+
 //3 | Pixel Logo
+
+var _alpha = 0
 
 //3.1 FADE IN (glitch shader in the future though)
 //Fade in when: the countdown reaches 30 frames after start.

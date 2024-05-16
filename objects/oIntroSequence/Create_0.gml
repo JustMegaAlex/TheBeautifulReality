@@ -8,7 +8,7 @@ logo_onscreentime = 60	//For x frames, logo stays on screen.
 logo_fadeoutpoint = logo_fadeinpoint + logo_fadeintime + logo_onscreentime //After x frames, logo fades out.
 logo_fadeouttime = 120	//Duration of fade-out, frames.
 
-sprite_logo_pixel = sHallowQuestLogo
+sprite_logo_pixel = sUnevenPixelLogo
 logo_fadeinpoint2 = 500	//After x frames, logo fades in.
 logo_fadeintime2 = 120	//Duration of fade-in, frames.
 logo_onscreentime2 = 60	//For x frames, logo stays on screen.

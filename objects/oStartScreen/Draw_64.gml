@@ -38,6 +38,7 @@ if (state == SCREENVIEW.NONE) or (state == SCREENVIEW.START)
 	
 	//Draw Title Sprite
 	draw_set_alpha(0.8)
+	draw_sprite(sprite_title, 1, xpos_title_current + _mouse_xshift + 2, ypos_title_current + _mouse_yshift + 2)
 	draw_sprite(sprite_title, title_image_index, xpos_title_current + _mouse_xshift, ypos_title_current + _mouse_yshift)
 	draw_set_alpha(1)
 

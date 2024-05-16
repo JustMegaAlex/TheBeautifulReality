@@ -12,8 +12,8 @@
   "duration":27.260227,
   "name":"sfxGlitch2",
   "parent":{
-    "name":"BeautifulReality",
-    "path":"BeautifulReality.yyp",
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
