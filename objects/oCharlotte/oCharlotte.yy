@@ -1,16 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"oTalkingDoor",
+  "%Name":"oCharlotte",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oTalkingDoor",
+  "name":"oCharlotte",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Dialogs",
+    "path":"folders/Objects/Dialogs.yy",
   },
   "parentObjectId":{
     "name":"oDialog",
@@ -34,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sDoor",
-    "path":"sprites/sDoor/sDoor.yy",
+    "name":"charlotte",
+    "path":"sprites/charlotte/charlotte.yy",
   },
   "spriteMaskId":null,
   "visible":true,

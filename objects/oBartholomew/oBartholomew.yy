@@ -1,12 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"oSharon",
+  "%Name":"oBartholomew",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oSharon",
+  "name":"oBartholomew",
   "overriddenProperties":[],
   "parent":{
     "name":"Dialogs",
@@ -34,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sSharon",
-    "path":"sprites/sSharon/sSharon.yy",
+    "name":"sNPC",
+    "path":"sprites/sNPC/sNPC.yy",
   },
   "spriteMaskId":null,
   "visible":true,
