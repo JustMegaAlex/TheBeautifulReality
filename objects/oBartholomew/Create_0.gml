@@ -11,6 +11,9 @@ dialog_tree = {
             text: "Woof! *pants*",
             options: {
                 "Ah, now that got your attention ay boy?]": "[end]"
+            },
+            call: function() {
+                oGameState.addEventHappened(NarrativeEvents.bart_treat_talk)
             }
         }
     }

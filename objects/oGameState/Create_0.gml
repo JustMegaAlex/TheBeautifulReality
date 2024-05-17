@@ -1,6 +1,6 @@
 enum NarrativeEvents {
-    first_talk,
-    cake_canban
+    bart_treat_talk,
+    bart_gave_treat,
 }
 
 EnsureSingleton()

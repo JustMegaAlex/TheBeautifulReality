@@ -72,9 +72,4 @@ function getFirst(struct) {
 }
 
 function interact(item) {
-    if item.object_index == oKanBan {
-        startDialog(dialog_kanban)
-        instance_destroy(item)
-        oGameState.addEventToHappenNextDay(NarrativeEvents.cake_canban)
-    }
 }

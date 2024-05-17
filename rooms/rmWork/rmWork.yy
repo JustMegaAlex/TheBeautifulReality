@@ -10,7 +10,6 @@
     {"name":"inst_22C76CC9","path":"rooms/rmWork/rmWork.yy",},
     {"name":"inst_6EAAB83C","path":"rooms/rmWork/rmWork.yy",},
     {"name":"inst_792A7A0A","path":"rooms/rmWork/rmWork.yy",},
-    {"name":"inst_388A0794","path":"rooms/rmWork/rmWork.yy",},
     {"name":"inst_16F0BE41","path":"rooms/rmWork/rmWork.yy",},
     {"name":"inst_3FF07127","path":"rooms/rmWork/rmWork.yy",},
   ],
@@ -23,7 +22,6 @@
         {"$GMRInstance":"","%Name":"inst_792A7A0A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_792A7A0A","objectId":{"name":"oRoomSwitch","path":"objects/oRoomSwitch/oRoomSwitch.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oRoomSwitch","path":"objects/oRoomSwitch/oRoomSwitch.yy",},"propertyId":{"name":"target_room","path":"objects/oRoomSwitch/oRoomSwitch.yy",},"resource":{"name":"rmFoyer","path":"rooms/rmFoyer/rmFoyer.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"rmFoyer",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":88.912834,"scaleX":0.61132336,"scaleY":0.5882353,"x":259.60257,"y":0.9114628,},
-        {"$GMRInstance":"","%Name":"inst_388A0794","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_388A0794","objectId":{"name":"oKanBan","path":"objects/oKanBan/oKanBan.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-72.799995,"y":77.0,},
         {"$GMRInstance":"","%Name":"inst_3FF07127","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3FF07127","objectId":{"name":"oNextBodyButton","path":"objects/oNextBodyButton/oNextBodyButton.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":11.0,"y":368.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Inventory","depth":100,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[

@@ -1,19 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"oHandsomeGuy",
+  "%Name":"oInventoryItem",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oHandsomeGuy",
+  "name":"oInventoryItem",
   "overriddenProperties":[],
   "parent":{
-    "name":"Dialogs",
-    "path":"folders/Objects/Dialogs.yy",
+    "name":"MorgueItems",
+    "path":"folders/Objects/MorgueItems.yy",
   },
   "parentObjectId":{
-    "name":"oDialog",
-    "path":"objects/oDialog/oDialog.yy",
+    "name":"oGrabableParent",
+    "path":"objects/oGrabableParent/oGrabableParent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sNPC",
-    "path":"sprites/sNPC/sNPC.yy",
+    "name":"sKanBan",
+    "path":"sprites/sKanBan/sKanBan.yy",
   },
   "spriteMaskId":null,
   "visible":true,
