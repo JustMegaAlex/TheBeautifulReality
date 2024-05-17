@@ -74,6 +74,7 @@ if state == SCREENVIEW.START {
         var _x = gui_w * (0.2 + (0.2 * i))
         var _y = gui_h * 0.8
 
+<<<<<<< Updated upstream
         //SET IMAGE SCALE
         var _scale = 1
 
@@ -163,11 +164,26 @@ if state == SCREENVIEW.START {
 
 
     }
+=======
+				case "CREDITS":
+				ds_stack_push(screen_stack, SCREENVIEW.CREDITS)
+				break;
+				
+				case "CLOCK OUT":
+				game_end()
+				break;	
+			}
+		}
+		
+	
+	}
+>>>>>>> Stashed changes
 }
 
 if state == SCREENVIEW.OPTIONS {
     layer_enable_fx("LayerBlur", true)
 
+<<<<<<< Updated upstream
     //UPDATE THE VALUES FOR EACH OPTION
     options_value_array = [global.audio.sfxlevel,
         global.audio.bgmlevel,
@@ -320,9 +336,87 @@ if state == SCREENVIEW.OPTIONS {
         title_anim_timer = 11
     }
     #endregion
+=======
+						case "BRIGHTNESS":
+						global.accessibility.brightness = j + 1
+						break;
+					
+						case "FONT SIZE":
+						global.accessibility.fontsize = j + 1
+						break;
+					
+						case "CURSOR SIZE":
+						global.accessibility.cursorsize = j + 1
+						break;
+					}
+				}	
+			}
+		}
+	}
+		
+	button_back()
+>>>>>>> Stashed changes
 }
 
+if state == SCREENVIEW.CREDITS
+{
+	layer_enable_fx("LayerBlur", true)
+	
+	var _xtop = gui_w * 0.2
+	var _ytop = gui_h * 0.2
+
+	var _size = array_length(credits_names)
+	for (var i = 0; i < _size; i++){
+		
+		var _alpha = 0.6
+		var _color = c_black
+		var _scale = 1
+		var _xoffset = 0
+		
+		//Get Rectangle
+		var _x1 = _xtop - 20
+		var _y1 = _ytop + (i * 40) - 20
+		var _x2 = _xtop + 220
+		var _y2 = _ytop + ((i + 1) * 40) - 20
+		var _w_nineslice = _x2 - _x1
+		var _h_nineslice = _y2 - _y1
+		
+		if point_in_rectangle(mouse_x, mouse_y, _x1, _y1, _x2, _y2){
+		
+		draw_sprite_stretched(credits_box1, 0, _x1, _y1, _w_nineslice, _h_nineslice)
+		
+		_scale = 1.2	
+		_alpha = 1
+		credits_highlighted[i] = true	
+			if credits_glitch_timer[i] > 0{
+				credits_glitch_timer[i] --			
+				_xoffset = irandom_range(-9, 3)
+				_color = choose(c_lime, c_blue, c_purple)
+			}
+		
+		} else {
+			credits_glitch_timer[i] = 6
+			credits_highlighted[i] = false
+		}
+		
+		draw_set_valign(fa_center)
+		draw_set_color(c_black)
+		draw_text_transformed_color(_xtop + _xoffset, _ytop + (i * 40), credits_names[i], _scale, _scale,0, _color, _color, _color, _color, _alpha)
+		draw_set_color(c_white)
+		draw_set_valign(fa_top)
+		
+		if (credits_highlighted[i] == true){
+			
+		}
+		
+	}
+	
+	button_back()
+}
+
+
 // BG Parallax
+#region
 
 var _xmid = gui_w * 0.5
 var _ymid = gui_h * 0.5
@@ -335,3 +429,6 @@ layer_y("BackgroundLeft", -20 + _mouse_yshift)
 
 layer_x("BackgroundRight", -20 + _mouse_xshift)
 layer_y("BackgroundRight", -20 + _mouse_yshift)
+
+#endregion
+

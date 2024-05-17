@@ -49,7 +49,7 @@ button_sprite_array = [sprite_clockin, sprite_options, sprite_credits,
 text_clockin = "CLOCK IN"
 text_options = "OPTIONS"
 text_credits = "CREDITS"
-text_clockout = "CLOCKOUT"
+text_clockout = "CLOCK OUT"
 
 button_text_array = [text_clockin, text_options, text_credits, text_clockout]
 
@@ -75,8 +75,12 @@ backbutton_rot2 = 0
 backbutton_rot3 = 0
 backbutton_scale = 1.4
 backbutton_click = 0
+backbutton_entrytimer_max = 12
+backbutton_entrytimer = backbutton_entrytimer_max
+backbutton_visible = false
 
 options_ypos_array = [gui_h, gui_h, gui_h, gui_h, gui_h]
+<<<<<<< Updated upstream
 options_text_array = ["SOUND EFFECTS", "MUSIC", "BRIGHTNESS", "FONT SIZE",
     "CURSOR SIZE"
 ]
@@ -84,3 +88,97 @@ options_value_array = [global.audio.sfxlevel, global.audio.bgmlevel, global
     .accessibility.brightness, global.accessibility.fontsize, global
     .accessibility.cursorsize
 ]
+=======
+options_text_array = ["SOUND EFFECTS", "MUSIC", "BRIGHTNESS", "FONT SIZE", "CURSOR SIZE"]
+options_value_array = [global.audio.sfxlevel, global.audio.bgmlevel, global.accessibility.brightness, global.accessibility.fontsize, global.accessibility.cursorsize]
+
+function button_back(){
+	//BACK BUTTON
+	
+	if (backbutton_entrytimer > 0){
+		backbutton_entrytimer --
+	} else {
+		if (backbutton_visible < 1)
+		backbutton_visible += 0.2	
+	}
+	
+	//SET X AND Y CENTER
+	var _x = gui_w * 0.8
+	var _y = gui_h * 0.8
+		
+	//SET IMAGE SCALE
+	var _scale = backbutton_visible
+		
+	//GET RECTANGLE REGION (the 24 is a buffer so we have +12px on all sides
+	var _sw = sprite_get_width(backbutton_sprite) + 24
+	var _sh = sprite_get_height(backbutton_sprite) + 24
+	var _xtop = _x - (_sw * 0.5)
+	var _ytop = _y - (_sh * 0.5)
+	var _xbot = _xtop + _sw
+	var _ybot = _ytop + _sh
+			
+	// DO SHIT IF MOUSE IS IN REGION
+	var _mouse_in_rect = point_in_rectangle(mouse_x, mouse_y, _xtop, _ytop, _xbot, _ybot)
+		
+	if _mouse_in_rect{
+		backbutton_scale = lerp(backbutton_scale, 1.2, 0.2)
+		_scale = backbutton_scale
+			
+		gpu_set_blendmode(bm_add)
+		//BG Sprite 1
+		backbutton_rot1 = lerp(backbutton_rot1, 8, 0.1)
+		draw_sprite_ext(backbutton_sprite, 0, _x + backbutton_rot1, _y  + backbutton_rot1, _scale, _scale, backbutton_rot1, c_red, 1)
+			
+		//BG Sprite 2
+		backbutton_rot2 = lerp(backbutton_rot2, -8, 0.1)			
+		draw_sprite_ext(backbutton_sprite, 0, _x + backbutton_rot2, _y + backbutton_rot2, _scale, _scale, backbutton_rot2, c_blue, 1)
+		gpu_set_blendmode(bm_normal)
+	} else {
+		//Reset the arrays for next time mouse hovers
+		backbutton_rot1 = 0
+		backbutton_rot2 = 0
+		backbutton_scale = 1.4
+	}
+		
+
+	// DRAW THE MAIN SPRITE + TEXT ABOVE EVERYTHING
+	if !_mouse_in_rect{		
+		draw_sprite_ext(backbutton_sprite, 0, _x, _y, _scale, _scale, 0, c_white, 0.9)
+		draw_set_halign(fa_middle)
+		draw_set_valign(fa_center)
+		if (backbutton_visible == 1)
+		draw_text_ext_transformed_color(_x, _y, backbutton_text, 30, 150, 1, 1, 0, c_black, c_black, c_black, c_black, 1)
+		draw_set_halign(fa_left)
+		draw_set_valign(fa_top)
+	} else if _mouse_in_rect{		
+		draw_sprite_ext(backbutton_sprite, 0, _x, _y, _scale, _scale, 0, c_black, 0.9)
+		draw_set_halign(fa_middle)
+		draw_set_valign(fa_center)
+		if (backbutton_visible == 1)
+		draw_text_ext_transformed_color(_x, _y, backbutton_text, 30, 150, _scale, _scale, 0, c_white, c_white, c_white, c_white, 1)
+		draw_set_halign(fa_left)
+		draw_set_valign(fa_top)
+	}
+		
+	//Actually do something on mouse click
+		
+	if (_mouse_in_rect) and (mouse_check_button_pressed(mb_left)){
+		options_ypos_array = [gui_h, gui_h, gui_h, gui_h, gui_h]
+		ds_stack_pop(screen_stack)
+		title_anim_timer = 11
+		backbutton_entrytimer = backbutton_entrytimer_max
+		backbutton_visible = 0
+	}
+	
+}
+
+// Credits Arrays & Vars
+
+credits_names = ["Adelle Thompson", "Gavrik", "Uneven Pixel", "flatwhitecanvas", "Ranarh", "Angela Hinz-Marica", "Paul Shelley", "coinbirdface"]
+credits_roles = ["Narrative, Game Design", "Programming, Game Design", "Programming, Game Design", "Character Art", "Environmental Art, UI", "Composition", "Sound Effects", "Project Management"] 
+credits_box1 = sStartScreenButtonOptions
+credits_box2 = sNineSlice1
+credits_glitch_timer = [6, 6, 6, 6, 6, 6, 6, 6] 
+credits_highlighted = [false, false, false, false, false, false, false, false] 
+
+>>>>>>> Stashed changes
