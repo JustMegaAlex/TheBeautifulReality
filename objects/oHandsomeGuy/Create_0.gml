@@ -1,4 +1,3 @@
-
 event_inherited()
 
 dialog_cakes = {
@@ -13,8 +12,8 @@ dialog_cakes = {
         id.dialog_tree = id.dialog_cakes
         oGameState.addEventHappened(NarrativeEvents.first_talk)
         if oGameState.checkEventHappened(NarrativeEvents.cake_canban) {
-            self.options[$ "Man, you only eat cakes"] = 
-                    id.dialog_reliable_eater
+            self.options[$ "Man, you only eat cakes"] =
+                id.dialog_reliable_eater
         }
     }
 }

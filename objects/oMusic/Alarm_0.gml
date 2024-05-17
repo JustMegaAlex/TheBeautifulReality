@@ -1,8 +1,7 @@
-
 audio_stop_sound(current_music)
 
 if next_music == noone
-	exit
+exit
 
 var msc_gain = get_gain(next_music)
 show_debug_message(string("Gain: {0}", msc_gain))

@@ -1,10 +1,9 @@
 // Enums for screen views
-enum SCREENVIEW
-{
-	NONE,
-	START,
-	OPTIONS,
-	CREDITS,
+enum SCREENVIEW {
+    NONE,
+    START,
+    OPTIONS,
+    CREDITS,
 }
 
 screen_stack = ds_stack_create()
@@ -28,7 +27,8 @@ ypos_title_initial = gui_h * 0.5
 xpos_title_current = gui_w * 0.5
 ypos_title_current = gui_h * 0.5
 title_anim_timer_max = 400
-title_anim_timer = title_anim_timer_max * 0.2	//This is also the point where the buttons come
+title_anim_timer = title_anim_timer_max *
+    0.2 //This is also the point where the buttons come
 title_image_index = 0
 
 
@@ -42,7 +42,9 @@ sprite_options = sStartScreenButtonOptions
 sprite_credits = sStartScreenButtonCredits
 sprite_clockout = sStartScreenButtonClockOut
 
-button_sprite_array = [sprite_clockin, sprite_options, sprite_credits, sprite_clockout]
+button_sprite_array = [sprite_clockin, sprite_options, sprite_credits,
+    sprite_clockout
+]
 
 text_clockin = "CLOCK IN"
 text_options = "OPTIONS"
@@ -61,8 +63,8 @@ button_rot3_array = [0, 0, 0, 0]
 button_scale_array = [1.4, 1.4, 1.4, 1.4]
 button_click_array = [0, 0, 0, 0]
 
-function clock_in(){
-	room_goto(rmStart)
+function clock_in() {
+    room_goto(rmStart)
 }
 
 // INIT | Other Views
@@ -75,10 +77,10 @@ backbutton_scale = 1.4
 backbutton_click = 0
 
 options_ypos_array = [gui_h, gui_h, gui_h, gui_h, gui_h]
-options_text_array = ["SOUND EFFECTS", "MUSIC", "BRIGHTNESS", "FONT SIZE", "CURSOR SIZE"]
-options_value_array = [global.audio.sfxlevel, global.audio.bgmlevel, global.accessibility.brightness, global.accessibility.fontsize, global.accessibility.cursorsize]
-
-
-
-
-
+options_text_array = ["SOUND EFFECTS", "MUSIC", "BRIGHTNESS", "FONT SIZE",
+    "CURSOR SIZE"
+]
+options_value_array = [global.audio.sfxlevel, global.audio.bgmlevel, global
+    .accessibility.brightness, global.accessibility.fontsize, global
+    .accessibility.cursorsize
+]

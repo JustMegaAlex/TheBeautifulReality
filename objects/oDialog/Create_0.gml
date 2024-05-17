@@ -46,9 +46,9 @@ function chooseOption(option) {
     }
     current_replica = current_dialog.text
     current_options_struct = get(current_dialog, "options")
-	if current_options_struct == undefined {
-		
-	}
+    if current_options_struct == undefined {
+
+    }
     var call = get(current_dialog, "call")
     if call != undefined {
         call()
@@ -58,8 +58,8 @@ function chooseOption(option) {
 
 function get(struct, key) {
     if !variable_struct_exists(struct, key) {
-		return undefined
-	}
+        return undefined
+    }
     return variable_struct_get(struct, key)
 }
 

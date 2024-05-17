@@ -6,13 +6,13 @@ if is_active {
         }
     }
 } else {
-	image_alpha = 0.6
-	if collision_point(mouse_x, mouse_y, id, false, false) {
-		image_alpha = 1
-	}
+    image_alpha = 0.6
+    if collision_point(mouse_x, mouse_y, id, false, false) {
+        image_alpha = 1
+    }
     if mouseClickedOnMe() {
-		intro_timer.reset()
-		image_alpha = 1
-		startDialog()
+        intro_timer.reset()
+        image_alpha = 1
+        startDialog()
     }
 }
