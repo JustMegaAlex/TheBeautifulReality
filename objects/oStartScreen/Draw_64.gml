@@ -74,7 +74,6 @@ if state == SCREENVIEW.START {
         var _x = gui_w * (0.2 + (0.2 * i))
         var _y = gui_h * 0.8
 
-<<<<<<< Updated upstream
         //SET IMAGE SCALE
         var _scale = 1
 
@@ -153,37 +152,22 @@ if state == SCREENVIEW.START {
                 break;
 
                 case "CREDITS":
-                room_goto(rmStart)
+                ds_stack_push(screen_stack, SCREENVIEW.CREDITS)
                 break;
 
                 case "CLOCK OUT":
-                room_goto(rmStart)
+                game_end()
                 break;
             }
         }
 
 
     }
-=======
-				case "CREDITS":
-				ds_stack_push(screen_stack, SCREENVIEW.CREDITS)
-				break;
-				
-				case "CLOCK OUT":
-				game_end()
-				break;	
-			}
-		}
-		
-	
-	}
->>>>>>> Stashed changes
 }
 
 if state == SCREENVIEW.OPTIONS {
     layer_enable_fx("LayerBlur", true)
 
-<<<<<<< Updated upstream
     //UPDATE THE VALUES FOR EACH OPTION
     options_value_array = [global.audio.sfxlevel,
         global.audio.bgmlevel,
@@ -263,99 +247,7 @@ if state == SCREENVIEW.OPTIONS {
         }
     }
 
-    //BACK BUTTON
-    #region
-    //SET X AND Y CENTER
-    var _x = gui_w * 0.8
-    var _y = gui_h * 0.8
-
-    //SET IMAGE SCALE
-    var _scale = 1
-
-    //GET RECTANGLE REGION (the 24 is a buffer so we have +12px on all sides
-    var _sw = sprite_get_width(backbutton_sprite) + 24
-    var _sh = sprite_get_height(backbutton_sprite) + 24
-    var _xtop = _x - (_sw * 0.5)
-    var _ytop = _y - (_sh * 0.5)
-    var _xbot = _xtop + _sw
-    var _ybot = _ytop + _sh
-
-    // DO SHIT IF MOUSE IS IN REGION
-    var _mouse_in_rect = point_in_rectangle(mouse_x, mouse_y, _xtop, _ytop,
-        _xbot, _ybot)
-
-    if _mouse_in_rect {
-        backbutton_scale = lerp(backbutton_scale, 1.2, 0.2)
-        _scale = backbutton_scale
-
-        gpu_set_blendmode(bm_add)
-        //BG Sprite 1
-        backbutton_rot1 = lerp(backbutton_rot1, 8, 0.1)
-        draw_sprite_ext(backbutton_sprite, 0, _x + backbutton_rot1, _y +
-            backbutton_rot1, _scale, _scale, backbutton_rot1, c_red, 1)
-
-        //BG Sprite 2
-        backbutton_rot2 = lerp(backbutton_rot2, -8, 0.1)
-        draw_sprite_ext(backbutton_sprite, 0, _x + backbutton_rot2, _y +
-            backbutton_rot2, _scale, _scale, backbutton_rot2, c_blue, 1)
-        gpu_set_blendmode(bm_normal)
-    } else {
-        //Reset the arrays for next time mouse hovers
-        backbutton_rot1 = 0
-        backbutton_rot2 = 0
-        backbutton_scale = 1.4
-    }
-
-
-    // DRAW THE MAIN SPRITE + TEXT ABOVE EVERYTHING
-    if !_mouse_in_rect {
-        draw_sprite_ext(backbutton_sprite, 0, _x, _y, _scale, _scale, 0,
-            c_white, 0.9)
-        draw_set_halign(fa_middle)
-        draw_set_valign(fa_center)
-        draw_text_ext_transformed_color(_x, _y, backbutton_text, 30, 150, 1,
-            1, 0, c_black, c_black, c_black, c_black, 1)
-        draw_set_halign(fa_left)
-        draw_set_valign(fa_top)
-    } else if _mouse_in_rect {
-        draw_sprite_ext(backbutton_sprite, 0, _x, _y, _scale, _scale, 0,
-            c_black, 0.9)
-        draw_set_halign(fa_middle)
-        draw_set_valign(fa_center)
-        draw_text_ext_transformed_color(_x, _y, backbutton_text, 30, 150,
-            _scale, _scale, 0, c_white, c_white, c_white, c_white, 1)
-        draw_set_halign(fa_left)
-        draw_set_valign(fa_top)
-    }
-
-    //Actually do something on mouse click
-
-    if (_mouse_in_rect) and(mouse_check_button_pressed(mb_left)) {
-        options_ypos_array = [gui_h, gui_h, gui_h, gui_h, gui_h]
-        ds_stack_pop(screen_stack)
-        title_anim_timer = 11
-    }
-    #endregion
-=======
-						case "BRIGHTNESS":
-						global.accessibility.brightness = j + 1
-						break;
-					
-						case "FONT SIZE":
-						global.accessibility.fontsize = j + 1
-						break;
-					
-						case "CURSOR SIZE":
-						global.accessibility.cursorsize = j + 1
-						break;
-					}
-				}	
-			}
-		}
-	}
-		
-	button_back()
->>>>>>> Stashed changes
+    button_back()
 }
 
 if state == SCREENVIEW.CREDITS

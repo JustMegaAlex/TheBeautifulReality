@@ -80,7 +80,7 @@ backbutton_entrytimer = backbutton_entrytimer_max
 backbutton_visible = false
 
 options_ypos_array = [gui_h, gui_h, gui_h, gui_h, gui_h]
-<<<<<<< Updated upstream
+
 options_text_array = ["SOUND EFFECTS", "MUSIC", "BRIGHTNESS", "FONT SIZE",
     "CURSOR SIZE"
 ]
@@ -88,9 +88,7 @@ options_value_array = [global.audio.sfxlevel, global.audio.bgmlevel, global
     .accessibility.brightness, global.accessibility.fontsize, global
     .accessibility.cursorsize
 ]
-=======
-options_text_array = ["SOUND EFFECTS", "MUSIC", "BRIGHTNESS", "FONT SIZE", "CURSOR SIZE"]
-options_value_array = [global.audio.sfxlevel, global.audio.bgmlevel, global.accessibility.brightness, global.accessibility.fontsize, global.accessibility.cursorsize]
+
 
 function button_back(){
 	//BACK BUTTON
@@ -174,11 +172,13 @@ function button_back(){
 
 // Credits Arrays & Vars
 
-credits_names = ["Adelle Thompson", "Gavrik", "Uneven Pixel", "flatwhitecanvas", "Ranarh", "Angela Hinz-Marica", "Paul Shelley", "coinbirdface"]
-credits_roles = ["Narrative, Game Design", "Programming, Game Design", "Programming, Game Design", "Character Art", "Environmental Art, UI", "Composition", "Sound Effects", "Project Management"] 
+credits_names = ["Adelle Thompson", "Gavrik", "Uneven Pixel", "flatwhitecanvas", 
+"Ranarh", "Angela Hinz-Marica", "Paul Shelley", "coinbirdface"]
+credits_roles = ["Narrative, Game Design", "Programming, Game Design", 
+"Programming, Game Design", "Character Art", "Environmental Art, UI", 
+"Composition", "Sound Effects", "Project Management"] 
 credits_box1 = sStartScreenButtonOptions
 credits_box2 = sNineSlice1
 credits_glitch_timer = [6, 6, 6, 6, 6, 6, 6, 6] 
 credits_highlighted = [false, false, false, false, false, false, false, false] 
 
->>>>>>> Stashed changes
