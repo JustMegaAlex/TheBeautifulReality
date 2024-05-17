@@ -16,6 +16,13 @@ current_dialog = dialog_tree
 current_replica = "Default replica"
 current_options = []
 
+
+intro_timer = MakeTimer(8)
+draw_text_allowed = false
+textbox_alpha = 0
+textbox_w = 0
+
+
 function startDialog(dialog = dialog_tree) {
     is_active = true
     current_dialog = dialog

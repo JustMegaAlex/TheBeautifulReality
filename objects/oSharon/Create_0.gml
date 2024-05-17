@@ -68,7 +68,7 @@ dialog_tree = {
 }
 
 //Base Anim Variables
-timer_intro = 8
+intro_timer = 8
 draw_text_allowed = false
 textbox_alpha = 0
 textbox_w = 0

@@ -1,6 +1,5 @@
 draw_self()
-draw_text(x,y, is_active)
-//Highlight Sprite on Mouse
+//Highlight Sprite on Moussse
 #region 
 
 if is_active{	//Whatever visuals need to happen during dialogue
@@ -9,7 +8,7 @@ if is_active{	//Whatever visuals need to happen during dialogue
 	image_alpha = 0.6
 	
 	//Mouse hover
-	if point_in_rectangle(mouse_x, mouse_y, bbox_left, bbox_top, bbox_right, bbox_bottom){
+	if collision_point(mouse_x, mouse_y, id, false, false) {
 		image_alpha = 1
 	}
 	
@@ -22,8 +21,8 @@ if is_active {
 	//Intro Timer
 	#region
 	
-	if (timer_intro > 0) {
-		timer_intro --
+	if (intro_timer > 0) {
+		intro_timer --
 	} else {
 		if (draw_text_allowed == false)
 		draw_text_allowed = true
