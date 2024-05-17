@@ -6,22 +6,13 @@ if is_active {
         }
     }
 } else {
-    if mouseClickedOnMe() {
-        startDialog()
-    }
-}
-
-
-if is_active {	//Whatever visuals need to happen during dialogue
-	image_alpha = 1
-} else {		//Inactive state
 	image_alpha = 0.6
-	
-	//Mouse hover
 	if collision_point(mouse_x, mouse_y, id, false, false) {
 		image_alpha = 1
 	}
-	
+    if mouseClickedOnMe() {
+		intro_timer.reset()
+		image_alpha = 1
+		startDialog()
+    }
 }
-
-#endregion

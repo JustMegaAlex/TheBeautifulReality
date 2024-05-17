@@ -24,8 +24,7 @@ if is_active {
 	
 	draw_set_color(c_black)
 	
-	if (draw_text_allowed == true){
-	
+	if !intro_timer.update() {
 	    draw_text(dialog_x, dialog_y, current_replica)
 	    var y_start = dialog_y + string_height(current_replica)
 	    for (var i = 0; i < array_length(current_options); ++i) {
