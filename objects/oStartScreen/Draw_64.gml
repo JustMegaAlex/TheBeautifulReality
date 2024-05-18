@@ -1,7 +1,6 @@
 // 0 | Get State
 state = ds_stack_top(screen_stack)
 
-
 // 1 | TITLE
 // This title glitches every once in a while, cycling between sprites
 
@@ -48,7 +47,6 @@ if (state == SCREENVIEW.NONE) or(state == SCREENVIEW.START) {
 
 }
 
-
 // 2 | BUTTONS
 //Count the timer down: add screen view in sync with the first glitch
 if (buttons_timer > 0) {
@@ -61,7 +59,6 @@ if (buttons_timer > 0) {
     }
 
 }
-
 
 
 if state == SCREENVIEW.START {
@@ -293,13 +290,44 @@ if state == SCREENVIEW.CREDITS
 		
 		draw_set_valign(fa_center)
 		draw_set_color(c_black)
-		draw_text_transformed_color(_xtop + _xoffset, _ytop + (i * 40), credits_names[i], _scale, _scale,0, _color, _color, _color, _color, _alpha)
+		draw_text_transformed_color(_xtop + _xoffset, _ytop + (i * 40), 
+		credits_names[i], _scale, _scale,0, _color, _color, _color, _color, _alpha)
 		draw_set_color(c_white)
 		draw_set_valign(fa_top)
 		
 		if (credits_highlighted[i] == true){
 			
+			var _xtop_bio = gui_w * 0.5
+			var _ytop_bio = _ytop
+			var _scale = 1
+			var _angle = 0
+			var _color = c_white
+			var _alpha = 1	
+			var _sep = 18
+			var _width = 350
+			
+			credits_bios_box_rot1[i] = lerp(credits_bios_box_rot1[i], 1, 0.2)
+			_alpha = credits_bios_box_rot1[i]
+			
+			credits_bios_box_scale[i] = lerp(credits_bios_box_scale[i], 1, 0.2)
+			_scale = credits_bios_box_scale[i]
+			
+			if credits_bios_box_rot2[i] > 0{
+				credits_bios_box_rot2[i] --
+			}
+			
+			draw_sprite_stretched_ext(sNineSlice1, 0, _xtop_bio - 10, _ytop_bio - 20, 
+			_width + 20, 300, c_black, 0.85)
+			
+			draw_text_ext_transformed_color(_xtop_bio, _ytop_bio, credits_bios[i],
+			_sep, _width, _scale, _scale, _angle, _color, _color, _color, _color, _alpha)
+			
+		} else {
+			credits_bios_box_rot1[i] = 0
+			credits_bios_box_rot2[i] = 10
+			credits_bios_box_scale[i] = 1.2
 		}
+		
 		
 	}
 	

@@ -182,3 +182,17 @@ credits_box2 = sNineSlice1
 credits_glitch_timer = [6, 6, 6, 6, 6, 6, 6, 6] 
 credits_highlighted = [false, false, false, false, false, false, false, false] 
 
+credits_bios = 
+["",
+"",
+"",
+"",
+"Ranarh is a 2D illustrator and game art generalist with an emphasis on conceptual and environment work. No genre is left untouched from horror to children's entertainment, and from FPS to visual novels.",
+"",
+"Freelance technical game sound designer with a violin making background and passion for accessibility in games",
+"Loves games."]
+
+credits_bios_box_rot1 = [0, 0, 0, 0, 0, 0, 0, 0]
+credits_bios_box_rot2 = [0, 0, 0, 0, 0, 0, 0, 0]
+credits_bios_box_scale = [1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2]
+
