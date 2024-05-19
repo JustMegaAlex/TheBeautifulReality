@@ -29,6 +29,14 @@ function startDialog(dialog = dialog_tree) {
     current_replica = current_dialog.text
     current_options_struct = current_dialog.options
     current_options = getKeys(current_options_struct)
+	dialogAddEvent()
+}
+
+function dialogAddEvent() {
+    var event = get(current_dialog, "event")
+    if event != undefined and !oGameState.checkEventHappened(event) {
+        oGameState.addEventHappened(event)
+    }
 }
 
 function chooseOption(option) {
@@ -49,10 +57,12 @@ function chooseOption(option) {
     if current_options_struct == undefined {
 
     }
+	dialogAddEvent()
     var call = get(current_dialog, "call")
     if call != undefined {
         call()
     }
+	dialogAddEvent()
     current_options = getKeys(current_options_struct)
 }
 

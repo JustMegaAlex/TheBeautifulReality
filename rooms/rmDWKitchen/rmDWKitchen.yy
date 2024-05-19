@@ -14,8 +14,8 @@
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"","%Name":"inst_7CB30B4C_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7CB30B4C_1","objectId":{"name":"oRoomSwitch","path":"objects/oRoomSwitch/oRoomSwitch.yy",},"properties":[
-            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oRoomSwitch","path":"objects/oRoomSwitch/oRoomSwitch.yy",},"propertyId":{"name":"target_room","path":"objects/oRoomSwitch/oRoomSwitch.yy",},"resource":null,"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"rmDWLivingRoom",},
-            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oRoomSwitch","path":"objects/oRoomSwitch/oRoomSwitch.yy",},"propertyId":{"name":"target_name","path":"objects/oRoomSwitch/oRoomSwitch.yy",},"resource":null,"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"living room",},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oRoomSwitch","path":"objects/oRoomSwitch/oRoomSwitch.yy",},"propertyId":{"name":"target_room","path":"objects/oRoomSwitch/oRoomSwitch.yy",},"resource":{"name":"rmDWLivingRoom","path":"rooms/rmDWLivingRoom/rmDWLivingRoom.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"rmDWLivingRoom",},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oRoomSwitch","path":"objects/oRoomSwitch/oRoomSwitch.yy",},"propertyId":{"name":"target_name","path":"objects/oRoomSwitch/oRoomSwitch.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"living room",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":-1.2114792,"scaleX":0.91813034,"scaleY":0.6593068,"x":208.0,"y":0.0,},
         {"$GMRInstance":"","%Name":"inst_1BE6BFA7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1BE6BFA7","objectId":{"name":"oBartholomew","path":"objects/oBartholomew/oBartholomew.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":93.56682,"scaleX":1.0,"scaleY":1.0,"x":768.0,"y":384.0,},
         {"$GMRInstance":"","%Name":"inst_ED9B30C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_ED9B30C","objectId":{"name":"oCharlotte","path":"objects/oCharlotte/oCharlotte.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":144.0,"y":544.0,},
@@ -40,7 +40,7 @@
   "roomSettings":{
     "Height":540,
     "inheritRoomSettings":false,
-    "persistent":true,
+    "persistent":false,
     "Width":960,
   },
   "sequenceId":null,
