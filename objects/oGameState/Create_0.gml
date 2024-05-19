@@ -14,6 +14,7 @@ function addEventToHappenNextDay(event) {
 }
 
 function addEventHappened(event) {
+    show_debug_message_ext("Add event {0}", [event])
     if checkEventHappened(event) {
         show_debug_message_ext("Event is already going happen {0}", [event])
         return
