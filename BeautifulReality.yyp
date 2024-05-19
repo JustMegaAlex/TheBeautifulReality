@@ -47,7 +47,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.2.0.132",
+    "IDEVersion":"2024.4.0.137",
   },
   "name":"BeautifulReality",
   "resources":[
@@ -62,6 +62,7 @@
     {"id":{"name":"oDogTreat","path":"objects/oDogTreat/oDogTreat.yy",},},
     {"id":{"name":"oGameController","path":"objects/oGameController/oGameController.yy",},},
     {"id":{"name":"oGameState","path":"objects/oGameState/oGameState.yy",},},
+    {"id":{"name":"oGameStateUpdater","path":"objects/oGameStateUpdater/oGameStateUpdater.yy",},},
     {"id":{"name":"oGrabableParent","path":"objects/oGrabableParent/oGrabableParent.yy",},},
     {"id":{"name":"oInput","path":"objects/oInput/oInput.yy",},},
     {"id":{"name":"oIntroSequence","path":"objects/oIntroSequence/oIntroSequence.yy",},},
@@ -111,7 +112,6 @@
     {"id":{"name":"sfxGlitch1","path":"sounds/sfxGlitch1/sfxGlitch1.yy",},},
     {"id":{"name":"sfxGlitch2","path":"sounds/sfxGlitch2/sfxGlitch2.yy",},},
     {"id":{"name":"charlotte","path":"sprites/charlotte/charlotte.yy",},},
-    {"id":{"name":"sNoah","path":"sprites/sNoah/sNoah.yy",},},
     {"id":{"name":"sBGLivingRoom","path":"sprites/sBGLivingRoom/sBGLivingRoom.yy",},},
     {"id":{"name":"sBGStartLeft","path":"sprites/sBGStartLeft/sBGStartLeft.yy",},},
     {"id":{"name":"sBGStartRight","path":"sprites/sBGStartRight/sBGStartRight.yy",},},
@@ -121,6 +121,7 @@
     {"id":{"name":"sHallowQuestLogo","path":"sprites/sHallowQuestLogo/sHallowQuestLogo.yy",},},
     {"id":{"name":"sKanBan","path":"sprites/sKanBan/sKanBan.yy",},},
     {"id":{"name":"sNineSlice1","path":"sprites/sNineSlice1/sNineSlice1.yy",},},
+    {"id":{"name":"sNoah","path":"sprites/sNoah/sNoah.yy",},},
     {"id":{"name":"sNoahFaceHappy","path":"sprites/sNoahFaceHappy/sNoahFaceHappy.yy",},},
     {"id":{"name":"sNPC","path":"sprites/sNPC/sNPC.yy",},},
     {"id":{"name":"sPDA","path":"sprites/sPDA/sPDA.yy",},},
