@@ -60,6 +60,8 @@
     {"id":{"name":"oConveyerBelt","path":"objects/oConveyerBelt/oConveyerBelt.yy",},},
     {"id":{"name":"oDialog","path":"objects/oDialog/oDialog.yy",},},
     {"id":{"name":"oDogTreat","path":"objects/oDogTreat/oDogTreat.yy",},},
+    {"id":{"name":"oDrawerKey","path":"objects/oDrawerKey/oDrawerKey.yy",},},
+    {"id":{"name":"oDrawerKeyNote","path":"objects/oDrawerKeyNote/oDrawerKeyNote.yy",},},
     {"id":{"name":"oGameController","path":"objects/oGameController/oGameController.yy",},},
     {"id":{"name":"oGameState","path":"objects/oGameState/oGameState.yy",},},
     {"id":{"name":"oGameStateUpdater","path":"objects/oGameStateUpdater/oGameStateUpdater.yy",},},
