@@ -1,3 +1,7 @@
+/*
+Controls the game behaviour and triggers different objects to appear
+based on different circumstances like happened events (see oGameState) or current room.
+*/
 
 EnsureSingleton()
 

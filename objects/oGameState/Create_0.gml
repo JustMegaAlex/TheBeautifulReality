@@ -1,3 +1,15 @@
+/*
+This is the game's event registry.
+Game progress is defined by a sequence of events
+that already have happened, e.g. gave-treat-to-the-dog event,
+talked-to-sharon-about-vacation event, took-key-from-drawer event etc.
+Event ids are defined in NarrativeEvents enum.
+Mark events as happened using addEventHappened function.
+Check if an event has happened using checkEventHappened function.
+
+See oGameStateUpdater
+*/
+
 enum NarrativeEvents {
     bart_treat_talk,
     bart_gave_treat,
@@ -5,14 +17,6 @@ enum NarrativeEvents {
 }
 
 EnsureSingleton()
-
-function addEventToHappenNextDay(event) {
-    if checkEventHappenNextDay(event) {
-        show_debug_message_ext("Event has already happened {0}", [event])
-        return
-    }
-    array_push(next_day_events, event)
-}
 
 function addEventHappened(event) {
     show_debug_message_ext("Add event {0}", [event])
@@ -23,23 +27,8 @@ function addEventHappened(event) {
     array_push(happened_events, event)
 }
 
-function checkEventHappenNextDay(event) {
-    return array_contains(next_day_events, event)
-}
-
 function checkEventHappened(event) {
     return array_contains(happened_events, event)
 }
 
-// check both checkEventHappenNextDay and checkEventHappened
-function checkEvent(event) {
-    return checkEventHappened(event) or checkEventHappenNextDay(event)
-}
-
-function triggerNextDay() {
-    ArrayExpand(happened_events, next_day_events)
-    next_day_events = []
-}
-
-next_day_events = []
 happened_events = []
