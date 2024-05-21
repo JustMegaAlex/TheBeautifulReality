@@ -15,3 +15,7 @@ grabb_y = y
 function onInvenotryDrop() {
     // override
 }
+
+if !active_from_start {
+	setActive(false)
+}

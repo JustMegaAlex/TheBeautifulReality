@@ -25,3 +25,17 @@ dialog_tree = {
         }
     }
 }
+
+dialog_family_photo = {
+    text: "A different dialog will appear here as soon as it's ready",
+    options: {
+        "Can't wait, can't wait": "[end]"
+    }
+}
+
+function interact(item) {
+    if item.object_index == oFamilyPhoto {
+        startDialog(dialog_family_photo)
+    }
+    instance_destroy(item)
+}
