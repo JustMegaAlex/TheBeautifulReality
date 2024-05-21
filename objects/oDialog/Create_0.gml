@@ -11,7 +11,8 @@ dialog_tree = {
     }
 }
 
-is_active = false
+is_active = true // can be interacted
+is_dialog_running = false
 current_dialog = dialog_tree
 current_replica = "Default replica"
 current_options = []
@@ -22,9 +23,13 @@ draw_text_allowed = false
 textbox_alpha = 0
 textbox_w = 0
 
+function setActive(value) {
+    is_active = value
+    visible = value
+}
 
 function startDialog(dialog = dialog_tree) {
-    is_active = true
+    is_dialog_running = true
     current_dialog = dialog
     current_replica = current_dialog.text
     current_options_struct = current_dialog.options
@@ -41,12 +46,12 @@ function dialogAddEvent() {
 
 function chooseOption(option) {
     if option == "end dialog" {
-        is_active = false
+        is_dialog_running = false
         return
     }
     current_dialog = current_options_struct[$ option]
     if current_dialog == "[end]" {
-        is_active = false
+        is_dialog_running = false
         return
     } else if is_string(current_dialog) {
         current_replica = current_dialog

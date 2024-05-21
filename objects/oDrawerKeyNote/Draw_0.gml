@@ -2,7 +2,7 @@ draw_self()
 //Highlight Sprite on Moussse
 #region
 
-if is_active { //Whatever visuals need to happen during dialogue
+if is_dialog_running { //Whatever visuals need to happen during dialogue
     image_alpha = 1
 } else { //Inactive state
     image_alpha = 0.6
@@ -16,7 +16,7 @@ if is_active { //Whatever visuals need to happen during dialogue
 
 #endregion
 
-if is_active {
+if is_dialog_running {
 
     //Intro Timer
     #region

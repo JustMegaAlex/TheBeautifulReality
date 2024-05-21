@@ -23,4 +23,7 @@ function update() {
 	if check(rmWork, [NarrativeEvents.bart_treat_talk], [NarrativeEvents.bart_gave_treat]) {
 		instance_create_layer(0, oConveyerBelt.y, "Instances", oDogTreat)
 	}
+	if check(rmWork, [NarrativeEvents.bart_gave_treat], [NarrativeEvents.drawer_key_taken]) {
+		oDrawerKey.setActive(true); oDrawerKeyNote.setActive(true)
+	}
 }

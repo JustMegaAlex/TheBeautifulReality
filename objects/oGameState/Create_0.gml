@@ -1,6 +1,7 @@
 enum NarrativeEvents {
     bart_treat_talk,
     bart_gave_treat,
+    drawer_key_taken,
 }
 
 EnsureSingleton()

@@ -45,4 +45,5 @@ function interact(item) {
     if item.object_index == oDogTreat {
         startDialog(dialogTreat)
     }
+    instance_destroy(item)
 }

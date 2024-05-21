@@ -1,6 +1,6 @@
 draw_self()
 
-if is_active {
+if is_dialog_running {
 
     var _x1 = room_width * 0.1
     var _y1 = room_height * 0.6

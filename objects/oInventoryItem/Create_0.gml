@@ -11,3 +11,7 @@ is_inventory = false
 
 grabb_x = x
 grabb_y = y
+
+function onInvenotryDrop() {
+    // override
+}
