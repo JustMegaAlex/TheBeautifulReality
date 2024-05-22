@@ -78,7 +78,16 @@ function setActive(value) {
 }
 
 #region dialog functions
-function startDialog(dialog = dialog_tree) {
+// override this in childs if need
+// to choose between various dialogs
+function getDialog() {
+    return dialog_tree
+}
+
+function startDialog(dialog = undefined) {
+    if dialog == undefined {
+        dialog = getDialog()
+    }
     is_dialog_running = true
     current_dialog = dialog
     current_replica = current_dialog.text

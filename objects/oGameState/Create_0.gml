@@ -14,6 +14,8 @@ enum NarrativeEvents {
     bart_treat_talk,
     bart_gave_treat,
     drawer_key_taken,
+    showed_photo_to_sharon,
+    obtained_missing_death_report,
 }
 
 EnsureSingleton()
