@@ -1,3 +1,4 @@
 EnsureSingleton()
 
 randomize()
+DebugDrawIni()

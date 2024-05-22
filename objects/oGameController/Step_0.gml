@@ -4,3 +4,5 @@ if keyboard_check_pressed(vk_f1) {
 if keyboard_check_pressed(vk_f2) {
     show_debug_log(!is_debug_overlay_open())
 }
+
+DebugDrawUpdate()

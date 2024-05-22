@@ -5,6 +5,7 @@ is_hint_on = false
 is_switching_room = false
 fade_ratio = 0.03
 fade_amount = 0
+hint_text = string(hint_message_template, target_name)
 
 function switchRoom() {
     is_switching_room = true

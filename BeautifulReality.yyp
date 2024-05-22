@@ -79,6 +79,7 @@
     {"id":{"name":"oParticles","path":"objects/oParticles/oParticles.yy",},},
     {"id":{"name":"oPDA","path":"objects/oPDA/oPDA.yy",},},
     {"id":{"name":"oRoomSwitch","path":"objects/oRoomSwitch/oRoomSwitch.yy",},},
+    {"id":{"name":"oRoomSwitchToWork","path":"objects/oRoomSwitchToWork/oRoomSwitchToWork.yy",},},
     {"id":{"name":"oSharon","path":"objects/oSharon/oSharon.yy",},},
     {"id":{"name":"oStartScreen","path":"objects/oStartScreen/oStartScreen.yy",},},
     {"id":{"name":"oTable","path":"objects/oTable/oTable.yy",},},

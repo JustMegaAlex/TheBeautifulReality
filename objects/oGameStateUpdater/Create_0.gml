@@ -10,12 +10,12 @@ function check(_room, events, exclude_events) {
 		return false
 	}
 	for (var i = 0; i < array_length(events); ++i) {
-		if !oGameState.checkEvent(events[i]) {
+		if !oGameState.checkEventHappened(events[i]) {
 			return false	
 		}
 	}
 	for (var i = 0; i < array_length(exclude_events); ++i) {
-		if oGameState.checkEvent(exclude_events[i]) {
+		if oGameState.checkEventHappened(exclude_events[i]) {
 			return false	
 		}
 	}

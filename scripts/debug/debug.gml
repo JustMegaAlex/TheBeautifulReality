@@ -3,6 +3,8 @@
 /// in which DebugDrawVar() is called
 function DebugDrawIni() {
     global.VAR_BAR_LENGTH = 0
+    global.VAR_BAR_Y_BASE = 20
+    global.VAR_BAR_X_BASE = 30
     global.VAR_BAR_X = 0
     global.VAR_BAR_Y = 0
     global.VAR_BAR_ROW_DELTA = 20
@@ -12,7 +14,7 @@ function DebugDrawIni() {
 //// Use this function once per step somewhere
 function DebugDrawUpdate() {
     global.VAR_BAR_LENGTH = 0
-    global.VAR_BAR_X = 30
+    global.VAR_BAR_X = global.VAR_BAR_X_BASE
     global.VAR_BAR_Y = global.VAR_BAR_Y_BASE
 }
 

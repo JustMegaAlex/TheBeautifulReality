@@ -11,6 +11,21 @@ dialog_x = room_width * 0.5
 dialog_y = room_height * 0.7
 row_height = 20
 
+dialog_tree = undefined
+
+another_dialog = {
+    text: "Ok, what have you been up to lately?",
+    options: {
+        "I'm trying to figure out all that dialog stuff": "[end]"
+    },
+    id: id,
+    // call() will be called when this dialog shoots
+    call: function() {
+        // redefine dialog_tree to make this dialog always appear
+        id.dialog_tree = self
+    }
+}
+
 // default value for the "root" dialog 
 // override this in childs
 dialog_tree = {
@@ -41,19 +56,6 @@ dialog_tree = {
     },
     // mark events as happened
     event: ExampleEvents.non_existing_event
-}
-
-another_dialog = {
-    text: "Ok, what have you been up to lately?",
-    options: {
-        "I'm trying to figure out all that dialog stuff": "[end]"
-    },
-    id: id,
-    // call() will be called when this dialog shoots
-    call: function() {
-        // redefine dialog_tree to make this dialog always appear
-        id.dialog_tree = self
-    }
 }
 
 is_active = true // can be interacted

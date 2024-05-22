@@ -2,10 +2,12 @@
 event_inherited()
 
 dialog_tree = {
-    text: "[Text exapmle: I'll need this back at the morgue]",
+    text: "HEY HUN, DON’T FORGET TO TAKE YOUR DAILY DOSE OF ANTIDEPRESSANTS."
+          + "\nYOU KNOW HOW CRANKY AND CONFUSED YOU GET WITHOUT THEM!"
+          + "\n\nLOVE,\nPOOKIE",
     options: {
         "Take 1 pill": {
-            text: "[Like a doctor says]",
+            text: "[Better play it safe, gotta long day tomorrow.]",
             options: {
                 "Go to bed": "[end]",
             },
@@ -14,7 +16,7 @@ dialog_tree = {
             }
         },
         "Take 2 pills": {
-            text: "[Let's boost the productivity]",
+            text: "[I don’t need it today. What’s the worst thing that could happen?]",
             options: {
                 "Go to bed": "[end]",
             },
@@ -23,7 +25,7 @@ dialog_tree = {
             }
         },
         "Take none": {
-            text: "[I just don't feel like taking meds]",
+            text: "[Here goes nothing. Merry will be pleased]",
             options: {
                 "Go to bed": "[end]",
             },
