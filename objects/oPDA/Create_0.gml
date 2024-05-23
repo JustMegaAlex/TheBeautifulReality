@@ -1,7 +1,7 @@
 pda_open = false
 pda_spd = 32
 pda_target_y[0] = 16
-pda_target_y[1] = room_height
+pda_target_y[1] = sprite_height + 50
 
 x = room_width - (sprite_width / 2)
 
