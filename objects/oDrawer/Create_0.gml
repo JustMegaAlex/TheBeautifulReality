@@ -10,7 +10,7 @@ dialog_tree = {
 dialog_opened = {
     text: "",
     options: {
-        "Let’s see what we got here...]": "[end]"
+        "Let's see what we got here...]": "[end]"
     }
 }
 

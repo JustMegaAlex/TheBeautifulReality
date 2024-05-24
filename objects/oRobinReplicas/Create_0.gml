@@ -15,7 +15,7 @@ dialog_dog_treat_found = {
 
 dialog_family_photo_found = {
     text: "Hold on, I recognize this photo.\n"
-          + "It’s our family trip to The Alps in the south of France.\n"
+          + "It's our family trip to The Alps in the south of France.\n"
           + "I thought I lost it.]",
     options: {
         "continue": "[end]"

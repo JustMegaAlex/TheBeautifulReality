@@ -4,7 +4,7 @@ event_inherited()
 dialog_tree = {
     text: "zzZZZ",
     options: {
-        "How’s your day been? ": "zzZZZ",
+        "How's your day been? ": "zzZZZ",
         "Enjoying your nap? ": "zzZZZ",
         "Wanna go for a walk?": "zzZZZ",
         "Do you want a treat?": {
