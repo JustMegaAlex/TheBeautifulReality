@@ -24,18 +24,13 @@ dialog_tree = {
 }
 
 dialogTreat = {
-	text: "Woof! *waving with his tail impatiently*",
+	text: "zzzzzZZZZZZZ",
 	options: {
-		"Do you want it?" : {
-			text: "Woof!",
-			options: {
-				"Catch!": {
-					text:  "Woof! *catches the treat",
-					options: {
-						"Haha, good boy!": "[end]"	
-					}
-				}
-			}
+		"Hey I have a treat for you buddy!" : {
+			text: "*Bites on it happily*",
+            options: {
+                "Haha, good boy!": "[end]"	
+            }
 		}
 	},
 	event: NarrativeEvents.bart_gave_treat
