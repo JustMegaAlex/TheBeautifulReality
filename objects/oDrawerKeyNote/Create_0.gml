@@ -2,9 +2,9 @@ event_inherited()
 
 dialog_tree = {
     id: id,
-    text: "Woof!",
+    text: "\"Woof\"!",
     options: {
-        "A sticker note that says \"Woof\"... and a key": "[end]"
+        "Was this here the whole time or am I just... forgetful?]": "[end]"
     },
     call: function() {
         instance_destroy(id)

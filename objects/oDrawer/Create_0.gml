@@ -7,9 +7,17 @@ dialog_tree = {
     }
 }
 
+dialog_opened = {
+    text: "",
+    options: {
+        "Let’s see what we got here...]": "[end]"
+    }
+}
+
 function drawerOpen() {
     image_index = 1
     oFamilyPhoto.setActive(true)
+    startDialog(dialog_opened)
 }
 
 function interact(item) {

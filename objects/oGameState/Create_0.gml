@@ -11,11 +11,16 @@ See oGameStateUpdater
 */
 
 enum NarrativeEvents {
+    // first clue
     bart_treat_talk,
     bart_gave_treat,
     drawer_key_taken,
     showed_photo_to_sharon,
+    
+    // second clue
     obtained_missing_death_report,
+    
+    asked_sharon_about_vacation,
 }
 
 EnsureSingleton()
