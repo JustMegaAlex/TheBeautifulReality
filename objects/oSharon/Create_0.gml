@@ -30,8 +30,8 @@ dialog_tree = {
 dialog_family_photo = {
     text: "Hi honey",
     options: {
-        "You used to love the mountains. Remember?]": {
-            text: "Oh…yes of course. I prefer the cold, silly me.\n"
+        "You used to love the mountains. Remember?": {
+            text: "Oh... yes of course. I prefer the cold, silly me.\n"
                   + "How about I que up some location videos for us.\n"
                   + "They'll make us feel like we’re right there again, I promise!",
             options: {
