@@ -12,3 +12,8 @@ accessibility = {
 
 pills_taken = 0
 processed_body_count = 0
+
+depths = {
+    instances: 0,
+    dialogs: -100,
+}

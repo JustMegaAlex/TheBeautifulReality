@@ -3,6 +3,8 @@ Dialogs trees and animation.
 Dialog objects can be interacted via inventory items (see interact())
 */
 
+depth = global.depths.dialogs
+
 enum ExampleEvents {
     non_existing_event
 }
