@@ -60,6 +60,8 @@ dialog_tree = {
     // mark events as happened
     event: ExampleEvents.non_existing_event
 }
+// Dialog also can contain list replicas
+// see oMerry for example
 
 is_active = true // can be interacted
 is_dialog_running = false
