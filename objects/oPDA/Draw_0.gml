@@ -1,8 +1,19 @@
-draw_sprite(sprite_index, 0, x, y)
+//draw_sprite(sprite_index, 0, x, y)
 
-//Replace with PDA surface
-draw_sprite(sprite_index, 1, x, y)
+////Replace with PDA surface
+//draw_sprite(sprite_index, 1, x, y)
 
+draw_self()
+
+//// temp info drawing
+if instance_exists(oBody) {
+	var c = c_black
+	draw_set_halign(fa_left)
+	draw_set_valign(fa_top)
+	draw_set_font(fMain)
+	var w = sprite_width * 0.7
+	draw_text_ext_color(bbox_left + 20, bbox_top + 20, oBody.info, 30, w, c, c, c, c, 1)
+}
 
 var _hover = false
 draw_set_color(c_white)
