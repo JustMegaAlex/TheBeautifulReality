@@ -16,7 +16,7 @@ dialog_tree = {
             }
         },
         "Take 2 pills": {
-            text: "[I don’t need it today. What’s the worst thing that could happen?]",
+            text: "[Here goes nothing. Merry will be pleased]",
             options: {
                 "Go to bed": "[end]",
             },
@@ -25,7 +25,7 @@ dialog_tree = {
             }
         },
         "Take none": {
-            text: "[Here goes nothing. Merry will be pleased]",
+            text: "[I don’t need it today. What’s the worst thing that could happen?]",
             options: {
                 "Go to bed": "[end]",
             },

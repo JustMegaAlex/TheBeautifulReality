@@ -11,12 +11,12 @@ function check(_room, events, exclude_events) {
 	}
 	for (var i = 0; i < array_length(events); ++i) {
 		if !oGameState.checkEventHappened(events[i]) {
-			return false	
+			return false
 		}
 	}
 	for (var i = 0; i < array_length(exclude_events); ++i) {
 		if oGameState.checkEventHappened(exclude_events[i]) {
-			return false	
+			return false
 		}
 	}
 	return true
@@ -32,5 +32,6 @@ function update() {
 	}
 	if check(rmWork, [NarrativeEvents.showed_photo_to_sharon], [NarrativeEvents.obtained_missing_death_report]) {
 		oMerry.setDialogMissingReport()
+        oBody.setInfoDeathMissingReason()
 	}
 }

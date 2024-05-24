@@ -12,7 +12,6 @@ hair_index = choose(-1, 0)
 
 info = choose(
 	"John Smith, a farmer, died from a heart attack",
-	"Sarah Johnson, a detective, died from a gunshot wound",
 	"David White, a scientist, died from a poisonous snake bite",
 	"Emily Brown, a chef, died from food poisoning",
 	"Michael Jones, a firefighter, died in a building collapse",
@@ -22,3 +21,7 @@ info = choose(
 	"James Taylor, a mechanic, died in a workplace accident",
 	"Samantha Miller, a teacher, died from a terminal illness",
 )
+
+function setInfoDeathMissingReason() {
+	info = "Sarah Johnson, a detective, {{death_reason_missing}}"
+}

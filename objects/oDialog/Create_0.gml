@@ -93,6 +93,7 @@ function startDialog(dialog = undefined) {
     current_replica = current_dialog.text
     current_options_struct = current_dialog.options
     current_options = getKeys(current_options_struct)
+	dialogCheckCallFunction()
 	dialogAddEvent()
 }
 
@@ -103,11 +104,14 @@ function dialogAddEvent() {
     }
 }
 
-function chooseOption(option) {
-    if option == "end dialog" {
-        is_dialog_running = false
-        return
+function dialogCheckCallFunction() {
+    var call = get(current_dialog, "call")
+    if call != undefined {
+        call()
     }
+}
+
+function chooseOption(option) {
     current_dialog = current_options_struct[$ option]
     if current_dialog == "[end]" {
         is_dialog_running = false
@@ -118,15 +122,8 @@ function chooseOption(option) {
     }
     current_replica = current_dialog.text
     current_options_struct = get(current_dialog, "options")
-    if current_options_struct == undefined {
-
-    }
 	dialogAddEvent()
-    var call = get(current_dialog, "call")
-    if call != undefined {
-        call()
-    }
-	dialogAddEvent()
+	dialogCheckCallFunction()
     current_options = getKeys(current_options_struct)
 }
 #endregion

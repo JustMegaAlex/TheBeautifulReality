@@ -30,7 +30,8 @@ dialog_family_photo = {
     text: "A different dialog will appear here as soon as it's ready",
     options: {
         "Can't wait, can't wait": "[end]"
-    }
+    },
+    event: NarrativeEvents.showed_photo_to_sharon
 }
 
 function interact(item) {

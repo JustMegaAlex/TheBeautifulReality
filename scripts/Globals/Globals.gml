@@ -11,3 +11,4 @@ accessibility = {
 }
 
 pills_taken = 0
+processed_body_count = 0
