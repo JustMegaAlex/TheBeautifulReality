@@ -22,7 +22,7 @@ switch (body_state) {
         if dropped {
             if instance_place(x, y, oTable) {
                 body_state = PBodyState.table
-
+                global.processed_body_count++
                 x = oTable.x
                 y = oTable.y
             }

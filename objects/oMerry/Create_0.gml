@@ -26,22 +26,31 @@ dialog_missing_death_reason = {
         }
     },
     call: function() {
-        if global.pills_taken == 2 and global.processed_body_count == 1 {
-            text = "zzzzzzZZZZZZ"
-            options = {
-                "Read the autopsy report" : {
-                    text: "[The report says the death reason\nis 'overdosing from Somnium Amphetamines']",
-                    options: {
-                        "Somnium Amphetamines...?": "[end]"
-                    }
-                }
+    }
+}
+
+dialog_autopsy_report = {
+	text: "zzzzzzZZZZZZ",
+    options: {
+        "Read the autopsy report" : {
+            text: "[The report says the death reason\nis 'overdosing from Somnium Amphetamines']",
+            options: {
+                "Somnium Amphetamines...?": "[end]"
             }
         }
-    }
+    },
+    event: NarrativeEvents.obtained_missing_death_report
 }
 
 function setDialogMissingReport() {
     dialog_tree = dialog_missing_death_reason
+}
+
+function getDialog() {
+    if global.pills_taken == 2 and global.processed_body_count == 1 {
+        return dialog_autopsy_report
+    }
+	return dialog_tree
 }
 
 setActive(false)

@@ -17,3 +17,22 @@ function Set(inst, variable, value) {
     return variable_instance_set(inst, variable, value)
 }
 ////
+
+function AddEvent(event) {
+    oGameState.addEventHappened(event)
+    oGameStateUpdater.update()
+}
+
+function Pills(amount) {
+    global.pills_taken = amount
+}
+
+function Bodies(amount) {
+    global.processed_body_count = amount
+}
+
+function DebugSetGameState() {
+    AddEvent(NarrativeEvents.showed_photo_to_sharon)
+    Pills(2)
+    Bodies(1)
+}

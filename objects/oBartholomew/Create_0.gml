@@ -13,7 +13,7 @@ dialog_tree = {
                 "Ah, now that got your attention ay boy?]": "[end]"
             },
             event: NarrativeEvents.bart_treat_talk
-        }
+        },
     },
     call: function() {
         // remove dog treat dialog after getting a treat
