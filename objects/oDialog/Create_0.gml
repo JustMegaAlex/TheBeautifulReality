@@ -10,6 +10,7 @@ enum ExampleEvents {
 dialog_x = room_width * 0.5
 dialog_y = room_height * 0.7
 row_height = 20
+text_length = 0
 
 dialog_tree = undefined
 
@@ -111,10 +112,16 @@ function dialogCheckCallFunction() {
     }
 }
 
+function endDialog() {
+    is_dialog_running = false
+    text_length = 0
+}
+
 function chooseOption(option) {
+    text_length = 0
     current_dialog = current_options_struct[$ option]
     if current_dialog == "[end]" {
-        is_dialog_running = false
+        endDialog()
         return
     } else if is_string(current_dialog) {
         current_replica = current_dialog
@@ -125,9 +132,9 @@ function chooseOption(option) {
 	dialogAddEvent()
 	dialogCheckCallFunction()
     current_options = getKeys(current_options_struct)
-    
+
     if current_replica == "[end]" {
-        is_dialog_running = false
+        endDialog()
         return
     }
 }

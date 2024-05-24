@@ -8,6 +8,7 @@ if is_dialog_running {
     var _y2 = room_height * 0.99
     var _wmax = _x2 - _x1
     var _hmax = _y2 - _y1
+    var dialog_x = room_width * 0.2
 
     var _color = c_white
     textbox_alpha = lerp(textbox_alpha, 1, 1)
@@ -24,19 +25,25 @@ if is_dialog_running {
 
     draw_set_color(c_black)
 
+    draw_set_halign(fa_left)
     if !intro_timer.update() {
-        draw_text(dialog_x, dialog_y, current_replica)
-        var y_start = dialog_y + string_height(current_replica)
+        var w = _wmax * 0.8
+        draw_text_scribble_ext(dialog_x, dialog_y, current_replica, w, text_length)
+        var option_y = dialog_y + string_height_scribble_ext(current_replica, w) + row_height
         for (var i = 0; i < array_length(current_options); ++i) {
             var option = current_options[i]
 
-            // workaround GM not permitting to start struct entries with "["
+            var xx = dialog_x
+            var enumerator = string(i+1) + "."
+			draw_text(xx, option_y, enumerator)
+            xx += string_width(enumerator)
+            // workaround scribble using "[" as a format marker
             if string_ends_with(option, "]") {
-                option = "[" + option
+                draw_text(xx, option_y, "[")
+                xx += string_width("[")
             }
-
-            draw_text(dialog_x, y_start + (i + 1) * row_height,
-                string("{0}. {1}", string(i + 1), option))
+            draw_text_scribble_ext(xx, option_y, option, w)
+            option_y += string_height_scribble_ext(option, w)
         }
 
     }

@@ -1,4 +1,5 @@
 if is_dialog_running {
+    text_length += 2
     if oInput.key_any {
         var option_ind = keyboard_key - 49
         if option_ind >= 0 && option_ind < array_length(current_options) {
