@@ -11,21 +11,27 @@ dialog_tree_default = {
 dialog_tree = dialog_tree_default
 
 dialog_missing_death_reason = {
-    text: "",
-    options: {
-        "Hey, Merry, one of today's bodies reports has a 'missing' death reason": {
-            text: "So what?",
-            options: {
-                "Can I have a look on autopsy report?": {
-                    text: "These files are for certified personnel only",
-                    options: {
-                        "Go back to work]" : "[end]"
-                    }
-                }
-            }
+    text: [
+        "What can I do you for, hireling?",
+        "Kimberly's cause of death has been tampered with, I need the autopsy report. Can you get it for me? ",
+        "Oh yea sure, let me think about it. ",
+        "Okay I'll pop by later-",
+        "No.",
+        "What do you mean 'no'? ",
+        "I just thought about it. It's a no can do, sorry.",
+        "Already?",
+        "Mhm.",
+        "What's in the file Merry? ",
+        "Nothing. ",
+        "Stop lying, I can see it with my very eyes!",
+        "Okay you got me, I'll tell ya. ",
+        "Really?",
+    ],
+    next: {
+        text: "Na ha I'm just messin with ya. GET BACK TO FUCKING WORK!",
+        options: {
+            "go back to work]": "[end]"
         }
-    },
-    call: function() {
     }
 }
 

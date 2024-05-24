@@ -7,12 +7,12 @@ draw_self()
 
 //// temp info drawing
 if instance_exists(oBody) {
-	var c = c_black
-	draw_set_halign(fa_left)
-	draw_set_valign(fa_top)
-	draw_set_font(fMain)
+	// draw_set_halign(fa_left)
+	// draw_set_valign(fa_top)
+	// draw_set_font(fMain)
 	var w = sprite_width * 0.7
-	draw_text_ext_color(bbox_left + 20, bbox_top + 20, oBody.info, 30, w, c, c, c, c, 1)
+    var txt = "[c_black][fa_left][fa_top][fMain]" + oBody.info
+	draw_text_scribble_ext(bbox_left + 20, bbox_top + 20, txt, w)
 }
 
 var _hover = false

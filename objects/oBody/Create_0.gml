@@ -10,18 +10,21 @@ body_state = PBodyState.conveyer
 
 hair_index = choose(-1, 0)
 
+// body's info, displayed on PDA
 info = choose(
-	"John Smith, a farmer, died from a heart attack",
-	"David White, a scientist, died from a poisonous snake bite",
-	"Emily Brown, a chef, died from food poisoning",
-	"Michael Jones, a firefighter, died in a building collapse",
-	"Rachel Williams, a lawyer, died from a car accident",
-	"Thomas Davis, a soldier, died in combat",
-	"Jessica Martinez, a nurse, died from a medical error",
-	"James Taylor, a mechanic, died in a workplace accident",
-	"Samantha Miller, a teacher, died from a terminal illness",
+	"John Smith\noccupation: farmer\ndeath cause: heart attack",
+	"David White\noccupation: scientist\ndeath cause: poisonous snake bite",
+	"Emily Brown\noccupation: chef\ndeath cause: poisoning",
+	"Michael Jones\noccupation: firefighter\ndeath cause: building collapse",
+	"Rachel Williams\noccupation: lawyer\ndeath cause: car accident",
+	"Thomas Davis\noccupation: soldier\ndeath cause: died in combat",
+	"Jessica Martinez\noccupation: nurse\ndeath cause: medical error",
+	"James Taylor\noccupation: mechanic\ndeath cause: workplace accident",
+	"Samantha Miller\noccupation: teacher\ndeath cause: terminal illness",
 )
 
 function setInfoDeathMissingReason() {
-	info = "Sarah Johnson, a detective, {{death_reason_missing}}"
+	info = "Kimberly Sinclair\n"
+            + "occupation: school teacher\n"
+            + "death cause: [c_red]null"
 }

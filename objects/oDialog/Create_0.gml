@@ -66,6 +66,8 @@ is_dialog_running = false
 current_dialog = dialog_tree
 current_replica = "Default replica"
 current_options = []
+is_list_replicas = false
+list_replicas_index = 0
 
 
 intro_timer = MakeTimer(8)
@@ -87,17 +89,41 @@ function getDialog() {
     return dialog_tree
 }
 
+function startListReplicas() {
+    is_list_replicas = true
+    list_replicas = current_dialog.text
+    current_replica = list_replicas[0]
+    current_options = [list_replicas[1]]
+    list_replicas_index = 0
+}
+
+function nextListReplica() {
+    list_replicas_index += 2
+    if list_replicas_index >= array_length(list_replicas) {
+        is_list_replicas = false
+        startDialog(current_dialog.next)
+        return
+    }
+    current_replica = list_replicas[list_replicas_index]
+    current_options = [list_replicas[list_replicas_index + 1]]
+}
+
 function startDialog(dialog = undefined) {
     if dialog == undefined {
         dialog = getDialog()
     }
     is_dialog_running = true
     current_dialog = dialog
-    current_replica = current_dialog.text
-    current_options_struct = current_dialog.options
-    current_options = getKeys(current_options_struct)
-	dialogCheckCallFunction()
-	dialogAddEvent()
+    dialogCheckCallFunction()
+    dialogAddEvent()
+    if is_array(current_dialog.text) {
+        list_replicas_index = 0
+        startListReplicas()
+    } else {
+        current_replica = current_dialog.text
+        current_options_struct = current_dialog.options
+        current_options = getKeys(current_options_struct)
+    }
 }
 
 function dialogAddEvent() {
@@ -121,6 +147,10 @@ function endDialog() {
 
 function chooseOption(option) {
     text_length = 0
+    if is_list_replicas {
+        nextListReplica()
+        return
+    }
     current_dialog = current_options_struct[$ option]
     if current_dialog == "[end]" {
         endDialog()
@@ -128,9 +158,10 @@ function chooseOption(option) {
     } else if is_string(current_dialog) {
         current_replica = current_dialog
         return
+    } else {
+        current_replica = current_dialog.text
+        current_options_struct = get(current_dialog, "options")
     }
-    current_replica = current_dialog.text
-    current_options_struct = get(current_dialog, "options")
 	dialogAddEvent()
 	dialogCheckCallFunction()
     current_options = getKeys(current_options_struct)
