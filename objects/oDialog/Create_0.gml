@@ -125,6 +125,11 @@ function chooseOption(option) {
 	dialogAddEvent()
 	dialogCheckCallFunction()
     current_options = getKeys(current_options_struct)
+    
+    if current_replica == "[end]" {
+        is_dialog_running = false
+        return
+    }
 }
 #endregion
 
