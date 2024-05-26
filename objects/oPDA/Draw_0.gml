@@ -5,32 +5,24 @@
 
 draw_self()
 
+surface_set_target(pda_text_surface)
+draw_sprite_ext(sprite_index, 0, sprite_xoffset, sprite_yoffset - pda_text_surf_top_gap,
+                image_xscale, image_yscale, 0, c_white, 1)
+draw_text_scribble_ext(20, 20 - pda_text_scroll, pda_text, pda_text_w)
+surface_reset_target()
+
+
+draw_surface(pda_text_surface, bbox_left, bbox_top + pda_text_surf_top_gap)
+
 //// temp info drawing
-if instance_exists(oBody) {
-	// draw_set_halign(fa_left)
-	// draw_set_valign(fa_top)
-	// draw_set_font(fMain)
-	var w = sprite_width * 0.7
-    var txt = "[c_black][fa_left][fa_top][fMain]" + oBody.info
-	draw_text_scribble_ext(bbox_left + 20, bbox_top + 20, txt, w)
-}
+// if instance_exists(oBody) {
+// }
 
-var _hover = false
-draw_set_color(c_white)
-if point_in_rectangle(mouse_x, mouse_y, bbox_left, 0, bbox_right, 32) {
-    draw_set_alpha(0.1)
-    draw_rectangle(bbox_left, 0, bbox_right, 32, false)
-    draw_set_alpha(1)
-
-    _hover = true
-
-}
+pull_out_button.draw()
+prev_page_button.draw()
+next_page_button.draw()
 
 draw_set_valign(fa_middle)
 draw_set_halign(fa_center)
 
-var _nohoveralpha = 0.25
-draw_set_alpha(_nohoveralpha + (_hover * (1 - _nohoveralpha)))
-draw_text(room_width - sprite_width / 2, 16, (pda_open ? "Put away PDA" :
-    "Pull out PDA"))
-draw_set_alpha(1)
+draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, true)

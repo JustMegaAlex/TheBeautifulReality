@@ -164,14 +164,17 @@ function chooseOption(option) {
         current_replica = current_dialog.text
         current_options_struct = get(current_dialog, "options")
     }
-	dialogAddEvent()
-	dialogCheckCallFunction()
-    current_options = getKeys(current_options_struct)
 
+    dialogAddEvent()
+    dialogCheckCallFunction()
+
+    
     if current_replica == "[end]" {
         endDialog()
         return
     }
+
+    current_options = getKeys(current_options_struct)
 }
 #endregion
 

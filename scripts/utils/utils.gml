@@ -365,3 +365,12 @@ function irandomer(first, second = undefined) {
 function CheckBitwise(src, dest) {
     return src & power(2, dest)
 }
+
+function ReadFileString(filename) {
+    var result = ""
+    var file = file_text_open_read(filename)
+    while !file_text_eof(file) {
+        result += file_text_readln(file)
+    }
+    return result
+}

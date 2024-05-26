@@ -38,10 +38,11 @@ dialog_missing_death_reason = {
 dialog_autopsy_report = {
 	text: "zzzzzzZZZZZZ",
     options: {
-        "Read the autopsy report" : {
-            text: "[The report says the death reason\nis 'overdosing from Somnium Amphetamines']",
-            options: {
-                "Somnium Amphetamines...?": "[end]"
+        "Read the autopsy report]" : {
+            text: "[end]",
+            call: function() {
+                var text = ReadFileString("autopsy.txt")
+                oPDA.setText(text)
             }
         }
     },
