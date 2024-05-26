@@ -30,7 +30,7 @@ dialog_missing_death_reason = {
     next: {
         text: "Na ha I'm just messin with ya. GET BACK TO FUCKING WORK!",
         options: {
-            "go back to work]": "[end]"
+            "back to work]": "[end]"
         }
     }
 }
@@ -53,6 +53,7 @@ function setDialogMissingReport() {
 }
 
 function getDialog() {
+    // temp condition to trigger autopsy dialog
     if global.pills_taken == 2 and global.processed_body_count == 1 {
         return dialog_autopsy_report
     }
