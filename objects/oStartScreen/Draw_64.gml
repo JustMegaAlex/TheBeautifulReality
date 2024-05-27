@@ -138,6 +138,7 @@ if state == SCREENVIEW.START {
         if (_mouse_in_rect) and(mouse_check_button_pressed(mb_left)) {
             switch button_text_array[i] {
                 case "CLOCK IN":
+				sfx_play(sfxMenuClockInOut, 1)
                 room_goto(rmStart)
                 if audio_is_playing(bgmStartScreen)
                 audio_sound_gain(bgmStartScreen, 0, 1000)
@@ -146,13 +147,16 @@ if state == SCREENVIEW.START {
 
                 case "OPTIONS":
                 ds_stack_push(screen_stack, SCREENVIEW.OPTIONS)
+				sfx_play(sfxMenuClick, 1)
                 break;
 
                 case "CREDITS":
                 ds_stack_push(screen_stack, SCREENVIEW.CREDITS)
+				sfx_play(sfxMenuClick, 1)
                 break;
 
                 case "CLOCK OUT":
+				sfx_play(sfxMenuClockInOut, 1)
                 game_end()
                 break;
             }
@@ -218,6 +222,7 @@ if state == SCREENVIEW.OPTIONS {
                 draw_set_color(_color)
 
                 if (_mouse_in_rect) and mouse_check_button(mb_left) {
+					sfx_play(sfxMenuClick, 1)
                     switch options_text_array[i] {
                         case "SOUND EFFECTS":
                         global.audio.sfxlevel = j + 1

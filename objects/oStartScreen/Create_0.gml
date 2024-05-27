@@ -161,6 +161,8 @@ function button_back(){
 	//Actually do something on mouse click
 		
 	if (_mouse_in_rect) and (mouse_check_button_pressed(mb_left)){
+		sfx_play(sfxMenuClick, 1)
+		
 		options_ypos_array = [gui_h, gui_h, gui_h, gui_h, gui_h]
 		ds_stack_pop(screen_stack)
 		title_anim_timer = 11
@@ -185,7 +187,7 @@ credits_highlighted = [false, false, false, false, false, false, false, false]
 credits_bios = 
 ["Part time raccoon, full time gamer and cat mom. A narrative designer with lots of love for creating engaging interactive stories.",
 "Alex Gavrik \nProgrammer-artist who loves to code games",
-"",
+"Passionate about game development, Uneven Pixel brings extensive experience in programming with Game Maker to craft immersive and engaging gameplay experiences.",
 "Flat White Canvas: \ncharacter artist \nwild magic sorcerer \npress Y to honk",
 "Ranarh is a 2D illustrator and game art generalist with an emphasis on conceptual and environment work. No genre is left untouched from horror to children's entertainment, and from FPS to visual novels.",
 "Composes music for games because every epic quest needs a soundtrack as dramatic as my coffee addiction!",
@@ -195,4 +197,7 @@ credits_bios =
 credits_bios_box_rot1 = [0, 0, 0, 0, 0, 0, 0, 0]
 credits_bios_box_rot2 = [0, 0, 0, 0, 0, 0, 0, 0]
 credits_bios_box_scale = [1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2]
+
+
+
 
