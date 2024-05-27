@@ -3,8 +3,8 @@
   "%Name":"sNoah",
   "bboxMode":0,
   "bbox_bottom":539,
-  "bbox_left":117,
-  "bbox_right":325,
+  "bbox_left":124,
+  "bbox_right":332,
   "bbox_top":204,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"01940a6a-36c0-4a8c-810c-b12b25c267c8","name":"01940a6a-36c0-4a8c-810c-b12b25c267c8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"c13fd707-c3a8-41d4-8d20-2cde1a3e1aa5","name":"c13fd707-c3a8-41d4-8d20-2cde1a3e1aa5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":540,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"33dc50af-e3c2-4c2b-9871-a2221c889e28","blendMode":0,"displayName":"default","isLocked":false,"name":"33dc50af-e3c2-4c2b-9871-a2221c889e28","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"0df8557c-a6b1-47a0-8c5f-5fa78a453549","blendMode":0,"displayName":"default","isLocked":false,"name":"0df8557c-a6b1-47a0-8c5f-5fa78a453549","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sNoah",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"01940a6a-36c0-4a8c-810c-b12b25c267c8","path":"sprites/sNoah/sNoah.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"4a1dc6f8-a3de-400e-bc98-7450f70c9bf4","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c13fd707-c3a8-41d4-8d20-2cde1a3e1aa5","path":"sprites/sNoah/sNoah.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"e097aaf3-dfbf-4cf2-bf36-642d87dec29a","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
