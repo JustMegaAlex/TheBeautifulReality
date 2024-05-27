@@ -15,7 +15,7 @@ if dropped {
         if on_inventory {
             is_inventory = true
             persistent = true
-            onInvenotryDrop()
+            onInventoryDrop()
         } else {
             x = grabb_x
             y = grabb_y
