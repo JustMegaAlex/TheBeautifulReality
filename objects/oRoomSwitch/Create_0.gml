@@ -15,29 +15,29 @@ function switchRoom() {
 
 //Elevator Close Sequence
 
-activeAnimation = -1;
-sequenceLayer = -1;
-activeSequence = -1;
+active_animation = -1
+sequence_layer = -1
+active_sequence = -1
 
 function playElevatorClose() {
 	
-	sequence = seqElevatorClose;
-	sequenceLayer = layer_create(-99999);
-	activeSequence = layer_sequence_create(sequenceLayer, 0, 0, sequence);
+	sequence = seqElevatorClose
+	sequence_layer = layer_create(-99999)
+	active_sequence = layer_sequence_create(sequence_layer, 0, 0, sequence)
 }
 
 function checkElevatorClose() {
-	if (activeSequence == undefined) return;
+	if (active_sequence == undefined) return
 	
-	if (layer_sequence_is_finished(activeSequence)) {
-		layer_sequence_destroy(activeSequence);
-		layer_destroy(sequenceLayer);
+	if (layer_sequence_is_finished(active_sequence)) {
+		layer_sequence_destroy(active_sequence)
+		layer_destroy(sequence_layer)
 		
 		switchRoom()
 		
-		activeAnimation = -1;
-		activeSequence = -1;
-		sequenceLayer = -1;
+		active_animation = -1
+		sequence_layer = -1
+		active_sequence = -1
 	}
 }	
 
