@@ -26,7 +26,7 @@
   "origin":7,
   "parent":{
     "name":"Noah",
-    "path":"folders/Sprites/03 Home/Noah.yy",
+    "path":"folders/Sprites/03 Home/01 Family/Noah.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

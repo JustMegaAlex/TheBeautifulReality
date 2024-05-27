@@ -1,0 +1,1 @@
+sprite_index = door_to_kitchen
