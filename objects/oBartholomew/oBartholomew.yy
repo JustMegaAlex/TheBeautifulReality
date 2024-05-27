@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sNPC",
-    "path":"sprites/sNPC/sNPC.yy",
+    "name":"sBartholomew",
+    "path":"sprites/sBartholomew/sBartholomew.yy",
   },
   "spriteMaskId":null,
   "visible":true,
