@@ -183,12 +183,12 @@ credits_glitch_timer = [6, 6, 6, 6, 6, 6, 6, 6]
 credits_highlighted = [false, false, false, false, false, false, false, false] 
 
 credits_bios = 
-["",
+["Part time raccoon, full time gamer and cat mom. A narrative designer with lots of love for creating engaging interactive stories.",
+"Alex Gavrik \nProgrammer-artist who loves to code games",
 "",
-"",
-"",
+"Flat White Canvas: \ncharacter artist \nwild magic sorcerer \npress Y to honk",
 "Ranarh is a 2D illustrator and game art generalist with an emphasis on conceptual and environment work. No genre is left untouched from horror to children's entertainment, and from FPS to visual novels.",
-"",
+"Composes music for games because every epic quest needs a soundtrack as dramatic as my coffee addiction!",
 "Freelance technical game sound designer with a violin making background and passion for accessibility in games",
 "Loves games."]
 
