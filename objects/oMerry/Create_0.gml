@@ -69,11 +69,17 @@ dialog_ask_autopsy_report2 = {
 dialog_autopsy_report = {
 	text: "zzzzzzZZZZZZ",
     options: {
-        "Read the autopsy report]" : {
-            text: "[end]",
+        "Looks like all that yapping got to him. Now’s my chance to get that report.] " : {
+            text: "",
+            options: {
+                "That’s it! Kimberly’s autopsy report.]": "[end]"
+            },
             call: function() {
                 var text = ReadFileString("autopsy.txt")
                 oPDA.setText(text)
+                oPDA.setCloseCallback(function() {
+                    oRobinReplicas.startDialog(oRobinReplicas.dialog_autopsy_report)
+                })
             }
         }
     },

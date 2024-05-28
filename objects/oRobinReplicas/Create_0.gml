@@ -7,7 +7,7 @@ Persistent
 */
 
 dialog_dog_treat_found = {
-    text: "[Hey, Barth might like that!]",
+    text: "[[Hey, Barth might like that!]",
     options: {
         "continue": "[end]"
     }
@@ -19,5 +19,15 @@ dialog_family_photo_found = {
           + "I thought I lost it.]",
     options: {
         "continue": "[end]"
+    }
+}
+
+dialog_autopsy_report = {
+    text: "[[Somnium Amphetamines? This is Noah’s teacher...she was always working late. Noah didn’t say anything about her dying.]",
+    options: {
+        "continue": {
+            text: "[[Maybe I should talk to him.]",
+            options: {"continue": "[end]"}
+        }
     }
 }

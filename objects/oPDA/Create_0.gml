@@ -76,9 +76,14 @@ pull_out_button = new Button(bbox_left, 0, bbox_right, 32, "Pull out PDA",
         if !pda_open {
             oPDA.prev_page_button.visible = false
             oPDA.next_page_button.visible = false
+            if close_callback != undefined {
+                close_callback()
+                close_callback = undefined
+            }
         }
     }
 )
+close_callback = undefined
 
 var yy = pda_target_y[1] - 8
 prev_page_button = new Button(bbox_left,
@@ -102,6 +107,10 @@ next_page_button = new Button(bbox_left + sprite_width * 0.7,
 )
 prev_page_button.visible = false
 next_page_button.visible = false
+
+function setCloseCallback(callback) {
+    close_callback = callback
+}
 
 function setText(text) {
 	pda_text_count = 1000

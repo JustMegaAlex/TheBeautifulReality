@@ -178,7 +178,7 @@ function chooseOption(option) {
 }
 #endregion
 
-#region helper functions
+#region helper functionsg©
 function get(struct, key) {
     if !variable_struct_exists(struct, key) {
         return undefined
