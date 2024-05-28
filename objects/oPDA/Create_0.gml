@@ -106,7 +106,6 @@ next_page_button.visible = false
 function setText(text) {
 	pda_text_count = 1000
     pda_text_scroll = 0
-	text = ReadFileString("autopsy.txt")
     if string_height_scribble_ext(text, pda_text_w) > pda_text_max_h {
         prev_page_button.visible = true
         next_page_button.visible = true
