@@ -28,3 +28,46 @@ function setInfoDeathMissingReason() {
             + "occupation: school teacher\n"
             + "death cause: [c_red]null"
 }
+
+//Props
+props_list_names = 
+[
+	"Flowers",
+	"ModelPlane", 
+	"Camera", 
+	"Knitting",
+	"Necklace", 
+	"Book", 
+	"Flask", 
+	"TeddyBear"
+]
+
+props_list_sprites =
+[
+	sInventoryItemFlowers,
+	sInventoryItemModelPlane,
+	sInventoryItemCamera,
+	sInventoryItemKnitting,
+	sInventoryItemNecklace,
+	sInventoryItemBook,
+	sInventoryItemFlask,
+	sInventoryItemTeddyBear
+]
+
+
+var _size = array_length(props_list_names)
+
+repeat(3){
+	var _choice = irandom_range(0, (_size - 1))
+
+	with instance_create_layer(x, y, "Instances", oInventoryItem)
+	{
+		sprite_index = other.props_list_sprites[_choice]
+		
+		//Temporary, until final assets
+		image_xscale = 0.15
+		image_yscale = 0.15
+	}
+}
+
+
