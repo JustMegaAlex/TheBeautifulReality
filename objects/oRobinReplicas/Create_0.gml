@@ -31,3 +31,8 @@ dialog_autopsy_report = {
         }
     }
 }
+
+dialog_missing_death_reason = {
+    text: "That's…unusual. Guess I should report it to Merry.]",
+    options: {"continue": "[end]"}
+}

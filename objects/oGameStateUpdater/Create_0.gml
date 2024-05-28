@@ -33,5 +33,8 @@ function update() {
 	if check(rmWork, [NarrativeEvents.showed_photo_to_sharon], [NarrativeEvents.obtained_missing_death_report]) {
 		oMerry.setDialogMissingReport()
         oBody.setInfoDeathMissingReason()
+        oPDA.setOpenCallback(function() {
+            oRobinReplicas.startDialog(oRobinReplicas.dialog_missing_death_reason)
+        })
 	}
 }

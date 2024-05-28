@@ -19,6 +19,7 @@ enum NarrativeEvents {
 
     // second clue
     obtained_missing_death_report,
+    finished_clue_2,
     
     asked_sharon_about_vacation,
 }
@@ -36,6 +37,20 @@ function addEventHappened(event) {
 
 function checkEventHappened(event) {
     return array_contains(happened_events, event)
+}
+
+function checkState(happened, not_happened=[]) {
+	for (var i = 0; i < array_length(happened); ++i) {
+		if !oGameState.checkEventHappened(happened[i]) {
+			return false
+		}
+	}
+	for (var i = 0; i < array_length(not_happened); ++i) {
+		if oGameState.checkEventHappened(not_happened[i]) {
+			return false
+		}
+	}
+	return true
 }
 
 happened_events = []

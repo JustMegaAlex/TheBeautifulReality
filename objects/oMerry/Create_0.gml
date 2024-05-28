@@ -45,13 +45,24 @@ dialog_ask_autopsy_report2 = {
         "Read the autopsy report]": {
             id: id,
             text: "", options: {},
+            _last_replica_used: undefined,
             call: function() {
-                id.dialog_ask_autopsy_report2.text = choose(
+                var text = choose(
                     "Nuh uh uh. For my eyes only!",
                     "Quit it.",
                     "It ain't fuckin' happening.",
                     "Shouldn't you be WORKING?",
                 )
+                while _last_replica_used == text {
+                    text = choose(
+                        "Nuh uh uh. For my eyes only!",
+                        "Quit it.",
+                        "It ain't fuckin' happening.",
+                        "Shouldn't you be WORKING?",
+                    )
+                }
+                _last_replica_used = text
+                id.dialog_ask_autopsy_report2.text = text
                 id.startDialog(id.dialog_ask_autopsy_report2)
             }
         },

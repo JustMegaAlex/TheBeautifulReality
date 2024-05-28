@@ -13,6 +13,9 @@ pda_text_surface = surface_create(
     sprite_width,
     sprite_height - pda_text_surf_top_gap - pda_text_surf_bottom_gap)
 
+open_callback = undefined
+close_callback = undefined
+
 x = room_width - (sprite_width / 2)
 
 subscreen = 0
@@ -80,16 +83,20 @@ pull_out_button = new Button(bbox_left, 0, bbox_right, 32, "Pull out PDA",
                 close_callback()
                 close_callback = undefined
             }
+        } else {
+            if open_callback != undefined {
+                open_callback()
+                open_callback = undefined
+            }
         }
     }
 )
-close_callback = undefined
 
 var yy = pda_target_y[1] - 8
 prev_page_button = new Button(bbox_left,
                               yy - 32,
                               bbox_left + sprite_width * 0.3,
-                              yy,"previous",
+                              yy, "previous",
     function() {
         id.pda_text_scroll -= 60
         id.pda_text_scroll = max(0, id.pda_text_scroll)
@@ -110,6 +117,10 @@ next_page_button.visible = false
 
 function setCloseCallback(callback) {
     close_callback = callback
+}
+
+function setOpenCallback(callback) {
+    open_callback = callback
 }
 
 function setText(text) {
