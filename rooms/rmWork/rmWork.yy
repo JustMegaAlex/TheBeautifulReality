@@ -15,6 +15,8 @@
     {"name":"inst_4332E916","path":"rooms/rmWork/rmWork.yy",},
     {"name":"inst_1720C381","path":"rooms/rmWork/rmWork.yy",},
     {"name":"inst_22C76CC9","path":"rooms/rmWork/rmWork.yy",},
+    {"name":"inst_6E60B07","path":"rooms/rmWork/rmWork.yy",},
+    {"name":"inst_58BF84CE","path":"rooms/rmWork/rmWork.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -34,6 +36,8 @@
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Conveyor","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"","%Name":"inst_4630EA27","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4630EA27","objectId":{"name":"oConveyerBelt","path":"objects/oConveyerBelt/oConveyerBelt.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.8,"scaleY":0.88148147,"x":-256.0,"y":224.0,},
+        {"$GMRInstance":"","%Name":"inst_6E60B07","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6E60B07","objectId":{"name":"oConveyerBeltOut","path":"objects/oConveyerBeltOut/oConveyerBeltOut.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1216.0,"y":288.0,},
+        {"$GMRInstance":"","%Name":"inst_58BF84CE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_58BF84CE","objectId":{"name":"oCompleteBodyButton","path":"objects/oCompleteBodyButton/oCompleteBodyButton.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"x":928.0,"y":416.0,},
       ],"layers":[],"name":"Conveyor","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Table","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"","%Name":"inst_22C76CC9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_22C76CC9","objectId":{"name":"oTable","path":"objects/oTable/oTable.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.1831684,"scaleY":1.1896613,"x":448.0,"y":256.0,},
