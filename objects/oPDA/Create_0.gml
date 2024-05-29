@@ -73,7 +73,7 @@ pull_out_button = new Button(bbox_left, 0, bbox_right, 32, "Pull out PDA",
         pda_open = !pda_open
         oMerry.setActive(pda_open)
         if instance_exists(oBody) {
-            setText(oBody.info)
+            setText(string(oBody.info) + "\nItems needed: " + string(oBody.props_count))
         }
         label = pda_open ? "Put away PDA" : "Pull out PDA"
         if !pda_open {

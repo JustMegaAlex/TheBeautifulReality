@@ -23,6 +23,12 @@ info = choose(
 	"Samantha Miller\noccupation: teacher\ndeath cause: terminal illness",
 )
 
+//How many items needed
+props_count = choose(1,2,3)
+
+//How many items the body currently has
+props_current = 0
+
 function setInfoDeathMissingReason() {
 	info = "Kimberly Sinclair\n"
             + "occupation: school teacher\n"
@@ -62,10 +68,10 @@ props_list_sprites =
 
 var _size = array_length(props_list_names)
 
-repeat(3) {
+for (var i = 0; i < 4; i ++) {
 	var _choice = irandom_range(0, (_size - 1))
-
-	with instance_create_layer(x, y, "Instances", oInventoryItem)
+	
+	with instance_create_layer(bbox_left - 48, bbox_top + 40 + (i * 40), "Instances", oInventoryItemALT)
 	{
 		sprite_index = other.props_list_sprites[_choice]
 		

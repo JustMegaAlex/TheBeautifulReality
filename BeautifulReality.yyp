@@ -74,7 +74,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.4.0.137",
+    "IDEVersion":"2024.2.0.132",
   },
   "name":"BeautifulReality",
   "resources":[
@@ -102,6 +102,7 @@
     {"id":{"name":"oIntroSequence","path":"objects/oIntroSequence/oIntroSequence.yy",},},
     {"id":{"name":"oInventory","path":"objects/oInventory/oInventory.yy",},},
     {"id":{"name":"oInventoryItem","path":"objects/oInventoryItem/oInventoryItem.yy",},},
+    {"id":{"name":"oInventoryItemALT","path":"objects/oInventoryItemALT/oInventoryItemALT.yy",},},
     {"id":{"name":"oMeds","path":"objects/oMeds/oMeds.yy",},},
     {"id":{"name":"oMerry","path":"objects/oMerry/oMerry.yy",},},
     {"id":{"name":"oMusic","path":"objects/oMusic/oMusic.yy",},},
