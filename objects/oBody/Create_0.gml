@@ -29,6 +29,11 @@ function setInfoDeathMissingReason() {
             + "death cause: [c_red]null"
 }
 
+function setInfoMitchel() {
+    info = "Name:  David Mitchel\n\nAge: 35-40 yrs\n\nOccupation: ~~Mortician~~  Efficient Multi-tasker!"
+            + "\n\nCause of Death: Unknown"
+}
+
 //Props
 props_list_names = 
 [

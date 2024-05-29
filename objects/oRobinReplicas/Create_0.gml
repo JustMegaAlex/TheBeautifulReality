@@ -36,3 +36,8 @@ dialog_missing_death_reason = {
     text: "That's…unusual. Guess I should report it to Merry.]",
     options: {"continue": "[end]"}
 }
+
+dialog_mitchel_death_reason = {
+    text: "[[Another tampered profile…]",
+    options: {"continue": "[end]"}
+}

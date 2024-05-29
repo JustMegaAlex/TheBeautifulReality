@@ -37,4 +37,10 @@ function update() {
             oRobinReplicas.startDialog(oRobinReplicas.dialog_missing_death_reason)
         })
 	}
+	if check(rmWork, [NarrativeEvents.finished_clue_2], [NarrativeEvents.found_mitchels_jounal]) {
+        oBody.setInfoMitchel()
+        oPDA.setOpenCallback(function() {
+            oRobinReplicas.startDialog(oRobinReplicas.dialog_mitchel_death_reason)
+        })
+	}
 }

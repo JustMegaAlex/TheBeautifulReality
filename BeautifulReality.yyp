@@ -74,7 +74,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.2.0.132",
+    "IDEVersion":"2024.4.0.137",
   },
   "name":"BeautifulReality",
   "resources":[
@@ -85,6 +85,7 @@
     {"id":{"name":"oBartholomew","path":"objects/oBartholomew/oBartholomew.yy",},},
     {"id":{"name":"oBody","path":"objects/oBody/oBody.yy",},},
     {"id":{"name":"oCharlotte","path":"objects/oCharlotte/oCharlotte.yy",},},
+    {"id":{"name":"oCompleteBodyButton","path":"objects/oCompleteBodyButton/oCompleteBodyButton.yy",},},
     {"id":{"name":"oConveyerBelt","path":"objects/oConveyerBelt/oConveyerBelt.yy",},},
     {"id":{"name":"oConveyerBeltOut","path":"objects/oConveyerBeltOut/oConveyerBeltOut.yy",},},
     {"id":{"name":"oDialog","path":"objects/oDialog/oDialog.yy",},},
@@ -105,7 +106,6 @@
     {"id":{"name":"oMerry","path":"objects/oMerry/oMerry.yy",},},
     {"id":{"name":"oMusic","path":"objects/oMusic/oMusic.yy",},},
     {"id":{"name":"oNextBodyButton","path":"objects/oNextBodyButton/oNextBodyButton.yy",},},
-    {"id":{"name":"oCompleteBodyButton","path":"objects/oCompleteBodyButton/oCompleteBodyButton.yy",},},
     {"id":{"name":"oNoah","path":"objects/oNoah/oNoah.yy",},},
     {"id":{"name":"oParticles","path":"objects/oParticles/oParticles.yy",},},
     {"id":{"name":"oPDA","path":"objects/oPDA/oPDA.yy",},},

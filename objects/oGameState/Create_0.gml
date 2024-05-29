@@ -15,11 +15,15 @@ enum NarrativeEvents {
     bart_treat_talk,
     bart_gave_treat,
     drawer_key_taken,
-    showed_photo_to_sharon,
+    showed_photo_to_sharon, // 3
 
     // second clue
     obtained_missing_death_report,
     finished_clue_2,
+
+    // the last clue
+    found_mitchels_jounal, // 6
+    
     
     asked_sharon_about_vacation,
 }
