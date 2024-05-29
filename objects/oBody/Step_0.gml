@@ -22,7 +22,6 @@ switch (body_state) {
         if dropped {
             if instance_place(x, y, oTable) {
                 body_state = PBodyState.table
-                global.processed_body_count++
                 x = oTable.x
                 y = oTable.y
             }
@@ -34,10 +33,24 @@ switch (body_state) {
         break
 
     case PBodyState.table:
-
+		if props_current >= props_count
+		body_state = PBodyState.ship
+		
         able_grab = false
         break
-
+	case PBodyState.ship:
+		able_grab = true
+		
+		if dropped {
+			if instance_place(x, y, oConveyerBeltOut){
+				x = oConveyerBeltOut.x - oConveyerBeltOut.sprite_width + 100
+				y = oConveyerBeltOut.y
+			}
+		}
+		
+		
+		break
+	
     default:
         able_grab = true
         break

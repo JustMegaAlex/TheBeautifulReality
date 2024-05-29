@@ -18,3 +18,4 @@ function onInventoryDrop() {
 if !active_from_start {
 	setActive(false)
 }
+

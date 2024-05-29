@@ -28,6 +28,12 @@ if dropped {
             onInventoryDrop()
 		} else if table{
 			onInventoryDrop()
+			if (able_grab == true){
+				able_grab = false
+				oBody.props_current ++
+			}
+			
+			
 		} else {
             x = grabb_x
             y = grabb_y
