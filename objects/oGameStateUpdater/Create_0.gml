@@ -22,6 +22,14 @@ function check(_room, events, exclude_events) {
 	return true
 }
 
+function initMitchelItems() {
+    instance_destroy(oInventoryItem)
+    var xx = oConveyerBelt.bbox_right, yy = oConveyerBelt.y
+    var journal = instance_create_layer(xx, yy, "Instances", oInventoryItem)
+    journal.sprite_index = sKanBan
+    var note = instance_create_layer(xx + 20, yy + 20, "Instances", oInventoryItem)
+    note.sprite_index = sStickerNote
+}
 
 function update() {
 	if check(rmWork, [NarrativeEvents.bart_treat_talk], [NarrativeEvents.bart_gave_treat]) {
@@ -42,5 +50,6 @@ function update() {
         oPDA.setOpenCallback(function() {
             oRobinReplicas.startDialog(oRobinReplicas.dialog_mitchel_death_reason)
         })
+        initMitchelItems()
 	}
 }

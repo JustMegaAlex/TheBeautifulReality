@@ -62,7 +62,7 @@ props_list_sprites =
 
 var _size = array_length(props_list_names)
 
-repeat(3){
+repeat(3) {
 	var _choice = irandom_range(0, (_size - 1))
 
 	with instance_create_layer(x, y, "Instances", oInventoryItem)
@@ -74,5 +74,3 @@ repeat(3){
 		image_yscale = 0.15
 	}
 }
-
-
