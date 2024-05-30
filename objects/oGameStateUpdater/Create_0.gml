@@ -38,6 +38,7 @@ function initMitchelItems() {
     note.text = ReadFileString("mitchel_notes.txt")
     note.onPDADrop = function() {
         oRobinReplicas.startDialog(oRobinReplicas.dialog_mitchel_notes)
+        oGameState.addEventHappened(NarrativeEvents.read_mitchels_journal)
     }
 }
 
@@ -62,4 +63,7 @@ function update() {
         })
         initMitchelItems()
 	}
+    if check(rmDWKitchen, [NarrativeEvents.read_mitchels_journal], []) {
+        oBartholomew.alterDialogLastClue()
+    }
 }
