@@ -133,3 +133,9 @@ function setText(text) {
     }
     pda_text = "[c_black][fa_left][fa_top][fMain]" + text
 }
+
+function interact(item) {
+    if item.is_readable {
+        setText(item.text)
+    }
+}

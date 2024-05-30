@@ -27,8 +27,12 @@ function initMitchelItems() {
     var xx = oConveyerBelt.bbox_right, yy = oConveyerBelt.y
     var journal = instance_create_layer(xx, yy, "Instances", oInventoryItem)
     journal.sprite_index = sKanBan
+    journal.is_readable = true
+    journal.text = ReadFileString("mitchel_journal.txt")
     var note = instance_create_layer(xx + 20, yy + 20, "Instances", oInventoryItem)
     note.sprite_index = sStickerNote
+    note.is_readable = true
+    note.text = ReadFileString("mitchel_notes.txt")
 }
 
 function update() {

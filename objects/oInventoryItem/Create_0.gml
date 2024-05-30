@@ -8,6 +8,7 @@ y = random_range(180, 320)
 
 body_state = PBodyState.conveyer
 is_inventory = false
+is_readable = false
 
 grabb_x = x
 grabb_y = y
