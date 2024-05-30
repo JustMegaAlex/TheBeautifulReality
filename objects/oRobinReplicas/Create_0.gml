@@ -51,3 +51,8 @@ dialog_mitchel_notes = {
     text: "[[He was trying to warn us about something…or is this to himself?] ",
     options: {"continue": "[end]"}
 }
+
+dialog_endgame_enter_bedroom = {
+    text: "[[Huh. Was I asleep too long?] ",
+    options: {"continue": "[end]"}
+}

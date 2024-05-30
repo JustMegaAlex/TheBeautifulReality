@@ -39,5 +39,9 @@ function checkElevatorClose() {
 		sequence_layer = -1
 		active_sequence = -1
 	}
-}	
+}
+
+function onTransitionEnd() {
+    // override
+}
 

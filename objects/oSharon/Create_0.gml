@@ -49,3 +49,8 @@ function interact(item) {
     }
     instance_destroy(item)
 }
+
+function alterDialogEndgame() {
+    dialog_tree.text = "Hello User 0374. I’ve missed you."
+    dialog_tree.options[$ "What's for dinner?"] = "I maaaay have cooked your favorite…surprise!  There’s nothing like a good lie, am I right?"
+}
