@@ -16,7 +16,7 @@ if dropped {
             is_inventory = true
             persistent = true
             onInventoryDrop()
-        } else {
+        } else if !place_meeting(x, y, oTable) {
             x = grabb_x
             y = grabb_y
         }

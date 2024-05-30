@@ -6,12 +6,13 @@ if able_grab {
 
         dropped = false;
 
-        if mouse_check_button_pressed(mb_left) && point_in_rectangle(mouse_x,
+        if !global.picked_item && mouse_check_button_pressed(mb_left) && point_in_rectangle(mouse_x,
             mouse_y, bbox_left, bbox_top, bbox_right, bbox_bottom) {
 
             //switch to the grabbed state
             grabbed = true
             just_grabbed = true
+            global.picked_item = id
 
             //Get the relative mouse position to the origin
             mouse_rel_x = mouse_x - x
@@ -28,6 +29,7 @@ if able_grab {
 
             //Set Dropped to be true for this frame only.
             dropped = true
+            global.picked_item = noone
 
         }
 

@@ -71,7 +71,7 @@ var _size = array_length(props_list_names)
 for (var i = 0; i < 4; i ++) {
 	var _choice = irandom_range(0, (_size - 1))
 	
-	with instance_create_layer(bbox_left - 48, bbox_top + 40 + (i * 40), "Instances", oInventoryItemALT)
+	with instance_create_layer(bbox_left - 48, bbox_top + 40 + (i * 40), "Instances", oInventoryItem)
 	{
 		sprite_index = other.props_list_sprites[_choice]
 		
