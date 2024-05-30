@@ -56,3 +56,8 @@ dialog_endgame_enter_bedroom = {
     text: "[[Huh. Was I asleep too long?] ",
     options: {"continue": "[end]"}
 }
+
+dialog_endgame_not_leaving = {
+    text: "[[I have a strange feeling... I'm not going to work today]",
+    options: {"continue": "[end]"}
+}

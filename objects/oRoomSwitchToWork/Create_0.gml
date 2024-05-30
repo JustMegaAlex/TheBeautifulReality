@@ -3,6 +3,11 @@ event_inherited()
 hint_text = "Go to bed"
 
 function switchRoom() {
+    // not leaving to work today
+    if oGameState.checkEventHappened(NarrativeEvents.end_game_triggered) {
+        oRobinReplicas.startDialog(oRobinReplicas.dialog_endgame_not_leaving)
+        return
+    }
     if oGameState.checkEventHappened(NarrativeEvents.finished_last_clue)
             and global.pills_taken == 0 {
         target_room = room

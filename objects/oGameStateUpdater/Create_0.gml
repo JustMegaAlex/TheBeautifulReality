@@ -63,6 +63,9 @@ function update() {
         })
         initMitchelItems()
 	}
+    if check(rmDWBedroom, [NarrativeEvents.end_game_triggered], []) {
+        oMeds.alterDialogEndgame()
+    }
     if check(rmDWKitchen, [NarrativeEvents.read_mitchels_journal], [NarrativeEvents.end_game_triggered]) {
         oBartholomew.alterDialogLastClue()
     }

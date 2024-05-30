@@ -35,3 +35,10 @@ dialog_tree = {
         }
     }
 }
+
+function alterDialogEndgame() {
+    dialog_tree = {
+        text: "I don't need these",
+        options: {"continue": "[end]"}
+    }
+}
