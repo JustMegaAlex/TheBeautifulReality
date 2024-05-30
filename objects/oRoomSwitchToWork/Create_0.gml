@@ -1,11 +1,13 @@
 event_inherited()
 
-hint_text_base = hint_text
-hint_text_no_pills = "I'll go to work tomoroow"
+hint_text = "Go to bed"
 
 function switchRoom() {
 	if global.pills_taken == undefined {
+        oMeds.startDialog()
 		return
 	}
     is_switching_room = true
 }
+
+visible = false

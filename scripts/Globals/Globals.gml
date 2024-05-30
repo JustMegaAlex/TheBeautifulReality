@@ -12,7 +12,7 @@ accessibility = {
 
 picked_item = noone
 
-pills_taken = 0
+pills_taken = undefined
 processed_body_count = 0
 
 depths = {

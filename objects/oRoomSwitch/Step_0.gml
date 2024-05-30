@@ -10,7 +10,12 @@ is_hint_on = false
 if collision_point(mouse_x, mouse_y, id, false, false) {
     is_hint_on = true
     if oInput.key_interact_pressed {
-        playElevatorClose()
+        if target_room == rmDWBedroom
+                or target_room == rmWork {
+            playElevatorClose()
+        } else {
+            switchRoom()
+        }
     }
 }
 
