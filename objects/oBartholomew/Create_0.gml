@@ -48,6 +48,9 @@ function alterDialogLastClue() {
         text: "Keep going, you're almost there. I believe in you. *Woof!*",
         options: {
             "My dog is talking to me again. It’s probably fine...]": "[end]"
+        },
+        call: function() {
+            oGameState.addEventHappened(NarrativeEvents.finished_last_clue)
         }
     }
 }

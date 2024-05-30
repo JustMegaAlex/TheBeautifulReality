@@ -7,7 +7,6 @@
   "inheritLayers":false,
   "instanceCreationOrder":[
     {"name":"inst_2A760654","path":"rooms/rmDWBedroom/rmDWBedroom.yy",},
-    {"name":"inst_6B8C7888","path":"rooms/rmDWBedroom/rmDWBedroom.yy",},
     {"name":"inst_33D0156E","path":"rooms/rmDWBedroom/rmDWBedroom.yy",},
     {"name":"inst_EB4094B","path":"rooms/rmDWBedroom/rmDWBedroom.yy",},
   ],
@@ -18,7 +17,6 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oRoomSwitch","path":"objects/oRoomSwitch/oRoomSwitch.yy",},"propertyId":{"name":"target_room","path":"objects/oRoomSwitch/oRoomSwitch.yy",},"resource":{"name":"rmDWLivingRoom","path":"rooms/rmDWLivingRoom/rmDWLivingRoom.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"rmDWLivingRoom",},
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oRoomSwitch","path":"objects/oRoomSwitch/oRoomSwitch.yy",},"propertyId":{"name":"target_name","path":"objects/oRoomSwitch/oRoomSwitch.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"living room",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":27.0,"y":13.0,},
-        {"$GMRInstance":"","%Name":"inst_6B8C7888","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6B8C7888","objectId":{"name":"oNoah","path":"objects/oNoah/oNoah.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.99836063,"scaleY":0.99836063,"x":736.0,"y":540.0,},
         {"$GMRInstance":"","%Name":"inst_33D0156E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_33D0156E","objectId":{"name":"oMeds","path":"objects/oMeds/oMeds.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.38333336,"scaleY":0.36305732,"x":237.0,"y":260.0,},
         {"$GMRInstance":"","%Name":"inst_EB4094B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_EB4094B","objectId":{"name":"oRoomSwitchToWork","path":"objects/oRoomSwitchToWork/oRoomSwitchToWork.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":1.0298363,"scaleX":3.08867,"scaleY":5.088236,"x":256.0,"y":320.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
