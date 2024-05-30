@@ -17,6 +17,10 @@ function onInventoryDrop() {
     // override
 }
 
+function onPDADrop() {
+    // override
+}
+
 if !active_from_start {
 	setActive(false)
 }

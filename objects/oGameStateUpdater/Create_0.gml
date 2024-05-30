@@ -29,10 +29,16 @@ function initMitchelItems() {
     journal.sprite_index = sKanBan
     journal.is_readable = true
     journal.text = ReadFileString("mitchel_journal.txt")
+    journal.onPDADrop = function() {
+        oRobinReplicas.startDialog(oRobinReplicas.dialog_mitchel_journal)
+    }
     var note = instance_create_layer(xx + 20, yy + 20, "Instances", oInventoryItem)
     note.sprite_index = sStickerNote
     note.is_readable = true
     note.text = ReadFileString("mitchel_notes.txt")
+    note.onPDADrop = function() {
+        oRobinReplicas.startDialog(oRobinReplicas.dialog_mitchel_notes)
+    }
 }
 
 function update() {

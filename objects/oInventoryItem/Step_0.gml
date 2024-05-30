@@ -12,6 +12,7 @@ if just_grabbed {
 if dropped {
     if place_meeting(x, y, oPDA) {
         oPDA.interact(id)
+        onPDADrop()
     }
 
     var on_inventory = place_meeting(x, y, oInventory)

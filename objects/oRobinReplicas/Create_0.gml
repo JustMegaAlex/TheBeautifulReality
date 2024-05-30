@@ -41,3 +41,13 @@ dialog_mitchel_death_reason = {
     text: "[[Another tampered profile…]",
     options: {"continue": "[end]"}
 }
+
+dialog_mitchel_journal = {
+    text: "[[Looks like another in my line of work. Fortunately for me, I can’t communicate with my patients.]",
+    options: {"continue": "[end]"}
+}
+
+dialog_mitchel_notes = {
+    text: "[[He was trying to warn us about something…or is this to himself?] ",
+    options: {"continue": "[end]"}
+}
