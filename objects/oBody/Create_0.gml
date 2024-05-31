@@ -23,11 +23,18 @@ info = choose(
 	"Samantha Miller\noccupation: teacher\ndeath cause: terminal illness",
 )
 
+props_names = []
 //How many items needed
 props_count = choose(1,2,3)
 
 //How many items the body currently has
 props_current = 0
+
+function moveToOutConveyor() {
+    x = oConveyerBeltOut.bbox_left + 50
+    y = oConveyerBeltOut.y
+}
+
 
 function setInfoDeathMissingReason() {
 	info = "Kimberly Sinclair\n"
@@ -68,15 +75,16 @@ props_list_sprites =
 
 var _size = array_length(props_list_names)
 
-for (var i = 0; i < 4; i ++) {
+for (var i = 0; i < props_count; i ++) {
 	var _choice = irandom_range(0, (_size - 1))
-	
-	with instance_create_layer(bbox_left - 48, bbox_top + 40 + (i * 40), "Instances", oInventoryItem)
-	{
+
+    array_push(props_names, props_list_names[_choice])
+
+	with instance_create_layer(bbox_left - 48, bbox_top + 40 + (i * 40), "Instances", oInventoryItem) {
 		sprite_index = other.props_list_sprites[_choice]
 		
 		//Temporary, until final assets
-		image_xscale = 0.15
-		image_yscale = 0.15
+		image_xscale = 0.3
+		image_yscale = 0.3
 	}
 }

@@ -67,13 +67,12 @@ function Button(left, top, right, bottom, label, action=undefined) constructor {
     }
 }
 
-
 pull_out_button = new Button(bbox_left, 0, bbox_right, 32, "Pull out PDA", 
     function() {
         pda_open = !pda_open
         oMerry.setActive(pda_open)
         if instance_exists(oBody) {
-            setText(string(oBody.info) + "\nItems needed: " + string(oBody.props_count))
+            setText(string(oBody.info) + propertiesToString(oBody.props_names))
         }
         label = pda_open ? "Put away PDA" : "Pull out PDA"
         if !pda_open {
@@ -121,6 +120,10 @@ function setCloseCallback(callback) {
 
 function setOpenCallback(callback) {
     open_callback = callback
+}
+
+function propertiesToString(props) {
+    return "\nProperties: " + ArrJoin(props, ", ")
 }
 
 function setText(text) {

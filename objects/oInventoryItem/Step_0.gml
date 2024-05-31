@@ -7,6 +7,9 @@ if place_meeting(x, y, oConveyerBelt) {
 if just_grabbed {
     grabb_x = x
     grabb_y = y
+    if place_meeting(x, y, oTable) {
+        oBody.props_current--
+    }
 }
 
 if dropped {
@@ -14,14 +17,17 @@ if dropped {
         oPDA.interact(id)
         onPDADrop()
     }
-
+    
     var on_inventory = place_meeting(x, y, oInventory)
+    var on_table = place_meeting(x, y, oTable)
     if !is_inventory {
         if on_inventory {
             is_inventory = true
             persistent = true
             onInventoryDrop()
-        } else if !place_meeting(x, y, oTable) {
+        } else if on_table {
+            oBody.props_current++
+        } else {
             x = grabb_x
             y = grabb_y
         }
@@ -34,5 +40,12 @@ if dropped {
             y = grabb_y
         }
     }
+}
 
+if instance_place(x, y, oConveyerBeltOut){
+    able_grab = false
+    x += oConveyerBeltOut.conveyer_speed
+}
+if x > oConveyerBeltOut.bbox_right {
+    instance_destroy()
 }

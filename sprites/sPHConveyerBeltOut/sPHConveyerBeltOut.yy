@@ -23,7 +23,7 @@
   ],
   "name":"sPHConveyerBeltOut",
   "nineSlice":null,
-  "origin":5,
+  "origin":3,
   "parent":{
     "name":"02 Work",
     "path":"folders/Sprites/02 Work.yy",
@@ -75,7 +75,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":459,
+    "xorigin":0,
     "yorigin":103,
   },
   "swatchColours":null,
