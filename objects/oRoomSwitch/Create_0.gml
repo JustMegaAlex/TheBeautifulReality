@@ -41,6 +41,13 @@ function checkElevatorClose() {
 	}
 }
 
+function playElevatorOpen() {
+	
+	sequence = seqElevatorOpen
+	sequence_layer = layer_create(-99999)
+	active_sequence = layer_sequence_create(sequence_layer, 0, 0, sequence)
+}
+
 function onTransitionEnd() {
     // override
 }

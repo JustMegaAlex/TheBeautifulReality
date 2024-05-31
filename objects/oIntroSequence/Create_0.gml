@@ -1,5 +1,5 @@
 //TEMP
-room_goto(rmEnding)
+//room_goto(rmEnding)
 
 //Intro Sequence Timer (in frames)
 countdown_max = 1144
