@@ -36,22 +36,19 @@ switch (body_state) {
 		if props_current >= props_count {
             body_state = PBodyState.ship
         }
-		
+
         able_grab = false
         break
 	case PBodyState.ship:
 		able_grab = false
-
         if instance_place(x, y, oConveyerBeltOut){
             x += oConveyerBeltOut.conveyer_speed
         }
         if x > oConveyerBeltOut.bbox_right {
             instance_destroy()
         }
-    
-    
 		break
-	
+
     default:
         able_grab = true
         break
