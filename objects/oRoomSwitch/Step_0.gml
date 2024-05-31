@@ -15,7 +15,9 @@ is_hint_on = false
 if !global.dialog_on and collision_point(mouse_x, mouse_y, id, false, false) {
     is_hint_on = true
     if oInput.key_interact_pressed {
-        if (target_room == rmDWBedroom) and (room == rmFoyer)
+        if room == rmWork and !oWorkController.jobDone() {
+            oRobinReplicas.startDialog(oRobinReplicas.dialog_not_enogh_bodies)
+        } else if (target_room == rmDWBedroom) and (room == rmFoyer)
                 or (target_room == rmWork) and (room == rmFoyer){
             playElevatorClose()
         } else {

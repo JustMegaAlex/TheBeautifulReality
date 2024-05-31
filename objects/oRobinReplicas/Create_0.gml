@@ -61,3 +61,14 @@ dialog_endgame_not_leaving = {
     text: "[[I have a strange feeling... I'm not going to work today]",
     options: {"continue": "[end]"}
 }
+
+dialog_not_enogh_bodies = {
+    text: "[[I haven't finished the job for today]",
+    options: {"continue": "[end]"}
+}
+
+dialog_too_tired = {
+    text: "[[I'm too exhausted, I better go home]",
+    options: {"continue": "[end]"}
+}
+

@@ -14,7 +14,7 @@ dialog_tree = {
         "What do you want to be when you grow up?": {
             text: "Seriously Dad? I'm already practically a superstar! Don't worry, I'll make sure everyone knows my name soon. Charlotte Anderson...I can see it on the silver screen already. ",
             options: {
-                "Jeez do you ever turn it down a notch Sharl...at least one of us still has dreams, I suppose.":
+                "Jeez do you ever turn it down a notch Sharl...at least one of us still has dreams, I suppose.]":
                     "[end]"
             }
 

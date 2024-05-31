@@ -42,10 +42,12 @@ if dropped {
     }
 }
 
-if instance_place(x, y, oConveyerBeltOut){
-    able_grab = false
-    x += oConveyerBeltOut.conveyer_speed
-}
-if x > oConveyerBeltOut.bbox_right {
-    instance_destroy()
+if instance_exists(oConveyerBeltOut) {
+    if instance_place(x, y, oConveyerBeltOut){
+        able_grab = false
+        x += oConveyerBeltOut.conveyer_speed
+    }
+    if x > oConveyerBeltOut.bbox_right {
+        instance_destroy()
+    }
 }

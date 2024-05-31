@@ -5,10 +5,9 @@ switch room {
     break
 	case rmDWBedroom:
         global.pills_taken = undefined
-        oWorkController.processed = 0
 		if oGameState.checkEventHappened(NarrativeEvents.end_game_triggered){
-		oRoomSwitch.target_room = rmEnding
-	}
+            oRoomSwitch.target_room = rmEnding
+        }
     break	
 }
 

@@ -103,7 +103,7 @@ function setDialogMissingReport() {
 
 function getDialog() {
     // temp condition to trigger autopsy dialog
-    if global.pills_taken == 2 and oWorkController.processed == 1 {
+    if oWorkController.processed >= 7 {
         return dialog_autopsy_report
     }
 	return dialog_tree

@@ -4,3 +4,7 @@ processed = 0
 
 draw_x = 120
 draw_y = room_height * 0.8
+
+function jobDone() {
+    return processed >= need_to_process
+}

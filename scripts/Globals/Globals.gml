@@ -14,7 +14,7 @@ dialog_on = false
 
 picked_item = noone
 
-pills_taken = undefined
+pills_taken = 1
 
 depths = {
     instances: 0,
