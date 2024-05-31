@@ -74,5 +74,6 @@ function update() {
     }
     if check(rmDWKitchen, [NarrativeEvents.end_game_triggered], []) {
         oPie.setActive(true)
+        oLieWallSign.visible = true
     }
 }
