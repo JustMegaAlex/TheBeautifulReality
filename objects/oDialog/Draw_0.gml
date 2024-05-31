@@ -27,6 +27,7 @@ if is_dialog_running {
     draw_set_color(c_black)
 
     draw_set_halign(fa_left)
+    draw_set_valign(scribble_fallback_bulletpoint)
     if !intro_timer.update() {
         var w = _wmax * 0.8
         draw_text_scribble_ext(_dialog_x, _dialog_y, current_replica, w, text_length)
@@ -43,8 +44,21 @@ if is_dialog_running {
                 draw_text(xx, option_y, "[")
                 xx += string_width("[")
             }
+			
+			draw_set_color(c_black)
+            // mouse collision
+            var opt_h = string_height_scribble_ext(option, w)
+            if point_in_rectangle(mouse_x, mouse_y, 
+                    _dialog_x, option_y, _dialog_x + w, option_y + opt_h) {
+                if oInput.key_interact_pressed {
+                    chooseOption(option)
+                }
+				draw_set_color(c_aqua)
+            }
+
             draw_text_scribble_ext(xx, option_y, option, w)
-            option_y += string_height_scribble_ext(option, w)
+            draw_rectangle(_dialog_x, option_y, _dialog_x + w, option_y + opt_h, true)
+            option_y += opt_h
         }
 
     }
