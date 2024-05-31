@@ -7,7 +7,7 @@ if is_dialog_running {
         }
     }
 } else if is_active {
-    image_alpha = 0.6
+    image_alpha = 0.8
     if collision_point(mouse_x, mouse_y, id, false, false) {
         image_alpha = 1
     }

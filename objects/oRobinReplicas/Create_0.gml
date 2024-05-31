@@ -33,12 +33,12 @@ dialog_autopsy_report = {
 }
 
 dialog_missing_death_reason = {
-    text: "That's…unusual. Guess I should report it to Merry.]",
+    text: "That's...unusual. Guess I should report it to Merry.]",
     options: {"continue": "[end]"}
 }
 
 dialog_mitchel_death_reason = {
-    text: "[[Another tampered profile…]",
+    text: "[[Another tampered profile...]",
     options: {"continue": "[end]"}
 }
 
@@ -48,7 +48,7 @@ dialog_mitchel_journal = {
 }
 
 dialog_mitchel_notes = {
-    text: "[[He was trying to warn us about something…or is this to himself?] ",
+    text: "[[He was trying to warn us about something...or is this to himself?] ",
     options: {"continue": "[end]"}
 }
 
