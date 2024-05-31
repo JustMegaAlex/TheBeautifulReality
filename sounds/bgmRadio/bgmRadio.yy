@@ -12,8 +12,8 @@
   "duration":80.039185,
   "name":"bgmRadio",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"02 BGM",
+    "path":"folders/Sounds/02 BGM.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"sfxMenuClick",
+  "%Name":"sfxPDAOpen",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,17 +9,17 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":2.334583,
-  "name":"sfxMenuClick",
+  "duration":1.0,
+  "name":"sfxPDAOpen",
   "parent":{
-    "name":"01 Start Screen",
-    "path":"folders/Sounds/01 SFX/01 Start Screen.yy",
+    "name":"02 Work",
+    "path":"folders/Sounds/01 SFX/02 Work.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"sfxMenuClick.wav",
+  "soundFile":"sfxPDAOpen.wav",
   "type":0,
   "volume":1.0,
 }

@@ -4,7 +4,10 @@ if is_dialog_running {
         var option_ind = keyboard_key - 49
         if option_ind >= 0 && option_ind < array_length(current_options) {
             chooseOption(current_options[option_ind])
-			sfx_play(sfxDialogueSelect, 1)
+			
+			var _sound_gulp = choose(sfxGulp1, sfxGulp2, sfxGulp3, sfxGulp4)
+			sfx_play(_sound_gulp, 1)
+			
         }
     }
 } else if is_active {

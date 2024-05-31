@@ -16,11 +16,18 @@ switch (body_state) {
         break
 
     case PBodyState.ready:
-
+		
+		if mouse_check_button_pressed(mb_left)
+		sfx_play(sfxBodyPickup, 1)
+		
         able_grab = true
 
         if dropped {
             if instance_place(x, y, oTable) {
+				
+				var _sfx_place = choose(sfxBodyPlace1, sfxBodyPlace2, sfxBodyPlace3)
+				sfx_play(_sfx_place, 1)
+				
                 body_state = PBodyState.table
                 x = oTable.x
                 y = oTable.y
