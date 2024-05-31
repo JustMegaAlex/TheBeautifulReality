@@ -83,7 +83,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.2.0.132",
+    "IDEVersion":"2024.4.0.137",
   },
   "name":"BeautifulReality",
   "resources":[
@@ -112,6 +112,7 @@
     {"id":{"name":"oIntroSequence","path":"objects/oIntroSequence/oIntroSequence.yy",},},
     {"id":{"name":"oInventory","path":"objects/oInventory/oInventory.yy",},},
     {"id":{"name":"oInventoryItem","path":"objects/oInventoryItem/oInventoryItem.yy",},},
+    {"id":{"name":"oLieWallSign","path":"objects/oLieWallSign/oLieWallSign.yy",},},
     {"id":{"name":"oMeds","path":"objects/oMeds/oMeds.yy",},},
     {"id":{"name":"oMerry","path":"objects/oMerry/oMerry.yy",},},
     {"id":{"name":"oMusic","path":"objects/oMusic/oMusic.yy",},},
@@ -119,6 +120,7 @@
     {"id":{"name":"oNoah","path":"objects/oNoah/oNoah.yy",},},
     {"id":{"name":"oParticles","path":"objects/oParticles/oParticles.yy",},},
     {"id":{"name":"oPDA","path":"objects/oPDA/oPDA.yy",},},
+    {"id":{"name":"oPie","path":"objects/oPie/oPie.yy",},},
     {"id":{"name":"oRobinReplicas","path":"objects/oRobinReplicas/oRobinReplicas.yy",},},
     {"id":{"name":"oRoomSwitch","path":"objects/oRoomSwitch/oRoomSwitch.yy",},},
     {"id":{"name":"oRoomSwitchToWork","path":"objects/oRoomSwitchToWork/oRoomSwitchToWork.yy",},},
@@ -362,7 +364,6 @@
     {"id":{"name":"sPHNextBodyButton","path":"sprites/sPHNextBodyButton/sPHNextBodyButton.yy",},},
     {"id":{"name":"sPHTable","path":"sprites/sPHTable/sPHTable.yy",},},
     {"id":{"name":"sPie","path":"sprites/sPie/sPie.yy",},},
-    {"id":{"name":"sPieBroken","path":"sprites/sPieBroken/sPieBroken.yy",},},
     {"id":{"name":"sSharon","path":"sprites/sSharon/sSharon.yy",},},
     {"id":{"name":"sSharonFace","path":"sprites/sSharonFace/sSharonFace.yy",},},
     {"id":{"name":"sStartScreenBG","path":"sprites/sStartScreenBG/sStartScreenBG.yy",},},
