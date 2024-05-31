@@ -19,3 +19,5 @@ depths = {
     instances: 0,
     dialogs: -100,
 }
+
+room_prev = noone

@@ -1,3 +1,6 @@
+//TEMP
+//room_goto(rmEnding)
+
 //Intro Sequence Timer (in frames)
 countdown_max = 1144
 countdown_current = countdown_max
