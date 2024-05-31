@@ -14,6 +14,7 @@ function triggerEndGame(choice) {
     var transition = oRoomSwitch
     transition.target_room = rmEnding
     transition.switchRoom()
+    global.ending_version = choice
 }
 
 dialog_tree = {

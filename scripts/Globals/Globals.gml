@@ -20,4 +20,4 @@ depths = {
     dialogs: -100,
 }
 
-room_prev = noone
+ending_version = 0

@@ -6,7 +6,7 @@ if (room == rmWork){
 	playElevatorOpen()
 }
 
-if (room == rmDWBedroom) and (global.room_prev == rmFoyer){
+if (room == rmDWBedroom) and (room_previous == rmFoyer){
 	playElevatorOpen()
 }
 

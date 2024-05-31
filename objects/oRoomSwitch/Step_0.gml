@@ -4,7 +4,6 @@ fade_amount_prev = fade_amount
 fade_amount += is_switching_room ? fade_ratio : -fade_ratio
 fade_amount = clamp(fade_amount, 0, 1)
 if fade_amount == 1 {
-	global.room_prev = room
     room_goto(target_room)
 }
 
