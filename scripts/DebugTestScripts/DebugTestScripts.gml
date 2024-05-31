@@ -28,7 +28,7 @@ function Pills(amount) {
 }
 
 function Bodies(amount) {
-    global.processed_body_count = amount
+    oWorkController.processed = amount
 }
 
 function DebugSetGameState() {

@@ -7,7 +7,7 @@ if instance_exists(oBody){
                 moveToOutConveyor()
             }
 		}
-		global.processed_body_count++
+		oWorkController.processed++
 	}
 }
 

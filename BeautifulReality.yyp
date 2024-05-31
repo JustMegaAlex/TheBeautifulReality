@@ -122,6 +122,7 @@
     {"id":{"name":"oSharon","path":"objects/oSharon/oSharon.yy",},},
     {"id":{"name":"oStartScreen","path":"objects/oStartScreen/oStartScreen.yy",},},
     {"id":{"name":"oTable","path":"objects/oTable/oTable.yy",},},
+    {"id":{"name":"oWorkController","path":"objects/oWorkController/oWorkController.yy",},},
     {"id":{"name":"rmDWBedroom","path":"rooms/rmDWBedroom/rmDWBedroom.yy",},},
     {"id":{"name":"rmDWKitchen","path":"rooms/rmDWKitchen/rmDWKitchen.yy",},},
     {"id":{"name":"rmDWLivingRoom","path":"rooms/rmDWLivingRoom/rmDWLivingRoom.yy",},},

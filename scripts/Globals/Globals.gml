@@ -15,7 +15,6 @@ dialog_on = false
 picked_item = noone
 
 pills_taken = undefined
-processed_body_count = 0
 
 depths = {
     instances: 0,
