@@ -72,4 +72,7 @@ function update() {
     if check(rmDWLivingRoom, [NarrativeEvents.end_game_triggered], []) {
         oSharon.alterDialogEndgame()
     }
+    if check(rmDWKitchen, [NarrativeEvents.end_game_triggered], []) {
+        oPie.setActive(true)
+    }
 }
