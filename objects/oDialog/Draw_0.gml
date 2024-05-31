@@ -8,7 +8,8 @@ if is_dialog_running {
     var _y2 = room_height * 0.99
     var _wmax = _x2 - _x1
     var _hmax = _y2 - _y1
-    var dialog_x = room_width * 0.2
+    var _dialog_x = _x1 + 20
+	var _dialog_y = _y1 + 20
 
     var _color = c_white
     textbox_alpha = lerp(textbox_alpha, 1, 1)
@@ -17,7 +18,7 @@ if is_dialog_running {
     if (textbox_w < _wmax) {
         textbox_w += _wmax * 0.2
     }
-    var _w = textbox_w
+    var _w = _wmax //textbox_w (this was the old width)
 
     var _h = _hmax
 
@@ -28,12 +29,12 @@ if is_dialog_running {
     draw_set_halign(fa_left)
     if !intro_timer.update() {
         var w = _wmax * 0.8
-        draw_text_scribble_ext(dialog_x, dialog_y, current_replica, w, text_length)
-        var option_y = dialog_y + string_height_scribble_ext(current_replica, w) + row_height
+        draw_text_scribble_ext(_dialog_x, _dialog_y, current_replica, w, text_length)
+        var option_y = _dialog_y + string_height_scribble_ext(current_replica, w) + row_height
         for (var i = 0; i < array_length(current_options); ++i) {
             var option = current_options[i]
 
-            var xx = dialog_x
+            var xx = _dialog_x
             var enumerator = string(i+1) + "."
 			draw_text(xx, option_y, enumerator)
             xx += string_width(enumerator)
