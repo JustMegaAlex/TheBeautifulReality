@@ -4,6 +4,7 @@ Dialog objects can be interacted via inventory items (see interact())
 */
 
 depth = global.depths.dialogs
+spr_face = noone
 
 enum ExampleEvents {
     non_existing_event
@@ -111,6 +112,8 @@ function nextListReplica() {
 }
 
 function startDialog(dialog = undefined) {
+    depth = global.depths.active_dialog
+    global.dialog_on = true
     if dialog == undefined {
         dialog = getDialog()
     }
@@ -145,6 +148,9 @@ function dialogCheckCallFunction() {
 function endDialog() {
     is_dialog_running = false
     text_length = 0
+    depth = global.depths.dialogs
+    // reset global flag with delay in 1 frame
+    alarm[0] = 1
 }
 
 function chooseOption(option) {

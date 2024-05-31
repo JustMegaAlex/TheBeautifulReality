@@ -1,5 +1,6 @@
 event_inherited()
 
+spr_face = sNoahFaceHappy
 
 dialog_tree = {
     id: id,

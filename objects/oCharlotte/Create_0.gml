@@ -1,5 +1,6 @@
 event_inherited()
 
+spr_face = sCharlotteFace
 
 dialog_tree = {
     text: "Hm?",

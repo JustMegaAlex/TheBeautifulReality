@@ -1,5 +1,7 @@
 event_inherited()
 
+spr_face = sSharonFace
+
 dialog_tree = {
     text: "Why, if it isn't my favorite human in the whole wide world!",
     options: {

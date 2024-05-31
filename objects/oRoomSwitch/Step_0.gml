@@ -12,7 +12,7 @@ if fade_amount_prev > 0 and fade_amount <= 0 {
 }
 
 is_hint_on = false
-if collision_point(mouse_x, mouse_y, id, false, false) {
+if !global.dialog_on and collision_point(mouse_x, mouse_y, id, false, false) {
     is_hint_on = true
     if oInput.key_interact_pressed {
         if (target_room == rmDWBedroom) and (room == rmFoyer)
