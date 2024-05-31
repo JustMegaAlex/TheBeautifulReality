@@ -12,8 +12,8 @@
   "duration":1.241179,
   "name":"sfxGlitch1",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"01 Start Screen",
+    "path":"folders/Sounds/01 SFX/01 Start Screen.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

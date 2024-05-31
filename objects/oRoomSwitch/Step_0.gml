@@ -22,6 +22,12 @@ if !global.dialog_on and collision_point(mouse_x, mouse_y, id, false, false) {
             playElevatorClose()
         } else {
             switchRoom()
+			
+			var _sound_door = choose(sfxRoomChangeDoor1, 
+				sfxRoomChangeDoor2,sfxRoomChangeDoor3)
+			
+			sfx_play(_sound_door, 1)
+			
         }
     }
 }

@@ -69,6 +69,9 @@ function Button(left, top, right, bottom, label, action=undefined) constructor {
 
 pull_out_button = new Button(bbox_left, 0, bbox_right, 32, "Pull out PDA", 
     function() {
+		var _sound_pda = pda_open ? sfxPDAOpen : sfxPDAClose		
+		sfx_play(_sound_pda, 1)
+		
         pda_open = !pda_open
         oMerry.setActive(pda_open)
         if instance_exists(oBody) {

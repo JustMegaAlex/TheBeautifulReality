@@ -12,8 +12,8 @@
   "duration":67.23918,
   "name":"bgmStartScreen",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"02 BGM",
+    "path":"folders/Sounds/02 BGM.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

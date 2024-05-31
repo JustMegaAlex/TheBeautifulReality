@@ -1,4 +1,4 @@
-{
+s{
   "$GMObject":"",
   "%Name":"oInventoryItem",
   "eventList":[

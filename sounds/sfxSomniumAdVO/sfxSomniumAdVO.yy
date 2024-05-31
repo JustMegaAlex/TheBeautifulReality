@@ -12,8 +12,8 @@
   "duration":70.89521,
   "name":"sfxSomniumAdVO",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"01 SFX",
+    "path":"folders/Sounds/01 SFX.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
