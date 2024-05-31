@@ -19,7 +19,10 @@ timer_current = starting_timer
 fadeout = false
 fadeout_timer_max = 120
 fadeout_current = fadeout_timer_max
+fadeout_alpha = 0
 
+//Ending Text
+endtext = false
 
 //SFX
 ad_sound = noone

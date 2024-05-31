@@ -3,7 +3,7 @@
 function sfx_play(_sfx, _gain){
 	
 	var _final_gain = _gain * global.audio.sfxlevel
-	
-	audio_play_sound(_sfx, 0, false, _gain)
+	var _sound = audio_play_sound(_sfx, 0, false, _gain)
 
+	return _sound
 }
