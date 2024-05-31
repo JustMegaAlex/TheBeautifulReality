@@ -13,8 +13,7 @@ dialog_tree = {
         "Have you been looking after Mummy?":
             "Mummy is perfect all of the time. She doesn't need any help. ",
         "What do you want to be when you grow up?":
-            "A reliable team player. Just like you dad!",
-        "Ok, I gotta go": "[end]"
+            "A reliable team player. Just like you dad!"
     },
     call: function() {
         // clue 2

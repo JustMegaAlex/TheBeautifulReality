@@ -88,29 +88,6 @@ function setActive(value) {
 #region dialog functions
 // override this in childs if need
 // to choose between various dialogs
-function getDialog() {
-    return dialog_tree
-}
-
-function startListReplicas() {
-    is_list_replicas = true
-    list_replicas = current_dialog.text
-    current_replica = list_replicas[0]
-    current_options = [list_replicas[1]]
-    list_replicas_index = 0
-}
-
-function nextListReplica() {
-    list_replicas_index += 2
-    if list_replicas_index >= array_length(list_replicas) {
-        is_list_replicas = false
-        startDialog(current_dialog.next)
-        return
-    }
-    current_replica = list_replicas[list_replicas_index]
-    current_options = [list_replicas[list_replicas_index + 1]]
-}
-
 function startDialog(dialog = undefined) {
     depth = global.depths.active_dialog
     global.dialog_on = true
@@ -128,32 +105,15 @@ function startDialog(dialog = undefined) {
         current_replica = current_dialog.text
         current_options_struct = current_dialog.options
         current_options = getKeys(current_options_struct)
+        array_push(current_options, "leave]")
     }
-}
-
-function dialogAddEvent() {
-    var event = get(current_dialog, "event")
-    if event != undefined and !oGameState.checkEventHappened(event) {
-        oGameState.addEventHappened(event)
-    }
-}
-
-function dialogCheckCallFunction() {
-    var call = get(current_dialog, "call")
-    if call != undefined {
-        call()
-    }
-}
-
-function endDialog() {
-    is_dialog_running = false
-    text_length = 0
-    depth = global.depths.dialogs
-    // reset global flag with delay in 1 frame
-    alarm[0] = 1
 }
 
 function chooseOption(option) {
+    if option == "leave]" {
+        endDialog()
+        return
+    }
     text_length = 0
     if is_list_replicas {
         nextListReplica()
@@ -181,6 +141,51 @@ function chooseOption(option) {
     }
 
     current_options = getKeys(current_options_struct)
+    array_push(current_options, "leave]")
+}
+
+function endDialog() {
+    is_dialog_running = false
+    text_length = 0
+    depth = global.depths.dialogs
+    // reset global flag with delay in 1 frame
+    alarm[0] = 1
+}
+function getDialog() {
+    return dialog_tree
+}
+
+function startListReplicas() {
+    is_list_replicas = true
+    list_replicas = current_dialog.text
+    current_replica = list_replicas[0]
+    current_options = [list_replicas[1]]
+    list_replicas_index = 0
+}
+
+function nextListReplica() {
+    list_replicas_index += 2
+    if list_replicas_index >= array_length(list_replicas) {
+        is_list_replicas = false
+        startDialog(current_dialog.next)
+        return
+    }
+    current_replica = list_replicas[list_replicas_index]
+    current_options = [list_replicas[list_replicas_index + 1]]
+}
+
+function dialogAddEvent() {
+    var event = get(current_dialog, "event")
+    if event != undefined and !oGameState.checkEventHappened(event) {
+        oGameState.addEventHappened(event)
+    }
+}
+
+function dialogCheckCallFunction() {
+    var call = get(current_dialog, "call")
+    if call != undefined {
+        call()
+    }
 }
 #endregion
 
