@@ -2,7 +2,7 @@
 
 event_inherited()
 
-target_x = 240 - (sprite_width / 2)
+target_x = oConveyerBelt.bbox_right - 100
 
 function setConveyorY() {
     y = oConveyerBelt.y - 150
@@ -105,9 +105,9 @@ for (var i = 0; i < props_count; i ++) {
 
     array_push(props_names, props_list_names[_choice])
 
-	with instance_create_layer(bbox_left - 48, bbox_top + 40 + (i * 40), "Instances", oInventoryItem) {
+	with instance_create_layer(oConveyerBelt.bbox_left + 100, oConveyerBelt.bbox_top + (i * 40), "Instances", oInventoryItem) {
 		sprite_index = other.props_list_sprites[_choice]
-		
+
 		//Temporary, until final assets
 		image_xscale = 0.3
 		image_yscale = 0.3

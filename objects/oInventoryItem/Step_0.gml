@@ -1,13 +1,14 @@
 event_inherited()
 
-if place_meeting(x, y, oConveyerBelt) {
+if place_meeting(x + 50, y, oConveyerBelt) {
     x = Approach(x, target_x, oConveyerBelt.conveyerSpeed)
 }
 
 if just_grabbed {
     grabb_x = x
     grabb_y = y
-    if place_meeting(x, y, oTable) {
+    if is_on_table {
+        is_on_table = false
         oBody.props_current--
     }
 }
@@ -26,6 +27,7 @@ if dropped {
             persistent = true
             onInventoryDrop()
         } else if on_table {
+            is_on_table = true
             oBody.props_current++
         } else {
             x = grabb_x
