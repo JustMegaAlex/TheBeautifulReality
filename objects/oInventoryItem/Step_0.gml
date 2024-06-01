@@ -17,7 +17,7 @@ if dropped {
         oPDA.interact(id)
         onPDADrop()
     }
-    
+
     var on_inventory = place_meeting(x, y, oInventory)
     var on_table = place_meeting(x, y, oTable)
     if !is_inventory {
@@ -50,4 +50,5 @@ if instance_exists(oConveyerBeltOut) {
     if x > oConveyerBeltOut.bbox_right {
         instance_destroy()
     }
-}
+}/// @description Insert description here
+// You can write your code in this editor

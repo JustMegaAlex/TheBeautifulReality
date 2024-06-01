@@ -1,3 +1,5 @@
+/// @description Insert description here
+// You can write your code in this editor
 //Initial Movement On the Conveyer Belt
 
 
@@ -21,6 +23,7 @@ function onPDADrop() {
     // override
 }
 
-if !active_from_start {
-	setActive(false)
-}
+//if !active_from_start {
+    setActive(true)
+//}
+
