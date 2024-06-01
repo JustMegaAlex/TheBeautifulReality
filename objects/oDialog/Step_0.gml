@@ -4,7 +4,6 @@ if is_dialog_running {
         var option_ind = keyboard_key - 49
         if option_ind >= 0 && option_ind < array_length(current_options) {
             chooseOption(current_options[option_ind])
-			sfx_play(sfxDialogueSelect, 1)
         }
     }
 } else if is_active {

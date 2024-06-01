@@ -23,7 +23,7 @@ function onPDADrop() {
     // override
 }
 
-//if !active_from_start {
-    setActive(true)
-//}
+if !active_from_start {
+    setActive(false)
+}
 

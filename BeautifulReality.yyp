@@ -83,7 +83,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.2.0.132",
+    "IDEVersion":"2024.4.0.137",
   },
   "name":"BeautifulReality",
   "resources":[
@@ -92,7 +92,6 @@
     {"id":{"name":"Pixel's Notes","path":"notes/Pixel's Notes/Pixel's Notes.yy",},},
     {"id":{"name":"oAccessibility","path":"objects/oAccessibility/oAccessibility.yy",},},
     {"id":{"name":"oBartholomew","path":"objects/oBartholomew/oBartholomew.yy",},},
-    {"id":{"name":"oInventoryItem","path":"objects/oInventoryItem/oInventoryItem.yy",},},
     {"id":{"name":"oBody","path":"objects/oBody/oBody.yy",},},
     {"id":{"name":"oCharlotte","path":"objects/oCharlotte/oCharlotte.yy",},},
     {"id":{"name":"oCompleteBodyButton","path":"objects/oCompleteBodyButton/oCompleteBodyButton.yy",},},
@@ -112,6 +111,7 @@
     {"id":{"name":"oInput","path":"objects/oInput/oInput.yy",},},
     {"id":{"name":"oIntroSequence","path":"objects/oIntroSequence/oIntroSequence.yy",},},
     {"id":{"name":"oInventory","path":"objects/oInventory/oInventory.yy",},},
+    {"id":{"name":"oInventoryItem","path":"objects/oInventoryItem/oInventoryItem.yy",},},
     {"id":{"name":"oLieWallSign","path":"objects/oLieWallSign/oLieWallSign.yy",},},
     {"id":{"name":"oMeds","path":"objects/oMeds/oMeds.yy",},},
     {"id":{"name":"oMerry","path":"objects/oMerry/oMerry.yy",},},
