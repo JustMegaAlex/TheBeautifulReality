@@ -3,8 +3,33 @@
 event_inherited()
 
 target_x = 240 - (sprite_width / 2)
-x = -(sprite_width / 2)
-y = room_height / 2
+
+function setConveyorY() {
+    y = oConveyerBelt.y - 150
+}
+
+function setConveyorCoords() {
+    x = -(sprite_width / 2)
+    setConveyorY()
+}
+
+function setTableCoords() {
+    x = oTable.x - sprite_width * 0.5
+    y = oTable.y - 150
+}
+
+setConveyorCoords()
+
+body_parts_scale = 0.25
+sprite_index = choose(sBodyFace1, sBodyFace2, sBodyFace3)
+image_xscale = body_parts_scale
+image_yscale = body_parts_scale
+body_parts = [
+    choose(sBodyHair1, sBodyHair3, sBodyHair2),
+    choose(sBodyNose1, sBodyNose2),
+    choose(sBodyLips1, sBodyLips2),
+    choose(sBodyEyebrows1, sBodyEyebrows2),
+]
 
 body_state = PBodyState.conveyer
 

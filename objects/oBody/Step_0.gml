@@ -29,12 +29,11 @@ switch (body_state) {
 				sfx_play(_sfx_place, 1)
 				
                 body_state = PBodyState.table
-                x = oTable.x
-                y = oTable.y
+                setTableCoords()
             }
             else {
+                setConveyorY()
                 x = target_x
-                y = room_height / 2
             }
         }
         break
@@ -42,6 +41,7 @@ switch (body_state) {
     case PBodyState.table:
 		if props_current >= props_count {
             body_state = PBodyState.ship
+            setConveyorY()
         }
 
         able_grab = false

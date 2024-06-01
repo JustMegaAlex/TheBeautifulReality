@@ -35,9 +35,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sPHBody",
-    "path":"sprites/sPHBody/sPHBody.yy",
+    "name":"sBodyFace1",
+    "path":"sprites/sBodyFace1/sBodyFace1.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"sBodyFace1",
+    "path":"sprites/sBodyFace1/sBodyFace1.yy",
+  },
   "visible":true,
 }
