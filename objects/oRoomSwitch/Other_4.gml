@@ -1,12 +1,6 @@
-// begin fade out
-fade_amount = 1
-is_switching_room = false
 
-if (room == rmWork){
-	playElevatorOpen()
+if (room == rmWork) {
+	transition_struct = new transitionToWork()
+} else {
+    transition_struct = new transition(false)
 }
-
-if (room == rmDWBedroom) and (room_previous == rmFoyer){
-	playElevatorOpen()
-}
-

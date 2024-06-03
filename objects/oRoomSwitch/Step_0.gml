@@ -1,36 +1,17 @@
 // fade in after being clicked
 // or fade out after entering a room
-fade_amount_prev = fade_amount
-fade_amount += is_switching_room ? fade_ratio : -fade_ratio
-fade_amount = clamp(fade_amount, 0, 1)
-if fade_amount == 1 {
-    room_goto(target_room)
-}
 
-if fade_amount_prev > 0 and fade_amount <= 0 {
-    onTransitionEnd()
+if transition_struct != undefined {
+    transition_struct.step()
+    if transition_struct.finished {
+        transition_struct = undefined
+    }
 }
 
 is_hint_on = false
 if !global.dialog_on and collision_point(mouse_x, mouse_y, id, false, false) {
     is_hint_on = true
     if oInput.key_interact_pressed {
-        if room == rmWork and !oWorkController.jobDone() {
-            oRobinReplicas.startDialog(oRobinReplicas.dialog_not_enogh_bodies)
-        } else if (target_room == rmDWBedroom) and (room == rmFoyer)
-                or (target_room == rmWork) and (room == rmFoyer){
-            playElevatorClose()
-        } else {
-            switchRoom()
-			
-			var _sound_door = choose(sfxRoomChangeDoor1, 
-				sfxRoomChangeDoor2,sfxRoomChangeDoor3)
-			
-			sfx_play(_sound_door, 1)
-			
-        }
+        switchRoom()
     }
 }
-
-
-checkElevatorClose()
