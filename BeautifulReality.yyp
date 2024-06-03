@@ -89,7 +89,6 @@
   "resources":[
     {"id":{"name":"fMain","path":"fonts/fMain/fMain.yy",},},
     {"id":{"name":"scribble_fallback_font","path":"fonts/scribble_fallback_font/scribble_fallback_font.yy",},},
-    {"id":{"name":"Pixel's Notes","path":"notes/Pixel's Notes/Pixel's Notes.yy",},},
     {"id":{"name":"oAccessibility","path":"objects/oAccessibility/oAccessibility.yy",},},
     {"id":{"name":"oBartholomew","path":"objects/oBartholomew/oBartholomew.yy",},},
     {"id":{"name":"oBody","path":"objects/oBody/oBody.yy",},},
@@ -101,7 +100,6 @@
     {"id":{"name":"oDogTreat","path":"objects/oDogTreat/oDogTreat.yy",},},
     {"id":{"name":"oDrawer","path":"objects/oDrawer/oDrawer.yy",},},
     {"id":{"name":"oDrawerKey","path":"objects/oDrawerKey/oDrawerKey.yy",},},
-    {"id":{"name":"oDrawerKeyNote","path":"objects/oDrawerKeyNote/oDrawerKeyNote.yy",},},
     {"id":{"name":"oEndingRobin","path":"objects/oEndingRobin/oEndingRobin.yy",},},
     {"id":{"name":"oFamilyPhoto","path":"objects/oFamilyPhoto/oFamilyPhoto.yy",},},
     {"id":{"name":"oGameController","path":"objects/oGameController/oGameController.yy",},},
@@ -372,7 +370,6 @@
     {"id":{"name":"sStartScreenButtonClockOut","path":"sprites/sStartScreenButtonClockOut/sStartScreenButtonClockOut.yy",},},
     {"id":{"name":"sStartScreenButtonCredits","path":"sprites/sStartScreenButtonCredits/sStartScreenButtonCredits.yy",},},
     {"id":{"name":"sStartScreenButtonOptions","path":"sprites/sStartScreenButtonOptions/sStartScreenButtonOptions.yy",},},
-    {"id":{"name":"sStickerNote","path":"sprites/sStickerNote/sStickerNote.yy",},},
     {"id":{"name":"sTitle","path":"sprites/sTitle/sTitle.yy",},},
     {"id":{"name":"sUnevenPixelLogo","path":"sprites/sUnevenPixelLogo/sUnevenPixelLogo.yy",},},
     {"id":{"name":"sWorkAd1","path":"sprites/sWorkAd1/sWorkAd1.yy",},},
