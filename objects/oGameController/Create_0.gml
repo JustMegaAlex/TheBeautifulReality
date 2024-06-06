@@ -2,6 +2,6 @@ EnsureSingleton()
 
 randomize()
 DebugDrawIni()
-global.DEBUG = true
+global.DEBUG = false
 
 audio_set_master_gain(0, 0)
