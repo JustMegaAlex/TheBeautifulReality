@@ -17,7 +17,7 @@ function switchRoom() {
         oMeds.startDialog()
 		return
 	}
-    is_switching_room = true
+    transition_struct = new transition(true)
 }
 
 function onTransitionEnd() {
@@ -26,4 +26,4 @@ function onTransitionEnd() {
     }
 }
 
-visible = false
+image_alpha = 0

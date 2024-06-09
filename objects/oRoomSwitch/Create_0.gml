@@ -31,9 +31,9 @@ function onTransitionEnd() {
 }
 
 function transition(is_switching_room) constructor {
+    finished = false
     self.id_ = other.id
     self.is_switching_room = is_switching_room
-    finished = false
     fade_time = 30
     fade_ratio = 1 / fade_time
     fade_amount_prev = 0
@@ -47,14 +47,19 @@ function transition(is_switching_room) constructor {
         if fade_amount == 1 {
             room_goto(target_room)
         }
-        if fade_amount_prev > 0 and fade_amount <= 0 {
+        if (fade_amount_prev > 0) and (fade_amount <= 0) {
             id_.onTransitionEnd()
 			finished = true
         }
     }
 }
 
-function transitionToWork() : transition() constructor {
+//// Note: inheritance is broken in html
+function transitionToWork() constructor {
+    finished = false
+    self.id_ = other.id
+    self.target_room = id_.target_room
+
     fade_time = 90
     fade_ratio = 1 / fade_time
     fade_amount = 1
@@ -82,12 +87,14 @@ function transitionToWork() : transition() constructor {
     }
 }
 
-function transitionFromWork() : transition() constructor {
+function transitionFromWork() constructor {
+    finished = false
+    self.id_ = other.id
+
     fade_time = 90
     fade_ratio = 1 / fade_time
     fade_amount = 0
     is_transition = false
-	self.target_room = target_room
 
     sequence = seqElevatorClose
     sequence_layer = layer_create(-99999)
@@ -105,7 +112,7 @@ function transitionFromWork() : transition() constructor {
             fade_amount += fade_ratio
             fade_amount = clamp(fade_amount, 0, 1)
             if fade_amount == 1 {
-                room_goto(target_room)
+                room_goto(self.id_.target_room)
             }
         }
     }

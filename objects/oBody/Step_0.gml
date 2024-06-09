@@ -16,10 +16,11 @@ switch (body_state) {
         break
 
     case PBodyState.ready:
-		
-		if mouse_check_button_pressed(mb_left)
-		sfx_play(sfxBodyPickup, 1)
-		
+
+		if just_grabbed {
+            sfx_play(sfxBodyPickup, 1)
+        }
+
         able_grab = true
 
         if dropped {
