@@ -1,5 +1,5 @@
 switch room {
-    case rmFoyer:
+    case rmWork:
         switch_music(noone)
     break
     case rmDWBedroom:

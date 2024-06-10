@@ -30,7 +30,7 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"target_room","filters":[],"listItems":[],"multiselect":false,"name":"target_room","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"rmFoyer","path":"rooms/rmFoyer/rmFoyer.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"rmFoyer","varType":5,},
+    {"$GMObjectProperty":"v1","%Name":"target_room","filters":[],"listItems":[],"multiselect":false,"name":"target_room","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"rmWork","path":"rooms/rmWork/rmWork.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"rmWork","varType":5,},
     {"$GMObjectProperty":"v1","%Name":"target_name","filters":[],"listItems":[],"multiselect":false,"name":"target_name","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"work","varType":2,},
   ],
   "resourceType":"GMObject",

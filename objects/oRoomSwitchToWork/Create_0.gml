@@ -26,4 +26,7 @@ function onTransitionEnd() {
     }
 }
 
+// instead of visible=false which turns off all drawing
+// explaining: we need drawing of fading and we need
+// sprite for collision
 image_alpha = 0
