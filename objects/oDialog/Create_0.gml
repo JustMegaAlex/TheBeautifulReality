@@ -105,7 +105,7 @@ function startDialog(dialog = undefined) {
         current_replica = current_dialog.text
         current_options_struct = current_dialog.options
         current_options = getKeys(current_options_struct)
-        array_push(current_options, "leave]")
+        checkAddLeaveOption(current_options, current_options_struct)
     }
 }
 
@@ -134,14 +134,13 @@ function chooseOption(option) {
     dialogAddEvent()
     dialogCheckCallFunction()
 
-    
     if current_replica == "[end]" {
         endDialog()
         return
     }
 
     current_options = getKeys(current_options_struct)
-    array_push(current_options, "leave]")
+    checkAddLeaveOption(current_options, current_options_struct)
 }
 
 function endDialog() {
@@ -179,6 +178,21 @@ function dialogAddEvent() {
     if event != undefined and !oGameState.checkEventHappened(event) {
         oGameState.addEventHappened(event)
     }
+}
+
+function isEnd(opt, options_struct) {
+    return options_struct[$ opt] == "[end]"
+            or options_struct[$ opt].text == "[end]"
+}
+
+function checkAddLeaveOption(options, options_struct) {
+    for (var i = 0; i < array_length(options); i += 1) {
+        var opt = options[i]
+        if isEnd(opt, options_struct) {
+            return;
+        }
+    }
+    array_push(options, "leave]")
 }
 
 function dialogCheckCallFunction() {
