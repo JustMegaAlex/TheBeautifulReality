@@ -1,10 +1,27 @@
 
 event_inherited()
 
+greeting_replicas = [
+    "Hey there, hireling! Rise and grind, it's another glorious day in the cellar! I hope you're ready to sort and arrange with precision. Remember, the early bird gets the worm—or in our case, the coldest customers. Now, quit screwing around and get to work! ",
+    "Good morning hireling! Welcome to another exciting day in the land of the living dead. Ready to work your magic on today's arrivals? Let's make sure they leave looking better than they did in real life. Time to get to it!",
+    "Good to see you, hireling! Hope you had a restful night because we've got a busy day ahead. Let's get those bodies processed and pristine. And don't fuck it up!",
+    "My favourite mortician! Ready for another day of meticulous item arranging? Remember, those who fail to adhere to our standards tend to...vanish into thin air. Let's ensure we stay on the right path, shall we?",
+    "Rise and shine, hireling! Time to roll up those sleeves and give the departed the send-off they deserve. We've got a lot of work ahead, so don't waste a single second. Ready, set, mortify!",
+    "Morning, hireling! Another day, another inventory to sort. Keep up the good work, least you wanna join the ranks of those who've...underperformed... ugh. Chop chop! ",
+    "The hireling returns! Another chance to keep these goddamn inventories in order. Let's make sure we stay on top of things, shall we? We wouldn't want any... unfortunate accidents to occur.",
+]
+current_greeting_replica_id = 0
+
 dialog_tree_default = {
-    text: "Hi Robin",
+    id: id,
+    text: greeting_replicas[0],
     options: {
         "Hi Merry": "[end]",
+    },
+    call: function() {
+        id.current_greeting_replica_id = (id.current_greeting_replica_id + 1) 
+                                          mod (array_length(id.greeting_replicas) - 1)
+        text = id.greeting_replicas[id.current_greeting_replica_id]
     }
 }
 
