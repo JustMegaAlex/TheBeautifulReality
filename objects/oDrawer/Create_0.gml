@@ -23,6 +23,6 @@ function drawerOpen() {
 function interact(item) {
     if item.object_index == oDrawerKey {
         drawerOpen()
+        instance_destroy(item)
     }
-    instance_destroy(item)
 }

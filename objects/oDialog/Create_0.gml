@@ -181,8 +181,10 @@ function dialogAddEvent() {
 }
 
 function isEnd(opt, options_struct) {
-    return options_struct[$ opt] == "[end]"
-            or options_struct[$ opt].text == "[end]"
+    var value = options_struct[$ opt]
+    return value == "[end]"
+            or (is_struct(value)
+                and value.text == "[end]")
 }
 
 function checkAddLeaveOption(options, options_struct) {
@@ -223,7 +225,7 @@ function getFirst(struct) {
 function interact(item) {
     // this function is called when dropping an
     // inventory item on dialog object
-    if item.object_index == oNuclearBomb {
-        instance_destroy()
-    }
+    // if item.object_index == oNuclearBomb {
+    //     instance_destroy()
+    // }
 }

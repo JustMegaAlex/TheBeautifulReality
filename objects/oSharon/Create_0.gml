@@ -3,7 +3,7 @@ event_inherited()
 spr_face = sSharonFace
 
 dialog_tree = {
-    text: "Why, if it isn't my favorite human in the whole wide world!",
+    text: "Hey hunny, I've missed you.",
     options: {
         "How was your day?": "Just the usual spot of spring cleaning here and there.\nI spent time with the kids so I can't really complain. ",
 
@@ -48,11 +48,11 @@ dialog_family_photo = {
 function interact(item) {
     if item.object_index == oFamilyPhoto {
         startDialog(dialog_family_photo)
+        instance_destroy(item)
     }
-    instance_destroy(item)
 }
 
 function alterDialogEndgame() {
-    dialog_tree.text = "Hello User 0374. I’ve missed you."
-    dialog_tree.options[$ "What's for dinner?"] = "I maaaay have cooked your favorite...surprise!  There’s nothing like a good lie, am I right?"
+    dialog_tree.text = "Hello User 0374. I've missed you."
+    dialog_tree.options[$ "What's for dinner?"] = "I maaaay have cooked your favorite...surprise!  There's nothing like a good lie, am I right?"
 }

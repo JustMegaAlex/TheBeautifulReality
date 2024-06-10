@@ -18,33 +18,30 @@ if dropped {
         oPDA.interact(id)
         onPDADrop()
     }
-    
+
+    var dialog = instance_place(x, y, oDialog)
+    if dialog {
+        dialog.interact(id)
+    }
+
     var on_inventory = place_meeting(x, y, oInventory)
     var on_table = place_meeting(x, y, oTable)
-    if !is_inventory {
-        if on_inventory {
-            is_inventory = true
-            persistent = true
-            onInventoryDrop()
-        } else if on_table {
-            is_on_table = true
-            oBody.props_current++
-        } else {
-            x = grabb_x
-            y = grabb_y
-        }
+    if on_inventory {
+        is_inventory = true
+        is_on_table = false
+        persistent = true
+        onInventoryDrop()
+    } else if on_table and can_be_processed {
+        is_on_table = true
+        is_inventory = false
+        oBody.props_current++
     } else {
-        var dialog = instance_place(x, y, oDialog)
-        if dialog {
-            dialog.interact(id)
-        } else if !on_inventory {
-            x = grabb_x
-            y = grabb_y
-        }
+        x = grabb_x
+        y = grabb_y
     }
 }
 
-if instance_exists(oConveyerBeltOut) {
+if is_conveyor_out and instance_exists(oConveyerBeltOut) {
     if instance_place(x, y, oConveyerBeltOut){
         able_grab = false
         x += oConveyerBeltOut.conveyer_speed

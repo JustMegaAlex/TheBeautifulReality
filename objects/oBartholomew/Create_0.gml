@@ -39,15 +39,15 @@ dialogTreat = {
 function interact(item) {
     if item.object_index == oDogTreat {
         startDialog(dialogTreat)
+        instance_destroy(item)
     }
-    instance_destroy(item)
 }
 
 function alterDialogLastClue() {
     dialog_tree.options[$ "Do you want a treat?"] = {
         text: "Keep going, you're almost there. I believe in you. *Woof!*",
         options: {
-            "My dog is talking to me again. It’s probably fine...]": "[end]"
+            "My dog is talking to me again. It's probably fine...]": "[end]"
         },
         call: function() {
             oGameState.addEventHappened(NarrativeEvents.finished_last_clue)

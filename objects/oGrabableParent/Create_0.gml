@@ -15,4 +15,6 @@ function setActive(value) {
 function moveToOutConveyor() {
     x = oConveyerBeltOut.bbox_left + 50
     y = random_range(oConveyerBeltOut.bbox_top + 40, oConveyerBeltOut.bbox_bottom - 40)
+    is_conveyor_out = true
+    able_grab = false
 }

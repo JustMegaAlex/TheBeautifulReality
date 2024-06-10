@@ -9,8 +9,8 @@
   "name":"oDrawer",
   "overriddenProperties":[],
   "parent":{
-    "name":"Dialogs",
-    "path":"folders/Objects/Dialogs.yy",
+    "name":"MorgueItems",
+    "path":"folders/Objects/MorgueItems.yy",
   },
   "parentObjectId":{
     "name":"oDialog",

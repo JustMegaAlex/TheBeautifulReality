@@ -23,7 +23,7 @@ dialog_family_photo_found = {
 }
 
 dialog_autopsy_report = {
-    text: "[[Somnium Amphetamines? This is Noah’s teacher...she was always working late. Noah didn’t say anything about her dying.]",
+    text: "[[Somnium Amphetamines? This is Noah's teacher...she was always working late. Noah didn't say anything about her dying.]",
     options: {
         "continue": {
             text: "[[Maybe I should talk to him.]",
@@ -43,7 +43,7 @@ dialog_mitchel_death_reason = {
 }
 
 dialog_mitchel_journal = {
-    text: "[[Looks like another in my line of work. Fortunately for me, I can’t communicate with my patients.]",
+    text: "[[Looks like another in my line of work. Fortunately for me, I can't communicate with my patients.]",
     options: {"continue": "[end]"}
 }
 

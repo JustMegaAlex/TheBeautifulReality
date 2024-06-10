@@ -47,7 +47,7 @@ function update() {
 		instance_create_layer(0, oConveyerBelt.y, "Instances", oDogTreat)
 	}
 	if check(rmWork, [NarrativeEvents.bart_gave_treat], [NarrativeEvents.drawer_key_taken]) {
-		oDrawerKey.setActive(true); oDrawerKeyNote.setActive(true)
+		oDrawerKey.setActive(true)
 	}
 	if check(rmWork, [NarrativeEvents.showed_photo_to_sharon], [NarrativeEvents.obtained_missing_death_report]) {
 		oMerry.setDialogMissingReport()

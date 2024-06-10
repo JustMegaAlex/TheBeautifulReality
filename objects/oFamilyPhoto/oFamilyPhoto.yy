@@ -6,10 +6,12 @@
   ],
   "managed":true,
   "name":"oFamilyPhoto",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oInventoryItem","path":"objects/oInventoryItem/oInventoryItem.yy",},"propertyId":{"name":"active_from_start","path":"objects/oInventoryItem/oInventoryItem.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"False",},
+  ],
   "parent":{
-    "name":"Dialogs",
-    "path":"folders/Objects/Dialogs.yy",
+    "name":"MorgueItems",
+    "path":"folders/Objects/MorgueItems.yy",
   },
   "parentObjectId":{
     "name":"oInventoryItem",
