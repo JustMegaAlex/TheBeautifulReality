@@ -1,23 +1,15 @@
 event_inherited()
 
-dialog_tree = {
-    text: "",
-    options: {
-        "Looks like a simple drawer": "[end]"
-    }
-}
+layer = layer_get_id("Inventory")
 
-dialog_opened = {
-    text: "",
-    options: {
-        "Let's see what we got here...]": "[end]"
-    }
+function startDialog() {
+    oRobinReplicas.startDialog(oRobinReplicas.dialog_drawer)
 }
 
 function drawerOpen() {
     image_index = 1
     oFamilyPhoto.setActive(true)
-    startDialog(dialog_opened)
+    oRobinReplicas.startDialog(oRobinReplicas.dialog_drawer_opened)
 }
 
 function interact(item) {

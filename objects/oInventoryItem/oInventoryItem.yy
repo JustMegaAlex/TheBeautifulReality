@@ -11,8 +11,8 @@
   "name":"oInventoryItem",
   "overriddenProperties":[],
   "parent":{
-    "name":"MorgueItems",
-    "path":"folders/Objects/MorgueItems.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":{
     "name":"oGrabableParent",

@@ -72,3 +72,16 @@ dialog_too_tired = {
     options: {"continue": "[end]"}
 }
 
+dialog_drawer = {
+    text: "",
+    options: {
+        "Looks like a simple drawer": "[end]"
+    }
+}
+
+dialog_drawer_opened = {
+    text: "",
+    options: {
+        "Let's see what we got here...]": "[end]"
+    }
+}
