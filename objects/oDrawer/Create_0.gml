@@ -16,5 +16,6 @@ function interact(item) {
     if item.object_index == oDrawerKey {
         drawerOpen()
         instance_destroy(item)
+        oGameState.addEventHappened(NarrativeEvents.drawer_key_taken)
     }
 }
