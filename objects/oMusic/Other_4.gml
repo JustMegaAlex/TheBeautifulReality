@@ -3,6 +3,8 @@ switch room {
         switch_music(noone)
     break
     case rmDWBedroom:
-        switch_music(bgmRadio)
+        if !audio_is_playing(bgmRadio) {
+            switch_music(bgmRadio)
+        }
     break
 }
