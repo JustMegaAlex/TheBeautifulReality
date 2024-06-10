@@ -283,6 +283,7 @@
     {"id":{"name":"sfxButtonNextBody","path":"sounds/sfxButtonNextBody/sfxButtonNextBody.yy",},},
     {"id":{"name":"sfxConveyerActive","path":"sounds/sfxConveyerActive/sfxConveyerActive.yy",},},
     {"id":{"name":"sfxDialogueSelect","path":"sounds/sfxDialogueSelect/sfxDialogueSelect.yy",},},
+    {"id":{"name":"sfxElevator","path":"sounds/sfxElevator/sfxElevator.yy",},},
     {"id":{"name":"sfxGlitch1","path":"sounds/sfxGlitch1/sfxGlitch1.yy",},},
     {"id":{"name":"sfxGlitch2","path":"sounds/sfxGlitch2/sfxGlitch2.yy",},},
     {"id":{"name":"sfxGulp1","path":"sounds/sfxGulp1/sfxGulp1.yy",},},

@@ -5,6 +5,7 @@ if instance_exists(oBody){
 		with oInventoryItem {
 			if !is_inventory and place_meeting(x, y, oTable) {
                 moveToOutConveyor()
+                audio_play_sound(sfxConveyerActive, 3, false)
             }
 		}
 		oWorkController.processed++

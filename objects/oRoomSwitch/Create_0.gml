@@ -75,8 +75,7 @@ function transitionToWork() constructor {
         fade_amount = clamp(fade_amount, 0, 1)
         if fade_amount == 0 {
             layer_sequence_speedscale(sequence, 1)
-            sfx_play(choose(sfxRoomChangeDoor1,
-                sfxRoomChangeDoor2,sfxRoomChangeDoor3), 1)
+            // sfx_play(sfxElevator, 1)
         }
         if (layer_sequence_is_finished(active_sequence)) {
             layer_sequence_destroy(active_sequence)
@@ -99,8 +98,7 @@ function transitionFromWork() constructor {
     sequence = seqElevatorClose
     sequence_layer = layer_create(-99999)
     active_sequence = layer_sequence_create(sequence_layer, 0, 0, sequence)
-    sfx_play(choose(sfxRoomChangeDoor1,
-        sfxRoomChangeDoor2,sfxRoomChangeDoor3), 1)
+    // sfx_play(sfxElevator, 1)
 
 	step = function() {
         if (layer_sequence_is_finished(active_sequence)) {
