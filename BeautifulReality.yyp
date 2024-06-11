@@ -345,6 +345,7 @@
     {"id":{"name":"sInventoryItemModelPlane","path":"sprites/sInventoryItemModelPlane/sInventoryItemModelPlane.yy",},},
     {"id":{"name":"sInventoryItemNecklace","path":"sprites/sInventoryItemNecklace/sInventoryItemNecklace.yy",},},
     {"id":{"name":"sInventoryItemTeddyBear","path":"sprites/sInventoryItemTeddyBear/sInventoryItemTeddyBear.yy",},},
+    {"id":{"name":"sJacket","path":"sprites/sJacket/sJacket.yy",},},
     {"id":{"name":"sKanBan","path":"sprites/sKanBan/sKanBan.yy",},},
     {"id":{"name":"sLieWalSign","path":"sprites/sLieWalSign/sLieWalSign.yy",},},
     {"id":{"name":"sMeds","path":"sprites/sMeds/sMeds.yy",},},
