@@ -110,6 +110,7 @@
     {"id":{"name":"oIntroSequence","path":"objects/oIntroSequence/oIntroSequence.yy",},},
     {"id":{"name":"oInventory","path":"objects/oInventory/oInventory.yy",},},
     {"id":{"name":"oInventoryItem","path":"objects/oInventoryItem/oInventoryItem.yy",},},
+    {"id":{"name":"oJacket","path":"objects/oJacket/oJacket.yy",},},
     {"id":{"name":"oLieWallSign","path":"objects/oLieWallSign/oLieWallSign.yy",},},
     {"id":{"name":"oMeds","path":"objects/oMeds/oMeds.yy",},},
     {"id":{"name":"oMerry","path":"objects/oMerry/oMerry.yy",},},

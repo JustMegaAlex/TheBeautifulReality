@@ -22,7 +22,7 @@ enum NarrativeEvents {
     finished_clue_2,
 
     // the last clue
-    found_mitchels_jounal,  // 6
+    found_mitchels_jacket,  // 6
     read_mitchels_journal,
     finished_last_clue,
 

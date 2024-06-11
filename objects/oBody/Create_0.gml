@@ -70,19 +70,20 @@ function setInfoDeathMissingReason() {
 function setInfoMitchel() {
     info = "Name:  David Mitchel\n\nAge: 35-40 yrs\n\nOccupation: ~~Mortician~~  Efficient Multi-tasker!"
             + "\n\nCause of Death: Unknown"
+    array_push(props_names, "jacket")
 }
 
 //Props
 props_list_names = 
 [
-	"Flowers",
-	"ModelPlane", 
-	"Camera", 
-	"Knitting",
-	"Necklace", 
-	"Book", 
-	"Flask", 
-	"TeddyBear"
+	"flowers",
+	"modelPlane", 
+	"camera", 
+	"knitting",
+	"necklace", 
+	"book", 
+	"flask", 
+	"teddyBear"
 ]
 
 props_list_sprites =

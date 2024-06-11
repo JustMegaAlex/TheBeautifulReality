@@ -12,6 +12,33 @@ greeting_replicas = [
 ]
 current_greeting_replica_id = 0
 
+
+#region read mitchel's stuff dialog
+opt_read_mitchel_journal = {
+    text: "[end]",
+    options: undefined,
+    call: function() {
+        oPDA.setText(ReadFileString("mitchel_journal.txt"))
+        oRobinReplicas.startDialog(oRobinReplicas.dialog_mitchel_journal)
+        oGameState.addEventHappened(NarrativeEvents.read_mitchels_journal)
+    }
+}
+opt_read_mitchel_notes = {
+    text: "[end]",
+    options: undefined,
+    call: function() {
+        oPDA.setText(ReadFileString("mitchel_notes.txt"))
+        oRobinReplicas.startDialog(oRobinReplicas.dialog_mitchel_notes)
+    }
+}
+options_mitchel = {
+    "Read Mitchel's jounal]": opt_read_mitchel_journal,
+    "Read Mitchel's notes]": opt_read_mitchel_notes
+}
+opt_read_mitchel_journal.options = options_mitchel
+opt_read_mitchel_notes.options = options_mitchel
+#endregion
+
 dialog_tree_default = {
     id: id,
     text: greeting_replicas[0],
@@ -22,6 +49,9 @@ dialog_tree_default = {
         id.current_greeting_replica_id = (id.current_greeting_replica_id + 1) 
                                           mod (array_length(id.greeting_replicas) - 1)
         text = id.greeting_replicas[id.current_greeting_replica_id]
+        if oGameState.checkEventHappened(NarrativeEvents.found_mitchels_jacket) {
+            options = id.options_mitchel
+        }
     }
 }
 

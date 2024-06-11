@@ -92,3 +92,10 @@ dialog_drawer_opened = {
         "Let's see what we got here...]": "[end]"
     }
 }
+
+dialog_mitchel_jacket = {
+    text: "",
+    options: {
+        "Let me just check this... Here's a note and... some kind of a journal?]": "[end]"
+    }
+}

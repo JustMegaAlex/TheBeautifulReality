@@ -23,23 +23,18 @@ function check(_room, events, exclude_events) {
 }
 
 function initMitchelItems() {
-    instance_destroy(oInventoryItem)
+    // instance_destroy(oInventoryItem)
     var xx = oConveyerBelt.bbox_right, yy = oConveyerBelt.y
-    var journal = instance_create_layer(xx, yy, "Instances", oInventoryItem)
-    journal.sprite_index = sKanBan
-    journal.is_readable = true
-    journal.text = ReadFileString("mitchel_journal.txt")
-    journal.onPDADrop = function() {
-        oRobinReplicas.startDialog(oRobinReplicas.dialog_mitchel_journal)
-    }
-    var note = instance_create_layer(xx + 20, yy + 20, "Instances", oInventoryItem)
-    note.sprite_index = sStickerNote
-    note.is_readable = true
-    note.text = ReadFileString("mitchel_notes.txt")
-    note.onPDADrop = function() {
-        oRobinReplicas.startDialog(oRobinReplicas.dialog_mitchel_notes)
-        oGameState.addEventHappened(NarrativeEvents.read_mitchels_journal)
-    }
+    var jacket = instance_create_layer(xx, yy, "Instances", oJacket)
+    // jacket.text = ReadFileString("mitchel_journal.txt")
+    // jacket.onPDADrop = function() {
+    //     oRobinReplicas.startDialog(oRobinReplicas.dialog_mitchel_journal)
+    // }
+    // note.text = ReadFileString("mitchel_notes.txt")
+    // note.onPDADrop = function() {
+    //     oRobinReplicas.startDialog(oRobinReplicas.dialog_mitchel_notes)
+    //     oGameState.addEventHappened(NarrativeEvents.read_mitchels_journal)
+    // }
 }
 
 function update() {
@@ -56,7 +51,7 @@ function update() {
             oRobinReplicas.startDialog(oRobinReplicas.dialog_missing_death_reason)
         })
 	}
-	if check(rmWork, [NarrativeEvents.finished_clue_2], [NarrativeEvents.found_mitchels_jounal]) {
+	if check(rmWork, [NarrativeEvents.finished_clue_2], [NarrativeEvents.found_mitchels_jacket]) {
         oBody.setInfoMitchel()
         oPDA.setOpenCallback(function() {
             oRobinReplicas.startDialog(oRobinReplicas.dialog_mitchel_death_reason)
