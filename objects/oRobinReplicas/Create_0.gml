@@ -13,8 +13,15 @@ dialog_dog_treat_found = {
     }
 }
 
+dialog_drawer_key = {
+    text: "[[Was this here the whole time or am I just... forgetful?]",
+    options: {
+        "continue": "[end]"
+    }
+}
+
 dialog_family_photo_found = {
-    text: "Hold on, I recognize this photo.\n"
+    text: "[[Hold on, I recognize this photo.\n"
           + "It's our family trip to The Alps in the south of France.\n"
           + "I thought I lost it.]",
     options: {
@@ -33,7 +40,7 @@ dialog_autopsy_report = {
 }
 
 dialog_missing_death_reason = {
-    text: "That's...unusual. Guess I should report it to Merry.]",
+    text: "[[That's...unusual. Guess I should report it to Merry.]",
     options: {"continue": "[end]"}
 }
 

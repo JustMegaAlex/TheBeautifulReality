@@ -17,8 +17,23 @@ dialog_tree = {
     },
     call: function() {
         // remove dog treat dialog after getting a treat
-        if oGameState.checkEventHappened(NarrativeEvents.bart_gave_treat) {
+        if oGameState.checkState(
+                [NarrativeEvents.bart_gave_treat],
+                [NarrativeEvents.obtained_missing_death_report,
+                 NarrativeEvents.finished_clue_2]) {
             variable_struct_remove(self.options, "Do you want a treat?")
+        }
+		// clue 2 dialog
+        if oGameState.checkState(
+                [NarrativeEvents.obtained_missing_death_report],
+                [NarrativeEvents.finished_clue_2]) {
+            self.options[$ "Do you want a treat?"] = {
+                text: "Careful, you'll end up just like her.",
+                options: {
+                    "Did Barth just... talk? I really need some shuteye.]": "[end]"
+                },
+                event: NarrativeEvents.finished_clue_2
+            }
         }
     }
 }

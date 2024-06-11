@@ -1,5 +1,5 @@
 event_inherited()
 
-function onInvenotryDrop() {
+function onInventoryDrop() {
     oRobinReplicas.startDialog(oRobinReplicas.dialog_dog_treat_found)
 }

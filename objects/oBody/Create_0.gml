@@ -63,8 +63,8 @@ function moveToOutConveyor() {
 
 function setInfoDeathMissingReason() {
 	info = "Kimberly Sinclair\n"
-            + "occupation: school teacher\n"
-            + "death cause: [c_red]null"
+            + "occupation: reliable team player with attention to details\n"
+            + "death cause:"
 }
 
 function setInfoMitchel() {
